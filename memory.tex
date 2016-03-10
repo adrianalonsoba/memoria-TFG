@@ -30,6 +30,15 @@
 \usepackage{float}  %% H para posicionar figuras
 \usepackage[nottoc, notlot, notlof, notindex]{tocbibind} %% Opciones de índice
 \usepackage{latexsym}  %% Logo LaTeX
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=red,
+    filecolor=red,
+    linkcolor=red,
+    urlcolor=red
+}
+\usepackage{listings}
 
 \title{Memoria del Proyecto}
 \author{Adrián Alonso Barriuso}
@@ -107,7 +116,7 @@ FIXME: Título
 
 \vspace{1cm}
 \large
-\textbf{Autor :} FIXME Adrián Alonso Barriuso
+\textbf{Autor :} Adrián Alonso Barriuso
 \textbf{Tutor :} Dr. Jesús M. González Barahona
 
 \end{center}
@@ -186,7 +195,9 @@ Lo mejor es escribir el resumen al final.
 \chapter*{Summary}
 %\addcontentsline{toc}{chapter}{Summary} % si queremos que aparezca en el índice
 \markboth{SUMMARY}{SUMMARY} % encabezado
+This project aims to facilitate the visualization of data and statistics from software development in 3D, inside any web browser without the need to install any drivers , plugin or additional software.
 
+To do this has been mainly used the JavaScript programming language , and HTML5 as the basis to use WebGL, a library that allow us to render 3D graphics with hardware acceleration natively in almost any browser. However , since webGL is relatively low level and would be very difficult to make applications directly on its API , it has been used a library that provides a higher level of abstraction than WebGL, this library is Three.js.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -216,18 +227,27 @@ Lo mejor es escribir el resumen al final.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \cleardoublepage
-\chapter{Introducción}
+\chapter{Introduction}
 \label{sec:intro} % etiqueta para poder referenciar luego en el texto con ~\ref{sec:intro}
 \pagenumbering{arabic} % para empezar la numeración de página con números
 
 En este capítulo se introduce el proyeto. Debería tener información general sobre 
 el mismo, dando la información sobre el contexto en el que se ha desarrollado.
 
-\section{}
-\label{sec:}
+\section{Objectives}
+\label{sec:objec}
 
-\subsection{Estilo}
-\label{subsec:estilo}
+\subsection{Problem description}
+\label{subsec:probdescr}
+
+\subsection{Main Objective}
+\label{subsec:mainobj}
+
+\subsection{Requeriments}
+\label{subsec:mainobj}
+
+\section{Demos}
+\label{sec:demos}
 
 Sobre el uso de las comas\footnote{\url{http://narrativabreve.com/2015/02/opiniones-de-un-corrector-de-estilo-11-recetas-para-escribir-correctamente-la-coma.html}}
 
@@ -271,6 +291,25 @@ Sobre el uso de las comas\footnote{\url{http://narrativabreve.com/2015/02/opinio
 }
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PROYECT CONTEXT %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cleardoublepage
+\chapter{Proyect context}
+\label{chap:pcontext}
+
+\section{Free software}
+\label{sec:objetivos-especificos}
+
+
+\section{Objetivos específicos}
+\label{sec:objetivos-especificos}
+
+
+\section{Planificación temporal}
+\label{sec:planificacion-temporal}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -301,10 +340,55 @@ label{sec:planificacion-temporal}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \cleardoublepage
-\chapter{Estado del arte}
+\chapter{Used technologies}
 
-Descripción de las tecnologías que utilizas en tu trabajo. Con dos o tres párrafos por cada tecnología, vale.
+\section{HTML5}
+\label{sec:html5}
+\subsection{General description}
+\label{sec:html5gd}
+HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It was finalized, and published, on 28 October 2014 by the World Wide Web Consortium (W3C) This is the fifth revision of the HTML standard since the inception of the World Wide Web. The previous version, HTML 4, was standardized in 1997.
 
+Its core aims are to improve the language with support for the latest multimedia while keeping it easily readable by humans and consistently understood by computers and devices (web browsers, parsers, etc.). HTML5 is intended to subsume not only HTML 4, but also XHTML 1 and DOM Level 2 HTML.
+
+In particular, HTML5 adds many new syntactic features. These include the new <video>, <audio> and <canvas> elements, as well as the integration of scalable vector graphics (SVG) content (replacing generic <object> tags) and MathML for mathematical formulas. These features are designed to make it easy to include and handle multimedia and graphical content on the web without having to resort to proprietary plugins and APIs. Other new page structure elements, such as <main>, <section>, <article>, <header>, <footer>, <aside>, <nav> and <figure>, are designed to enrich the semantic content of documents. New attributes have been introduced, some elements and attributes have been removed and some elements, such as <a>, <cite> and <menu> have been changed, redefined or standardized. The APIs and Document Object Model (DOM) are no longer afterthoughts, but are fundamental parts of the HTML5 specification.[6] HTML5 also defines in some detail the required processing for invalid documents so that syntax errors will be treated uniformly by all conforming browsers and other user agents.
+\subsection{In this project}
+\label{sec:html5itp}
+As we said in the previous subsection, HTML5 adds the new syntactic feature known as Canvas, which allow us to render dynamic graphics and animations on our web pages. Almost all web browsers supports Canvas today.
+To render our 3D charts, we must to tell Three.js the canvas element that will contain our beautiful crafted charts:
+\lstset{language=Java, breaklines=true, basicstyle=\footnotesize}
+\begin{lstlisting}[frame=single]
+   // attach div element to variable to contain the renderer
+   container = document.getElementById( 'ThreeJS' );
+   // attach renderer to the container div
+   canvas=renderer.domElement
+   container.appendChild( canvas );
+\end{lstlisting}
+
+
+
+\section{CSS}
+\label{sec:CSS}
+
+\section{Javascript}
+\label{sec:js}
+
+\section{JQuery}
+\label{sec:jquery}
+
+\section{WebGL}
+\label{sec:wgl}
+sasa
+\section{Three}
+\label{sec:three}
+
+\section{Crossfilter}
+\label{sec:cf}
+
+\section{Domevents}
+\label{sec:de}
+
+\section{Orbitcontrols}
+\label{sec:de}
 
 Puedes citar libros, como el de Bonabeau et al. sobre procesos estigmérgicos~\cite{bonabeau:_swarm}. % Nota que el ~ añade un espacio en blanco, pero no deja que exista un salto de línea. Imprescindible ponerlo para las citas.
 
