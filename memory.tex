@@ -354,7 +354,7 @@ In particular, HTML5 adds many new syntactic features. These include the new <vi
 \subsection{In this project}
 \label{sec:html5itp}
 As we said in the previous subsection, HTML5 adds the new syntactic feature known as Canvas, which allow us to render dynamic graphics and animations on our web pages. Almost all web browsers supports Canvas today.
-To render our 3D charts, we must to tell Three.js the canvas element that will contain our beautiful crafted charts:
+To render 3D charts, we must to tell Three.js the canvas element that will contain our beautiful crafted charts:
 \lstset{language=Java, breaklines=true, basicstyle=\footnotesize}
 \begin{lstlisting}[frame=single]
    // attach div element to variable to contain the renderer
@@ -363,21 +363,85 @@ To render our 3D charts, we must to tell Three.js the canvas element that will c
    canvas=renderer.domElement
    container.appendChild( canvas );
 \end{lstlisting}
-
-
-
-\section{CSS}
-\label{sec:CSS}
+Where the the container is the div with ThreeJS tag(for example).
 
 \section{Javascript}
 \label{sec:js}
+JavaScript is a high-level, dynamic, untyped, and interpreted programming language.It has been standardized in the ECMAScript language specification. Alongside HTML and CSS, it is one of the three essential technologies of World Wide Web content production; the majority of websites employ it and it is supported by all modern Web browsers without plug-ins.JavaScript is prototype-based with first-class functions, making it a multi-paradigm language, supporting object-oriented,imperative, and functional programming styles.It has an API for working with text, arrays, dates and regular expressions, but does not include any I/O, such as networking, storage, or graphics facilities, relying for these upon the host environment in which it is embedded.
+
+Despite some naming, syntactic, and standard library similarities, JavaScript and Java are otherwise unrelated and have very different semantics. The syntax of JavaScript is actually derived from C, while the semantics and design are influenced by the Self and Scheme programming languages.
+
+JavaScript is also used in environments that are not Web-based, such as PDF documents, site-specific browsers, and desktop widgets. Newer and faster JavaScript virtual machines (VMs) and platforms built upon them have also increased the popularity of JavaScript for server-side Web applications. On the client side, JavaScript has been traditionally implemented as an interpreted language, but more recent browsers perform just-in-time compilation. It is also used in game development, the creation of desktop and mobile applications, and server-side network programming with runtime environments such as Node.js.
+
+\subsection{Main features}
+\label{sec:jsfeatures}
+
+\begin{itemize}  
+\item \underline{Imperative and structured}: 
+JavaScript supports much of the structured programming syntax from C (e.g., if statements, while loops, switch statements, do while loops, etc.). One partial exception is scoping: JavaScript originally had only function scoping with var. ECMAScript 2015 adds a let keyword for block scoping, meaning JavaScript now has both function and block scoping. Like C, JavaScript makes a distinction between expressions and statements. One syntactic difference from C is automatic semicolon insertion, which allows the semicolons that would normally terminate statements to be omitted.
+\item \underline{Dynamic}:
+As with most scripting languages, JavaScript is dynamically typed; a type is associated with each value, rather than just with each expression. For example, a variable that is at one time bound to a number may later be re-bound to a string. JavaScript supports various ways to test the type of an object, including duck typing.
+JavaScript includes an eval function that can execute statements provided as strings at run-time.
+\item \underline{Prototype-based (Object-oriented)}:
+JavaScript is almost entirely object-based. In JavaScript, an object is an associative array, augmented with a prototype (see below); each string key provides the name for an object property, and there are two syntactical ways to specify such a name: dot notation (obj.x = 10) and bracket notation (obj['x'] = 10). A property may be added, rebound, or deleted at run-time. Most properties of an object (and any property that belongs to an object's prototype inheritance chain) can be enumerated using a for...in loop.
+
+JavaScript has a small number of built-in objects, including Function and Date.
+\item \underline{Functional}:
+A function is first-class; a function is considered to be an object. As such, a function may have properties and methods, such as .call() and .bind().A nested function is a function defined within another function. It is created each time the outer function is invoked. In addition, each nested function forms a lexical closure: The lexical scope of the outer function (including any constant, local variable, or argument value) becomes part of the internal state of each inner function object, even after execution of the outer function concludes.JavaScript also supports anonymous functions.
+\end{itemize}
+\underline{Syntax examples}:
+\begin{lstlisting}[frame=single]
+var x; // defines the variable x, the special value 'undefined' (not to be confused with an undefined value) is assigned to it by default
+var y = 2; // defines the variable y and assigns the value of 2 to it
+
+//A simple recursive function:
+function factorial(n) {
+    if (n == 0) {
+        return 1;
+    }
+    return n*factorial(n - 1);
+}
+
+//Anonymous function (or lambda) syntax and closure example:
+var displayClosure = function() {
+    var count = 0;
+    return function () {
+        return ++count;
+    };
+}
+var inc = displayClosure();
+inc(); // returns 1
+inc(); // returns 2
+inc(); // returns 3
+\end{lstlisting}
+\subsection{In this project}
+
+Is have been used JavaScript for all the scripts in the project, and also, all the libraries we have included are written on JavaScript, these libraries are described in detail in the next sections.  
+
 
 \section{JQuery}
 \label{sec:jquery}
+PREGUNTAR SI LO INCLUYO, YA QUE SOLO SE USA EVENTUALENTE PARA RECOGER LOS DATOS Y NO ES PARTE DE LA LIBRERIA
 
 \section{WebGL}
 \label{sec:wgl}
-sasa
+WebGL (Web Graphics Library) is a JavaScript API for rendering interactive 3D computer graphics and 2D graphics within any compatible web browser without the use of plug-ins. WebGL is integrated completely into all the web standards of the browser allowing GPU accelerated usage of physics and image processing and effects as part of the web page canvas. WebGL elements can be mixed with other HTML elements and composited with other parts of the page or page background.WebGL programs consist of control code written in JavaScript and shader code that is executed on a computer's Graphics Processing Unit (GPU). WebGL is designed and maintained by the non-profit Khronos Group.
+
+WebGL 1.0 is based on OpenGL ES 2.0 and provides an API for 3D graphics.It uses the HTML5 canvas element and is accessed using Document Object Model interfaces. Automatic memory management is provided as part of the JavaScript language.
+
+Like OpenGL ES 2.0, WebGL does not have the fixed-function APIs introduced in OpenGL 1.0 and deprecated in OpenGL 3.0. This functionality can instead be provided by the user in the JavaScript code space.
+Shaders in WebGL are expressed directly in GLSL(OpenGL Shading Language,a high-level shading language based on the syntax of the C programming language).
+\subsection{Support}
+WebGL is widely supported in modern browsers. However its availability is dependent on other factors like the GPU supporting it. The official WebGL website offers a simple test page\footnote{\url{http://get.webgl.org/}}.
+
+ More detailed information (like what renderer the browser uses, and what extensions are available) is provided at third-party websites.
+ 
+\textbf{Desktop Browsers}:
+\begin{itemize}
+\item \underline{Google Chrome}: WebGL has been enabled on all platforms that have a capable graphics card with updated drivers since version 9, released in February 2011.By default on Windows, Chrome uses the ANGLE (Almost Native Graphics Layer Engine) renderer to translate OpenGL ES to Direct X 9.0c or 11.0, which have better driver support.On Linux and Mac OS X the default renderer is OpenGL however.It is also possible to force OpenGL as the renderer on Windows.Since September 2013, Chrome also has a newer Direct3D 11 renderer, which however requires a newer graphics card
+\end{itemize}
+
+
 \section{Three}
 \label{sec:three}
 
