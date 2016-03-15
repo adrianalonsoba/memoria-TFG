@@ -23,18 +23,21 @@
 \contentsline {section}{\numberline {4.3}JQuery}{11}{section.4.3}
 \contentsline {section}{\numberline {4.4}WebGL}{11}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Support}{12}{subsection.4.4.1}
-\contentsline {section}{\numberline {4.5}Three}{12}{section.4.5}
-\contentsline {section}{\numberline {4.6}Crossfilter}{12}{section.4.6}
-\contentsline {section}{\numberline {4.7}Domevents}{12}{section.4.7}
-\contentsline {section}{\numberline {4.8}Orbitcontrols}{12}{section.4.8}
-\contentsline {section}{\numberline {4.9}Secci\'on 1}{12}{section.4.9}
-\contentsline {chapter}{\numberline {5}Dise\~no e implementaci\'on}{13}{chapter.5}
-\contentsline {section}{\numberline {5.1}Arquitectura general}{13}{section.5.1}
-\contentsline {chapter}{\numberline {6}Resultados}{15}{chapter.6}
-\contentsline {chapter}{\numberline {7}Conclusiones}{17}{chapter.7}
-\contentsline {section}{\numberline {7.1}Consecuci\'on de objetivos}{17}{section.7.1}
-\contentsline {section}{\numberline {7.2}Aplicaci\'on de lo aprendido}{17}{section.7.2}
-\contentsline {section}{\numberline {7.3}Lecciones aprendidas}{17}{section.7.3}
-\contentsline {section}{\numberline {7.4}Trabajos futuros}{18}{section.7.4}
-\contentsline {section}{\numberline {7.5}Valoraci\'on personal}{18}{section.7.5}
-\contentsline {chapter}{\numberline {A}Manual de usuario}{19}{appendix.Alph1}
+\contentsline {subsection}{\numberline {4.4.2}In this project}{14}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Three}{14}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Usage example}{15}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}In this project}{18}{subsection.4.5.2}
+\contentsline {section}{\numberline {4.6}Crossfilter}{18}{section.4.6}
+\contentsline {section}{\numberline {4.7}Domevents}{18}{section.4.7}
+\contentsline {section}{\numberline {4.8}Orbitcontrols}{18}{section.4.8}
+\contentsline {section}{\numberline {4.9}Secci\'on 1}{18}{section.4.9}
+\contentsline {chapter}{\numberline {5}Dise\~no e implementaci\'on}{19}{chapter.5}
+\contentsline {section}{\numberline {5.1}Arquitectura general}{19}{section.5.1}
+\contentsline {chapter}{\numberline {6}Resultados}{21}{chapter.6}
+\contentsline {chapter}{\numberline {7}Conclusiones}{23}{chapter.7}
+\contentsline {section}{\numberline {7.1}Consecuci\'on de objetivos}{23}{section.7.1}
+\contentsline {section}{\numberline {7.2}Aplicaci\'on de lo aprendido}{23}{section.7.2}
+\contentsline {section}{\numberline {7.3}Lecciones aprendidas}{23}{section.7.3}
+\contentsline {section}{\numberline {7.4}Trabajos futuros}{24}{section.7.4}
+\contentsline {section}{\numberline {7.5}Valoraci\'on personal}{24}{section.7.5}
+\contentsline {chapter}{\numberline {A}Manual de usuario}{25}{appendix.Alph1}

@@ -350,10 +350,10 @@ HTML5 is a markup language used for structuring and presenting content on the Wo
 
 Its core aims are to improve the language with support for the latest multimedia while keeping it easily readable by humans and consistently understood by computers and devices (web browsers, parsers, etc.). HTML5 is intended to subsume not only HTML 4, but also XHTML 1 and DOM Level 2 HTML.
 
-In particular, HTML5 adds many new syntactic features. These include the new <video>, <audio> and <canvas> elements, as well as the integration of scalable vector graphics (SVG) content (replacing generic <object> tags) and MathML for mathematical formulas. These features are designed to make it easy to include and handle multimedia and graphical content on the web without having to resort to proprietary plugins and APIs. Other new page structure elements, such as <main>, <section>, <article>, <header>, <footer>, <aside>, <nav> and <figure>, are designed to enrich the semantic content of documents. New attributes have been introduced, some elements and attributes have been removed and some elements, such as <a>, <cite> and <menu> have been changed, redefined or standardized. The APIs and Document Object Model (DOM) are no longer afterthoughts, but are fundamental parts of the HTML5 specification.[6] HTML5 also defines in some detail the required processing for invalid documents so that syntax errors will be treated uniformly by all conforming browsers and other user agents.
+In particular, HTML5 adds many new syntactic features. These include the new video, audio and canvas elements, as well as the integration of scalable vector graphics (SVG) content (replacing generic object tags) and MathML for mathematical formulas. These features are designed to make it easy to include and handle multimedia and graphical content on the web without having to resort to proprietary plugins and APIs. Other new page structure elements, such as main, section, article, header, footer, aside, nav and figure, are designed to enrich the semantic content of documents. New attributes have been introduced, some elements and attributes have been removed and some elements, such as a, cite and menu> have been changed, redefined or standardized. The APIs and Document Object Model (DOM) are no longer afterthoughts, but are fundamental parts of the HTML5 specification.HTML5 also defines in some detail the required processing for invalid documents so that syntax errors will be treated uniformly by all conforming browsers and other user agents.
 \subsection{In this project}
 \label{sec:html5itp}
-As we said in the previous subsection, HTML5 adds the new syntactic feature known as Canvas, which allow us to render dynamic graphics and animations on our web pages. Almost all web browsers supports Canvas today.
+As we said in the previous subsection, HTML5 adds the new syntactic feature known as Canvas, allowing us to render dynamic graphics and animations on our web pages. Almost all web browsers supports Canvas today.
 To render 3D charts, we must to tell Three.js the canvas element that will contain our beautiful crafted charts:
 \lstset{language=Java, breaklines=true, basicstyle=\footnotesize}
 \begin{lstlisting}[frame=single]
@@ -363,7 +363,7 @@ To render 3D charts, we must to tell Three.js the canvas element that will conta
    canvas=renderer.domElement
    container.appendChild( canvas );
 \end{lstlisting}
-Where the the container is the div with ThreeJS tag(for example).
+Where the container is the div with ThreeJS tag(for example).
 
 \section{Javascript}
 \label{sec:js}
@@ -416,7 +416,7 @@ inc(); // returns 3
 \end{lstlisting}
 \subsection{In this project}
 
-Is have been used JavaScript for all the scripts in the project, and also, all the libraries we have included are written on JavaScript, these libraries are described in detail in the next sections.  
+Is have been used JavaScript for all the scripts in the project, and also, all the libraries we have included are written in JavaScript, these libraries are described in detail in the following sections.  
 
 
 \section{JQuery}
@@ -438,12 +438,135 @@ WebGL is widely supported in modern browsers. However its availability is depend
  
 \textbf{Desktop Browsers}:
 \begin{itemize}
-\item \underline{Google Chrome}: WebGL has been enabled on all platforms that have a capable graphics card with updated drivers since version 9, released in February 2011.By default on Windows, Chrome uses the ANGLE (Almost Native Graphics Layer Engine) renderer to translate OpenGL ES to Direct X 9.0c or 11.0, which have better driver support.On Linux and Mac OS X the default renderer is OpenGL however.It is also possible to force OpenGL as the renderer on Windows.Since September 2013, Chrome also has a newer Direct3D 11 renderer, which however requires a newer graphics card
+\item \underline{Google Chrome}: WebGL has been enabled on all platforms that have a capable graphics card with updated drivers since version 9, released in February 2011.By default on Windows, Chrome uses the ANGLE (Almost Native Graphics Layer Engine) renderer to translate OpenGL ES to Direct X 9.0c or 11.0, which have better driver support.On Linux and Mac OS X the default renderer is OpenGL however.It is also possible to force OpenGL as the renderer on Windows.Since September 2013, Chrome also has a newer Direct3D 11 renderer, which however requires a newer graphics card.
+\item \underline{Mozilla Firefox}: WebGL has been enabled on all platforms that have a capable graphics card with updated drivers since version 4.0.Since 2013 Firefox also uses DirectX on the Windows platform via ANGLE.
+\item \underline{Safari}: Safari 6.0 and newer versions installed on OS X Mountain Lion, Mac OS X Lion and Safari 5.1 on Mac OS X Snow Leopard implemented support for WebGL, which was disabled by default before Safari 8.0.
+\item \underline{Opera}: WebGL has been implemented in Opera 11 and 12, although was disabled by default in 2014.
+\item \underline{Internet Explorer}:WebGL is partially supported in Internet Explorer 11.It initially failed the majority of official WebGL conformance tests, but Microsoft later released several updates. The latest 0.94 WebGL engine currently passes ~97\% of Khronos tests. WebGL support can also be manually added to earlier versions of Internet Explorer using third-party plugins such as IEWebGL.
+\item \underline{Microsoft Edge}: The initial stable release supports WebGL version 0.95.
 \end{itemize}
+\textbf{Mobile Browsers}:
+\begin{itemize}
+\item \underline{BlackBerry 10}:  WebGL is available for BlackBerry devices since OS version 10.00
+\item \underline{BlackBerry 10}:  WebGL is available via WebWorks and browser in PlayBook OS 2.00
+\item \underline{Android Browser}:  Basically unsupported, but the Sony Ericsson Xperia range of Android smartphones have had WebGL capabilities following a firmware upgrade.Samsung smartphones also have WebGL enabled (verified on Galaxy SII (4.1.2) and Galaxy Note 8.0 (4.2)). Supported in Google Chrome that replaced Android browser in many phones (but is not a new standard Android Browser).
+\item \underline{Internet Explorer}:WebGL is available on Windows Phone 8.1.
+\item \underline{Firefox for mobile} WebGL is available for Android and MeeGo devices since Firefox 4.
+\item \underline{Firefox OS}
+\item \underline{Google Chrome}: WebGL is available for Android devices since Google Chrome 25 and enabled by default since version 30.
+\item \underline{Maemo}: In Nokia N900, WebGL is available in the stock microB browser from the PR1.2 firmware update onwards.
+\item \underline{MeeGo}:WebGL is unsupported in the stock browser "Web." However, it is available through Firefox.
+\item \underline{Opera Mobile}: Opera Mobile 12 supports WebGL (on Android only).
+\item \underline{Sailfish OS}: WebGL is supported in the default Sailfish browser.
+\item \underline{Tizen}.
+\item \underline{Ubuntu Touch}.
+\item \underline{WebOS}.
+\item \underline{iOS}:WebGL is available for mobile Safari, in iOS 8.
+\end{itemize}
+\subsection{In this project}
+\label{sec.webglitp}
+The WebGL API may be too tedious to use directly without some utility libraries, which for example set up typical view transformation shaders (e.g. for view frustum). Loading scene graphs and 3D objects in the popular industry formats is also not directly provided for. JavaScript libraries have been built (or sometimes ported to WebGL) to provide the additional functionality. A non-exhaustive list of libraries that provide many high-level features includes BabylonJS, three.js, O3D, OSG.JS, CopperLicht and GLGE. There also has been a rapid emergence of game engines for WebGL,including Unreal Engine 4 and Unity 5.The Stage3D/Flash-based Away3D high-level library also has a port to WebGL via TypeScript.A more light-weight utility library that provides just the vector and matrix math utilities for shaders is sylvester.js.It is sometimes used in conjunction with a WebGL specific extension called glUtils.js.
 
+To avoid this low-level of abstraction, we use Three.js in our case, but here\footnote{\url{https://en.wikipedia.org/wiki/List_of_WebGL_frameworks/}} we can find other useful webGL frameworks.
+To see Three.js in detail, we will go to the next section.
 
 \section{Three}
 \label{sec:three}
+Three.js is a cross-browser JavaScript library/API used to create and display animated 3D computer graphics in a web browser. Three.js uses WebGL. The source code is hosted in a repository on GitHub\footnote{\url{https://github.com/mrdoob/three.js/}}.
+
+Three.js allows the creation of GPU-accelerated 3D animations using the JavaScript language as part of a website without relying on proprietary browser plugins.This is possible thanks to the advent of WebGL.
+
+High-level libraries such as Three.js or GLGE, SceneJS, PhiloGL or a number of other libraries make it possible to author complex 3D computer animations that display in the browser without the effort required for a traditional standalone application or a plugin.
+
+\textbf{Main features}:
+\begin{enumerate}
+\item Effects: Anaglyph, cross-eyed and parallax barrier.
+\item Scenes: add and remove objects at run-time; fog.
+\item Cameras: perspective and orthographic; controllers: trackball, FPS, path and more.
+\item Animation: armatures, forward kinematics, inverse kinematics, morph and keyframe.
+\item Lights: ambient, direction, point and spot lights; shadows: cast and receive.
+\item Materials: Lambert, Phong, smooth shading, textures and more.
+\item Shaders: access to full OpenGL Shading Language (GLSL) capabilities: lens flare, depth pass and extensive post-processing library.
+\item Objects: meshes, particles, sprites, lines, ribbons, bones and more - all with Level of detail.
+\item Geometry: plane, cube, sphere, torus, 3D text and more; modifiers: lathe, extrude and tube
+\item Data loaders: binary, image, JSON and scene.
+\item Utilities: full set of time and 3D math functions including frustum, matrix, quaternion, UVs and more.
+\item Export and import: utilities to create Three.js-compatible JSON files from within: Blender, openCTM, FBX, Max, and OBJ.
+\item Support: API documentation is under construction, public forum and wiki in full operation.
+\item Examples: Over 150 files of coding examples plus fonts, models, textures, sounds and other support files
+\item Debugging: Stats.js, WebGL Inspector, Three.js Inspector.
+\end{enumerate}
+\subsection{Usage example}
+The Three.js library is a single JavaScript file. It can be included within a web page by linking to a local or remote copy:
+\lstset{language=HTML, breaklines=true, basicstyle=\footnotesize}
+\begin{lstlisting}[frame=single]
+<script src="js/three.js"></script>
+\end{lstlisting}
+
+The following code creates a scene, adds a camera and a cube to the scene, creates a WebGL renderer and adds its viewport in the document.body element. Once loaded, the cube rotates about its X- and Y-axis.
+\lstset{language=Java, breaklines=true, basicstyle=\footnotesize}
+\begin{lstlisting}[frame=single]
+var camera, scene, renderer;
+var geometry, material, mesh;
+
+init();
+animate();
+
+function init() {
+
+    camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 10000);
+    camera.position.z = 1000;
+
+    scene = new THREE.Scene();
+    
+    var light = new THREE.PointLight(0xffffff,0.8);
+    light.position.set(0,0,200);
+    scene.add(light);
+ 
+    geometry = new THREE.BoxGeometry(200, 200, 200);
+    material = new THREE.MeshLambertMaterial({
+        color: 0xff0000,
+        wireframe: false
+    });
+
+    mesh = new THREE.Mesh(geometry, material);
+    scene.add(mesh);
+
+    renderer = new THREE.WebGLRenderer();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setClearColor( 0xd8d8d8 );
+
+
+    document.body.appendChild(renderer.domElement);
+
+}
+
+function animate() {
+
+    requestAnimationFrame(animate);
+
+    mesh.rotation.x += 0.01;
+    mesh.rotation.y += 0.02;
+
+    renderer.render(scene, camera);
+
+}
+\end{lstlisting}
+
+If all went well, we will see something like this:
+figure~\ref{fig:basic_cube}.
+\begin{figure}
+  \centering
+  \includegraphics[width=9cm, keepaspectratio]{img/basic_example}
+  \caption{Basic cube made with Three.js}
+  \label{fig:basic_cube}
+\end{figure}
+
+Also, you can play with the example by following this JSfiddle link \footnote{\url{https://jsfiddle.net/no0aeknq/}}
+
+
+\subsection{In this project}
+
 
 \section{Crossfilter}
 \label{sec:cf}
@@ -462,7 +585,6 @@ LibreSoft\footnote{\url{http://www.libresoft.es}}.
 
 \section{Sección 1} 
 \label{sec:seccion1}
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -493,8 +615,6 @@ figura~\ref{fig:arquitectura}.
 
 \cleardoublepage
 \chapter{Resultados}
-
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
