@@ -465,9 +465,9 @@ WebGL is widely supported in modern browsers. However its availability is depend
 \end{itemize}
 \subsection{In this project}
 \label{sec.webglitp}
-The WebGL API may be too tedious to use directly without some utility libraries, which for example set up typical view transformation shaders (e.g. for view frustum). Loading scene graphs and 3D objects in the popular industry formats is also not directly provided for. JavaScript libraries have been built (or sometimes ported to WebGL) to provide the additional functionality. A non-exhaustive list of libraries that provide many high-level features includes BabylonJS, three.js, O3D, OSG.JS, CopperLicht and GLGE. There also has been a rapid emergence of game engines for WebGL,including Unreal Engine 4 and Unity 5.The Stage3D/Flash-based Away3D high-level library also has a port to WebGL via TypeScript.A more light-weight utility library that provides just the vector and matrix math utilities for shaders is sylvester.js.It is sometimes used in conjunction with a WebGL specific extension called glUtils.js.
+The WebGL API may be too tedious to use directly without some utility libraries due to its low abstraction level. Loading scene graphs and 3D objects in the popular industry formats is also not directly provided for. JavaScript libraries have been built (or sometimes ported to WebGL) to provide the additional functionality. A non-exhaustive list of libraries that provide many high-level features includes BabylonJS, three.js, O3D, OSG.JS, CopperLicht and GLGE. There also has been a rapid emergence of game engines for WebGL,including Unreal Engine 4 and Unity 5.The Stage3D/Flash-based Away3D high-level library also has a port to WebGL via TypeScript.A more light-weight utility library that provides just the vector and matrix math utilities for shaders is sylvester.js.It is sometimes used in conjunction with a WebGL specific extension called glUtils.js.
 
-To avoid this low-level of abstraction, we use Three.js in our case, but here\footnote{\url{https://en.wikipedia.org/wiki/List_of_WebGL_frameworks/}} we can find other useful webGL frameworks.
+To avoid this low abstraction level , we use Three.js in our case, but here\footnote{\url{https://en.wikipedia.org/wiki/List_of_WebGL_frameworks/}} we can find other useful webGL frameworks.
 To see Three.js in detail, we will go to the next section.
 
 \section{Three}
@@ -488,7 +488,7 @@ High-level libraries such as Three.js or GLGE, SceneJS, PhiloGL or a number of o
 \item Materials: Lambert, Phong, smooth shading, textures and more.
 \item Shaders: access to full OpenGL Shading Language (GLSL) capabilities: lens flare, depth pass and extensive post-processing library.
 \item Objects: meshes, particles, sprites, lines, ribbons, bones and more - all with Level of detail.
-\item Geometry: plane, cube, sphere, torus, 3D text and more; modifiers: lathe, extrude and tube
+\item Geometry: plane, cube, sphere, torus, 3D text and more; modifiers: lathe, extrude and tube.
 \item Data loaders: binary, image, JSON and scene.
 \item Utilities: full set of time and 3D math functions including frustum, matrix, quaternion, UVs and more.
 \item Export and import: utilities to create Three.js-compatible JSON files from within: Blender, openCTM, FBX, Max, and OBJ.
@@ -496,6 +496,16 @@ High-level libraries such as Three.js or GLGE, SceneJS, PhiloGL or a number of o
 \item Examples: Over 150 files of coding examples plus fonts, models, textures, sounds and other support files
 \item Debugging: Stats.js, WebGL Inspector, Three.js Inspector.
 \end{enumerate}
+
+An example of how complex would be our rendered graphics with Three.js:
+\ref{fig:car}.
+\begin{figure}
+  \centering
+  \includegraphics[width=15cm, keepaspectratio]{img/car_example}
+  \caption{Car rendered with Three.js}
+  \label{fig:car}
+\end{figure}
+
 \subsection{Usage example}
 The Three.js library is a single JavaScript file. It can be included within a web page by linking to a local or remote copy:
 \lstset{language=HTML, breaklines=true, basicstyle=\footnotesize}
@@ -566,7 +576,12 @@ Also, you can play with the example by following this JSfiddle link \footnote{\u
 
 
 \subsection{In this project}
+We choose Three.js to write our library because is one the most extended webGL graphics library written on JavaScript and it has a growing community of programmers. However, not all good news, due to it is a relatively new technology, its documentation is a little incomplete and outdated. Therefore, the learning mostly consists of reading code from other developers.
 
+We can find some highly commented use examples in several sites , but they are too old in many cases, using old versions of Three.js that require some changes. One of the used tutorials is a good example of this and we can find it on GitHub
+\footnote{\url{http://stemkoski.github.io/Three.js}}. It has a large number of examples of increasing complexity, but we will need to make some changes on its basis if we use the latest version of Three.js.
+
+Also, we have a very complete Udacity course where we can learn the foundations of interactive 3D graphics using Three.js. It contains videos, examples, exercises and even exams. You can register here \footnote{\url{https://www.udacity.com/course/interactive-3d-graphics--cs291}}.
 
 \section{Crossfilter}
 \label{sec:cf}
