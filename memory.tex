@@ -572,25 +572,60 @@ figure~\ref{fig:basic_cube}.
   \label{fig:basic_cube}
 \end{figure}
 
-Also, you can play with the example by following this JSfiddle link \footnote{\url{https://jsfiddle.net/no0aeknq/}}
+Also, you can play with the example following this JSfiddle link \footnote{\url{https://jsfiddle.net/no0aeknq/}}
 
 
 \subsection{In this project}
-We choose Three.js to write our library because is one the most extended webGL graphics library written on JavaScript and it has a growing community of programmers. However, not all good news, due to it is a relatively new technology, its documentation is a little incomplete and outdated. Therefore, the learning mostly consists of reading code from other developers.
+We choose Three.js to write our library because is one of the most extended webGL graphics library written on JavaScript and it has a growing community of programmers. However, not all good news, due to it is a relatively new technology, its documentation is a little incomplete and outdated. Therefore, the learning mostly consists of reading code from other developers.
 
 We can find some highly commented use examples in several sites , but they are too old in many cases, using old versions of Three.js that require some changes. One of the used tutorials is a good example of this and we can find it on GitHub
 \footnote{\url{http://stemkoski.github.io/Three.js}}. It has a large number of examples of increasing complexity, but we will need to make some changes on its basis if we use the latest version of Three.js.
 
-Also, we have a very complete Udacity course where we can learn the foundations of interactive 3D graphics using Three.js. It contains videos, examples, exercises and even exams. You can register here \footnote{\url{https://www.udacity.com/course/interactive-3d-graphics--cs291}}.
-
-\section{Crossfilter}
-\label{sec:cf}
+In addition, we have a very complete Udacity course where we can learn the foundations of interactive 3D graphics using Three.js. It contains videos, examples, exercises and even exams. You can register here \footnote{\url{https://www.udacity.com/course/interactive-3d-graphics--cs291}}.
 
 \section{Domevents}
 \label{sec:de}
 
+To interact with our charts, we need to manage the classic Javascript events , like 'click','mouseover', 'mouseup'...etc. With Three we must to create an invisible ray which intersects with the scene objects and then do the corresponding thing according to the event and the object. We believe that this is a little unintuitive and there is a three.js extension which provide dom events inside our 3d scene forgetting the ray casting. This is THREEx.DomEvent.js\footnote{\url{https://github.com/jeromeetienne/threex.domevents}}.
+
+All we have to do is to create a domEvents object and when we need to bind an event with a mesh just apply a method to the domEvents object. Here we have a simple example:
+\begin{lstlisting}[frame=single]
+//create the domEvents object with Three camera and renderer previously created
+var domEvents   = new THREEx.DomEvents(camera, renderer.domElement);
+
+//create a simple cube and add it to the scene
+ var   geometry = new THREE.BoxGeometry(200, 200, 200);
+ var   material = new THREE.MeshBasicMaterial({color: 0xff0000});
+ var  cube = new THREE.Mesh(geometry, material);
+ scene.add(mesh);
+ 
+ //bind the cube with the event			
+ domEvents.bind(cube, 'click', function(object3d){ 
+	alert('you clicked the cube');
+ });
+\end{lstlisting}
+When we want to unbind an event, just need to call the unbind method like this:
+\begin{lstlisting}[frame=single]
+domEvents.unbind(cube, 'click');
+\end{lstlisting}
+
+\section{Crossfilter}
+\label{sec:cf}
+\subsection{General description}
+Crossfilter is a JavaScript library for exploring large multivariate datasets in the browser. Crossfilter supports extremely fast (~30ms) interaction with coordinated views, even with datasets containing a million or more records.
+
+Since most interactions only involve a single dimension, and then only small adjustments are made to the filter values, incremental filtering and reducing is significantly faster than starting from scratch. Crossfilter uses sorted indexes (and a few bit-twiddling hacks) to make this possible, dramatically increasing the perfor­mance of live histograms and top-K lists. For more details on how Crossfilter works, see the API reference \footnote{\url{https://github.com/square/crossfilter/wiki/API-Reference}}.
+
+\subsection{In this project}
+As we will see in its corresponding section, we can filter the dimensions of our data sets, leading to re-render or rebuild the charts related to this dimension, so, in order to improve the performance, we need to handle the data sets as fast as we can, and Crossfilter allow us to do it extremely quickly.
+
+
+
+
 \section{Orbitcontrols}
-\label{sec:de}
+
+
+\label{sec:oc}
 
 Puedes citar libros, como el de Bonabeau et al. sobre procesos estigmérgicos~\cite{bonabeau:_swarm}. % Nota que el ~ añade un espacio en blanco, pero no deja que exista un salto de línea. Imprescindible ponerlo para las citas.
 

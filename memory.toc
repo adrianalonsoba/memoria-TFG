@@ -27,10 +27,12 @@
 \contentsline {section}{\numberline {4.5}Three}{14}{section.4.5}
 \contentsline {subsection}{\numberline {4.5.1}Usage example}{15}{subsection.4.5.1}
 \contentsline {subsection}{\numberline {4.5.2}In this project}{18}{subsection.4.5.2}
-\contentsline {section}{\numberline {4.6}Crossfilter}{19}{section.4.6}
-\contentsline {section}{\numberline {4.7}Domevents}{19}{section.4.7}
-\contentsline {section}{\numberline {4.8}Orbitcontrols}{19}{section.4.8}
-\contentsline {section}{\numberline {4.9}Secci\'on 1}{19}{section.4.9}
+\contentsline {section}{\numberline {4.6}Domevents}{18}{section.4.6}
+\contentsline {section}{\numberline {4.7}Crossfilter}{19}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}General description}{19}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}In this project}{20}{subsection.4.7.2}
+\contentsline {section}{\numberline {4.8}Orbitcontrols}{20}{section.4.8}
+\contentsline {section}{\numberline {4.9}Secci\'on 1}{20}{section.4.9}
 \contentsline {chapter}{\numberline {5}Dise\~no e implementaci\'on}{21}{chapter.5}
 \contentsline {section}{\numberline {5.1}Arquitectura general}{21}{section.5.1}
 \contentsline {chapter}{\numberline {6}Resultados}{23}{chapter.6}
