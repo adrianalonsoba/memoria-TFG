@@ -586,7 +586,7 @@ In addition, we have a very complete Udacity course where we can learn the found
 \section{Domevents}
 \label{sec:de}
 
-To interact with our charts, we need to manage the classic Javascript events , like 'click','mouseover', 'mouseup'...etc. With Three we must to create an invisible ray which intersects with the scene objects and then do the corresponding thing according to the event and the object. We believe that this is a little unintuitive and there is a three.js extension which provide dom events inside our 3d scene forgetting the ray casting. This is THREEx.DomEvent.js\footnote{\url{https://github.com/jeromeetienne/threex.domevents}}.
+To interact with our charts, we need to manage the classic Javascript events , like 'click','mouseover', 'mouseup'...etc. With Three we must to create an invisible ray which intersects with the scene objects and then do the corresponding thing according to the event and the object. We believe this is a little unintuitive and there is a three.js extension which provide dom events inside our 3d scene allowing us to forget the ray casting. This is THREEx.DomEvent.js\footnote{\url{https://github.com/jeromeetienne/threex.domevents}}.
 
 All we have to do is to create a domEvents object and when we need to bind an event with a mesh just apply a method to the domEvents object. Here we have a simple example:
 \begin{lstlisting}[frame=single]
@@ -617,14 +617,14 @@ Crossfilter is a JavaScript library for exploring large multivariate datasets in
 Since most interactions only involve a single dimension, and then only small adjustments are made to the filter values, incremental filtering and reducing is significantly faster than starting from scratch. Crossfilter uses sorted indexes (and a few bit-twiddling hacks) to make this possible, dramatically increasing the perfor­mance of live histograms and top-K lists. For more details on how Crossfilter works, see the API reference \footnote{\url{https://github.com/square/crossfilter/wiki/API-Reference}}.
 
 \subsection{In this project}
-As we will see in its corresponding section, we can filter the dimensions of our data sets, leading to re-render or rebuild the charts related to this dimension, so, in order to improve the performance, we need to handle the data sets as fast as we can, and Crossfilter allow us to do it extremely quickly.
+As we will see in its corresponding section, we can filter the dimensions of our data sets, leading to re-render or rebuild the charts related to this dimension, so, in order to improve the performance, we need to handle the data sets as fast as we can, and Crossfilter allow us to do it extremely fast.
 
 
-
+AÑADO UN EJEMPLO DE USO CON CODIGO?¿
 
 \section{Orbitcontrols}
 
-
+LO PONGO?¿
 \label{sec:oc}
 
 Puedes citar libros, como el de Bonabeau et al. sobre procesos estigmérgicos~\cite{bonabeau:_swarm}. % Nota que el ~ añade un espacio en blanco, pero no deja que exista un salto de línea. Imprescindible ponerlo para las citas.
@@ -633,9 +633,53 @@ También existe la posibilidad de poner notas al pie de página, por ejemplo,
 una para indicarte que visite la página de 
 LibreSoft\footnote{\url{http://www.libresoft.es}}.
 
-\section{Sección 1} 
-\label{sec:seccion1}
+\chapter{Development}
+\subsection{Scrum methodology}
+Scrum is an iterative and incremental agile software development framework for managing product development. It defines "a flexible, holistic product development strategy where a development team works as a unit to reach a common goal", challenges assumptions of the "traditional, sequential approach" to product development, and enables teams to self-organize by encouraging physical co-location or close online collaboration of all team members, as well as daily face-to-face communication among all team members and disciplines in the project.
 
+A key principle of scrum is its recognition that during production processes, the customers can change their minds about what they want and need (often called requirements volatility), and that unpredicted challenges cannot be easily addressed in a traditional predictive or planned manner. As such, scrum adopts an empirical approach,accepting that the problem cannot be fully understood or defined, focusing instead on maximizing the team's ability to deliver quickly, to respond to emerging requirements and to adapt to evolving technologies and changes in market conditions.
+
+In scrum there are three main roles defined:
+
+\begin{enumerate}
+\item \textbf{Product owner}: The person responsible for maintaining the product backlog by representing the interests of the stakeholders, and ensuring the value of the work the development team does.
+\item \textbf{Scrum master}: The person responsible for the scrum process, making sure it is used correctly and maximizing its benefits.
+\item \textbf{Development team}: A cross-functional group of people responsible for delivering potentially shippable increments of product at the end of every sprint.
+\end{enumerate}
+
+However, in our case the product owner and the scrum master are represented by the project tutor, so the development team is the project author. Apart from this, we follow the scrum methodology more faithfully.
+
+A sprint (or iteration) is the basic unit of development in scrum. The sprint is a time-boxed effort; that is, it is restricted to a specific duration. The duration is fixed in advance for each sprint and is normally between one week and one month, with two weeks being the most common.
+
+Each sprint starts with a sprint planning event that aims to define a sprint backlog, identify the work for the sprint, and make an estimated commitment for the sprint goal. Each sprint ends with a sprint review and sprint retrospective, that reviews progress to show to stakeholders and identify lessons and improvements for the next sprints.
+
+Scrum emphasizes working product at the end of the sprint that is really done. In the case of software, this likely includes that the software has been integrated, fully tested and end-user documented.
+
+%\ref{fig:scrum}
+\begin{figure}
+  \centering
+  \includegraphics[width=15cm, keepaspectratio]{img/scrum1}
+  \caption{The scrum framework}
+  \label{fig:scrum}
+\end{figure}
+
+Sprints or iterations,:
+
+\begin{enumerate}
+\item \textbf{Iteration 0}: This step mostly consist of investigation and learning.
+\item \textbf{Iteration 1}: First simple but functional demo with no interactivity.
+\item \textbf{Iteration 2}: Add interactivity, handle events.
+\item \textbf{Iteration 3}: Add crossfilter functionality.
+\item \textbf{Iteration 4}: Create the framework architecture and implement it.
+\item \textbf{Iteration 5}: Add panels to contain related charts.
+\end{enumerate}
+
+\subsection{Investigation and learning} 
+\subsection{First demo}
+\subsection{Interactivity and events}
+\subsection{Filtering}
+\subsection{Framework (o Library?¿)}
+\subsection{Panel creation}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
