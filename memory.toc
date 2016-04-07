@@ -35,18 +35,18 @@
 \contentsline {chapter}{\numberline {5}Development}{21}{chapter.5}
 \contentsline {subsection}{\numberline {5.0.1}Scrum methodology}{21}{subsection.5.0.1}
 \contentsline {subsection}{\numberline {5.0.2}Investigation and learning}{23}{subsection.5.0.2}
-\contentsline {subsection}{\numberline {5.0.3}First demo}{23}{subsection.5.0.3}
-\contentsline {subsection}{\numberline {5.0.4}Interactivity and events}{23}{subsection.5.0.4}
-\contentsline {subsection}{\numberline {5.0.5}Filtering}{23}{subsection.5.0.5}
-\contentsline {subsection}{\numberline {5.0.6}Framework (o Library?\IeC {\textquestiondown })}{23}{subsection.5.0.6}
-\contentsline {subsection}{\numberline {5.0.7}Panel creation}{23}{subsection.5.0.7}
-\contentsline {chapter}{\numberline {6}Dise\~no e implementaci\'on}{25}{chapter.6}
-\contentsline {section}{\numberline {6.1}Arquitectura general}{25}{section.6.1}
-\contentsline {chapter}{\numberline {7}Resultados}{27}{chapter.7}
-\contentsline {chapter}{\numberline {8}Conclusiones}{29}{chapter.8}
-\contentsline {section}{\numberline {8.1}Consecuci\'on de objetivos}{29}{section.8.1}
-\contentsline {section}{\numberline {8.2}Aplicaci\'on de lo aprendido}{29}{section.8.2}
-\contentsline {section}{\numberline {8.3}Lecciones aprendidas}{29}{section.8.3}
-\contentsline {section}{\numberline {8.4}Trabajos futuros}{30}{section.8.4}
-\contentsline {section}{\numberline {8.5}Valoraci\'on personal}{30}{section.8.5}
-\contentsline {chapter}{\numberline {A}Manual de usuario}{31}{appendix.Alph1}
+\contentsline {subsection}{\numberline {5.0.3}First demo}{25}{subsection.5.0.3}
+\contentsline {subsection}{\numberline {5.0.4}Interactivity and events}{25}{subsection.5.0.4}
+\contentsline {subsection}{\numberline {5.0.5}Filtering}{25}{subsection.5.0.5}
+\contentsline {subsection}{\numberline {5.0.6}Framework (o Library?\IeC {\textquestiondown })}{25}{subsection.5.0.6}
+\contentsline {subsection}{\numberline {5.0.7}Panel creation}{25}{subsection.5.0.7}
+\contentsline {chapter}{\numberline {6}Dise\~no e implementaci\'on}{27}{chapter.6}
+\contentsline {section}{\numberline {6.1}Arquitectura general}{27}{section.6.1}
+\contentsline {chapter}{\numberline {7}Resultados}{29}{chapter.7}
+\contentsline {chapter}{\numberline {8}Conclusiones}{31}{chapter.8}
+\contentsline {section}{\numberline {8.1}Consecuci\'on de objetivos}{31}{section.8.1}
+\contentsline {section}{\numberline {8.2}Aplicaci\'on de lo aprendido}{31}{section.8.2}
+\contentsline {section}{\numberline {8.3}Lecciones aprendidas}{31}{section.8.3}
+\contentsline {section}{\numberline {8.4}Trabajos futuros}{32}{section.8.4}
+\contentsline {section}{\numberline {8.5}Valoraci\'on personal}{32}{section.8.5}
+\contentsline {chapter}{\numberline {A}Manual de usuario}{33}{appendix.Alph1}

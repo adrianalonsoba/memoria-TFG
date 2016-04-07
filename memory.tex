@@ -663,7 +663,7 @@ Scrum emphasizes working product at the end of the sprint that is really done. I
   \label{fig:scrum}
 \end{figure}
 
-Sprints or iterations,:
+Sprints or iterations:
 
 \begin{enumerate}
 \item \textbf{Iteration 0}: This step mostly consist of investigation and learning.
@@ -675,9 +675,106 @@ Sprints or iterations,:
 \end{enumerate}
 
 \subsection{Investigation and learning} 
+
+At the beginning, there was a lot of things to explore. First of all, we had to choose a webGL framework to avoid its low abstraction level, as we said in the webGL section, there are a lot of javascript libraries to do this. Probably, the two most important today are Three.js and Babylon.js, both of them are free software and its code is hosted on Github ,but, although Babylon.js is written by Microsoft workers, Three.js has a larger developer community with more code examples. Here we have a little code demo to see how to create a similar basic scene in Three.js and Babylon.js:
+
+- Initialize a blank canvas:
+
+Three:
+ \begin{lstlisting}[frame=single]
+//<div id="ThreeJS"></div>
+var container = document.getElementById('ThreeJS');
+\end{lstlisting}
+
+Babylon:
+ \begin{lstlisting}[frame=single]
+//<div style="height:250px; width: 250px;" id="babylon">
+//<canvas id="babylonCanvas"></canvas></div>
+var container = document.getElementById('babylonCanvas');
+\end{lstlisting}
+-
+With Three.js we simply create an empty div as our container for the animation. Babylon.js, on the other hand, makes use of an explicitly defined HTML5 canvas to hold its 3D graphics.
+
+-Next, we load the renderer (engine in the case of Babylon) which will draw to the canvas:
+
+Three:
+ \begin{lstlisting}[frame=single]
+var renderer = new THREE.WebGLRenderer();
+renderer.setSize(width, height);
+container.appendChild(renderer.domElement);
+\end{lstlisting}
+
+Babylon:
+ \begin{lstlisting}[frame=single]
+var engine = new BABYLON.Engine(container, true);
+\end{lstlisting}
+
+-Add cameras:
+
+Three:
+ \begin{lstlisting}[frame=single]
+var scene = new THREE.Scene();
+var camera = new THREE.PerspectiveCamera(100, width / height, 1, 1000);
+camera.position.set(0,150,400);
+camera.lookAt(scene.position);
+\end{lstlisting}
+
+Babylon:
+ \begin{lstlisting}[frame=single]
+var scene = new BABYLON.Scene(engine);
+var camera = new BABYLON.ArcRotateCamera
+("camera", 1, 0.8, 10, new BABYLON.Vector3(0, 0, 0), scene);
+scene.activeCamera.attachControl(canvas);
+\end{lstlisting}
+
+-Create a simple cube and add it to the scene:
+
+Three:
+ \begin{lstlisting}[frame=single]
+var geometry = new THREE.CubeGeometry(100, 100, 100);
+var texture = THREE.ImageUtils.loadTexture('texture.gif');
+texture.anisotropy = renderer.getMaxAnisotropy();
+var material = new THREE.MeshBasicMaterial({ map: texture });
+var cube = new THREE.Mesh(cube, material);
+scene.add(mesh);
+\end{lstlisting}
+
+Babylon:
+ \begin{lstlisting}[frame=single]
+var box = BABYLON.Mesh.CreateBox("box", 3.0, sceneB);
+var material = new BABYLON.StandardMaterial("texture", sceneB);
+box.material = material;
+material.diffuseTexture = new BABYLON.Texture("texture.gif", sceneB);
+\end{lstlisting}
+
+-Finally, add a simple rotate animation and call the animate loop:
+Three:
+ \begin{lstlisting}[frame=single]
+function animate() {
+     requestAnimationFrame(animate);
+     cube.rotation.x += 0.005;
+     cube.rotation.y += 0.01;
+     renderer.render(scene, camera);
+}
+\end{lstlisting}
+
+Babylon:
+ \begin{lstlisting}[frame=single]
+engine.runRenderLoop(function () {
+     box.rotation.x += 0.005;
+     box.rotation.y += 0.01;
+     scene.render();
+});
+\end{lstlisting}
+
+As we can see in this example, the two frameworks have strong syntax likeness, but  
+Once we choose Three.js to write our framework, the next step was to brush up the javascript language and start to learn the basis of 3D computer graphics(PARA ESTO SON BUENOS LOS PRIMEROS PASOS DEL CURSO DE UDACITY) and Three.js(PONGO LOS EJEMPLOS  Y LOS COMENTO CON CODIGO Y FOTOS ), 
+
 \subsection{First demo}
+
 \subsection{Interactivity and events}
 \subsection{Filtering}
+primero empiezo con el estudio de dc y pongo ejemplos con código y fotos, luego sigo con lo mas tocho de todo
 \subsection{Framework (o Library?¿)}
 \subsection{Panel creation}
 
