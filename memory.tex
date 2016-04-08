@@ -197,7 +197,7 @@ Lo mejor es escribir el resumen al final.
 \markboth{SUMMARY}{SUMMARY} % encabezado
 This project aims to facilitate the visualization of data and statistics from software development in 3D, inside any web browser without the need to install any drivers , plugin or additional software.
 
-To do this has been mainly used the JavaScript programming language , and HTML5 as the basis to use WebGL, a library that allow us to render 3D graphics with hardware acceleration natively in almost any browser. However , since webGL is relatively low level and would be very difficult to make applications directly on its API , it has been used a library that provides a higher level of abstraction than WebGL, this library is Three.js.
+To do this,it has been mainly used the JavaScript programming language , and HTML5 as the basis to use WebGL, a library that allow us to render 3D graphics with hardware acceleration natively in almost any browser. However , since webGL is relatively low level and would be very difficult to make applications directly on its API , it has been used a library that provides a higher level of abstraction than WebGL, this library is Three.js.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -576,6 +576,7 @@ Also, you can play with the example following this JSfiddle link \footnote{\url{
 
 
 \subsection{In this project}
+\label{sec:titp}
 We choose Three.js to write our library because is one of the most extended webGL graphics library written on JavaScript and it has a growing community of programmers. However, not all good news, due to it is a relatively new technology, its documentation is a little incomplete and outdated. Therefore, the learning mostly consists of reading code from other developers.
 
 We can find some highly commented use examples in several sites , but they are too old in many cases, using old versions of Three.js that require some changes. One of the used tutorials is a good example of this and we can find it on GitHub
@@ -617,7 +618,7 @@ Crossfilter is a JavaScript library for exploring large multivariate datasets in
 Since most interactions only involve a single dimension, and then only small adjustments are made to the filter values, incremental filtering and reducing is significantly faster than starting from scratch. Crossfilter uses sorted indexes (and a few bit-twiddling hacks) to make this possible, dramatically increasing the perfor­mance of live histograms and top-K lists. For more details on how Crossfilter works, see the API reference \footnote{\url{https://github.com/square/crossfilter/wiki/API-Reference}}.
 
 \subsection{In this project}
-As we will see in its corresponding section, we can filter the dimensions of our data sets, leading to re-render or rebuild the charts related to this dimension, so, in order to improve the performance, we need to handle the data sets as fast as we can, and Crossfilter allow us to do it extremely fast.
+As we will see in its corresponding section, we can filter the dimensions of our data sets, leading to re-render (or rebuild) the charts related to this dimension, so, in order to improve the performance, we need to handle the data sets as fast as we can, and Crossfilter allow us to do it extremely fast.
 
 
 AÑADO UN EJEMPLO DE USO CON CODIGO?¿
@@ -669,7 +670,7 @@ Sprints or iterations:
 \item \textbf{Iteration 0}: This step mostly consist of investigation and learning.
 \item \textbf{Iteration 1}: First simple but functional demo with no interactivity.
 \item \textbf{Iteration 2}: Add interactivity, handle events.
-\item \textbf{Iteration 3}: Add crossfilter functionality.
+\item \textbf{Iteration 3}: Add Crossfilter functionality.
 \item \textbf{Iteration 4}: Create the framework architecture and implement it.
 \item \textbf{Iteration 5}: Add panels to contain related charts.
 \end{enumerate}
@@ -767,8 +768,10 @@ engine.runRenderLoop(function () {
 });
 \end{lstlisting}
 
-As we can see in this example, the two frameworks have strong syntax likeness, but  
-Once we choose Three.js to write our framework, the next step was to brush up the javascript language and start to learn the basis of 3D computer graphics(PARA ESTO SON BUENOS LOS PRIMEROS PASOS DEL CURSO DE UDACITY) and Three.js(PONGO LOS EJEMPLOS  Y LOS COMENTO CON CODIGO Y FOTOS ), 
+As we can see in this example, the two frameworks have strong syntax likeness, but finally we opted for Three.js because, as we said,  it has a bigger developer community  than Babylon.js.  
+
+Once we choose Three.js to write our framework, the next step was to study the foundations of 3D interactive graphics. If you are a passionate video game player (better known as 'gamer' nowadays) like me, you will be familiar with concepts like rendering, game engine, fps(frames per second), image resolution, pixels, GPU(graphics processing unit)... etc. If you don't, the first lesson of the Udacity course mentioned in the Three.js section~\ref{sec:titp} .
+to brush up the javascript language and start to learn the basis of 3D computer graphics(PARA ESTO SON BUENOS LOS PRIMEROS PASOS DEL CURSO DE UDACITY) and Three.js(PONGO LOS EJEMPLOS  Y LOS COMENTO CON CODIGO Y FOTOS ), 
 
 \subsection{First demo}
 
