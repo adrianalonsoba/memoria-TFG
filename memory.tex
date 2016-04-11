@@ -416,7 +416,7 @@ inc(); // returns 3
 \end{lstlisting}
 \subsection{In this project}
 
-Is have been used JavaScript for all the scripts in the project, and also, all the libraries we have included are written in JavaScript, these libraries are described in detail in the following sections.  
+Is have been used JavaScript for all the scripts in the project, and also, all the libraries we have included are written in JavaScript, these libraries are described in detail on the following sections.  
 
 
 \section{JQuery}
@@ -472,7 +472,7 @@ To see Three.js in detail, we will go to the next section.
 
 \section{Three}
 \label{sec:three}
-Three.js is a cross-browser JavaScript library/API used to create and display animated 3D computer graphics in a web browser. Three.js uses WebGL. The source code is hosted in a repository on GitHub\footnote{\url{https://github.com/mrdoob/three.js/}}.
+Three.js is a cross-browser JavaScript library/API used to create and display animated 3D computer graphics in a web browser. Three.js uses WebGL. The source code is hosted at a repository on GitHub\footnote{\url{https://github.com/mrdoob/three.js/}}.
 
 Three.js allows the creation of GPU-accelerated 3D animations using the JavaScript language as part of a website without relying on proprietary browser plugins.This is possible thanks to the advent of WebGL.
 
@@ -677,7 +677,7 @@ Sprints or iterations:
 
 \subsection{Investigation and learning} 
 
-At the beginning, there was a lot of things to explore. First of all, we had to choose a webGL framework to avoid its low abstraction level, as we said in the webGL section, there are a lot of javascript libraries to do this. Probably, the two most important today are Three.js and Babylon.js, both of them are free software and its code is hosted on Github ,but, although Babylon.js is written by Microsoft workers, Three.js has a larger developer community with more code examples. Here we have a little code demo to see how to create a similar basic scene in Three.js and Babylon.js:
+At the beginning, there was a lot of things to explore. First of all, we had to choose a webGL framework to avoid its low abstraction level, as we said in the webGL section, there are a lot of javascript libraries to do this. Probably, the two most important today are Three.js and Babylon.js, both of them are free software and its code is hosted at Github ,but, although Babylon.js is written by Microsoft workers, Three.js has a larger developer community with more code examples. Here we have a little code demo to see how to create a similar basic scene in Three.js and Babylon.js:
 
 - Initialize a blank canvas:
 
@@ -693,7 +693,6 @@ Babylon:
 //<canvas id="babylonCanvas"></canvas></div>
 var container = document.getElementById('babylonCanvas');
 \end{lstlisting}
--
 With Three.js we simply create an empty div as our container for the animation. Babylon.js, on the other hand, makes use of an explicitly defined HTML5 canvas to hold its 3D graphics.
 
 -Next, we load the renderer (engine in the case of Babylon) which will draw to the canvas:
@@ -710,7 +709,7 @@ Babylon:
 var engine = new BABYLON.Engine(container, true);
 \end{lstlisting}
 
--Add cameras:
+-Add scene and cameras:
 
 Three:
  \begin{lstlisting}[frame=single]
@@ -768,13 +767,35 @@ engine.runRenderLoop(function () {
 });
 \end{lstlisting}
 
-As we can see in this example, the two frameworks have strong syntax likeness, but finally we opted for Three.js because, as we said,  it has a bigger developer community  than Babylon.js.  
+As we can see in this example, the two frameworks have strong syntax likeness, but finally we opted for Three.js because as we said,  it has a bigger developer community  than Babylon.js.  
 
-Once we choose Three.js to write our framework, the next step was to study the foundations of 3D interactive graphics. If you are a passionate video game player (better known as 'gamer' nowadays) like me, you will be familiar with concepts like rendering, game engine, fps(frames per second), image resolution, pixels, GPU(graphics processing unit)... etc. If you don't, the first lesson of the Udacity course mentioned in the Three.js section~\ref{sec:titp} .
-to brush up the javascript language and start to learn the basis of 3D computer graphics(PARA ESTO SON BUENOS LOS PRIMEROS PASOS DEL CURSO DE UDACITY) and Three.js(PONGO LOS EJEMPLOS  Y LOS COMENTO CON CODIGO Y FOTOS ), 
+Once we choose Three.js to write our framework, the next step was to study the foundations of 3D interactive graphics. If you are a passionate video game player (better known as 'gamer' nowadays) like me, you will be familiar with concepts like rendering, game engine, fps(frames per second), image resolution, pixels, GPU(graphics processing unit)... etc. If you don't, the first lesson of the Udacity course mentioned in the Three.js section~\ref{sec:titp} would be helpful.
+
+(ME EXTIENDO AQUI?¿)
+
+
+The next step before to study Three.js was to brush up the Javascript language(\ref{sec:js}) and create a Github repository to contain the project. Once this is done, the best way to learn how to use a framework is to read code and play with it (the Udacity course is very good, but it would take much time), so i preferred to follow the Stemkoski tutorials.
+
+\ref{fig:tutorials}
+\begin{figure}
+  \centering
+  \includegraphics[width=15cm, keepaspectratio]{img/tutorials}
+  \caption{Index of Stemkoski tutorials }
+  \label{fig:car}
+\end{figure}
+
+Let's take a look to the 'Hello world' code:
+
+\ref{fig:tutorial1}
+\begin{figure}
+  \centering
+  \includegraphics[width=15cm, keepaspectratio]{img/tutorial1}
+  \caption{ Three.js 'Hello world' }
+  \label{fig:car}
+\end{figure}
 
 \subsection{First demo}
-
+primera demo con los charts perpendiculares por ejemplo, con captura y explicacion de código
 \subsection{Interactivity and events}
 \subsection{Filtering}
 primero empiezo con el estudio de dc y pongo ejemplos con código y fotos, luego sigo con lo mas tocho de todo
