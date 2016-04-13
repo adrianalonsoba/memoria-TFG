@@ -1,17 +1,22 @@
 \select@language {spanish}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces P\'agina con enlaces a hilos}}{2}{figure.1.1}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces P\'agina con enlaces a hilos\relax }}{2}{figure.caption.8}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Car rendered with Three.js}}{16}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Basic cube made with Three.js}}{18}{figure.4.2}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Car rendered with Three.js\relax }}{16}{figure.caption.9}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Basic cube made with Three.js\relax }}{18}{figure.caption.10}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces The scrum framework}}{22}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Index of Stemkoski tutorials }}{26}{figure.5.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Three.js 'Hello world' }}{26}{figure.5.3}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces The scrum framework\relax }}{22}{figure.caption.11}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Index of Stemkoski tutorials \relax }}{26}{figure.caption.12}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Three.js 'Hello world' by Stemkoski \relax }}{32}{figure.caption.13}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Different materials, same light source (the white sphere)\relax }}{32}{figure.caption.14}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Basic}}}{32}{subfigure.4.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Lambert}}}{32}{subfigure.4.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Phong}}}{32}{subfigure.4.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Wireframe}}}{32}{subfigure.4.4}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Estructura del parser b\'asico}}{30}{figure.6.1}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Estructura del parser b\'asico\relax }}{36}{figure.caption.15}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
