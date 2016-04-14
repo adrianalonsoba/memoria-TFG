@@ -679,7 +679,7 @@ Sprints or iterations:
 \item \textbf{Iteration 5}: Add panels to contain related charts.
 \end{enumerate}
 
-\subsection{Investigation and learning} 
+\subsection{Iteration 0: Investigation and learning} 
 
 At the beginning, there was a lot of things to explore. First of all, we had to choose a webGL framework to avoid its low abstraction level, as we said in the webGL section, there are a lot of javascript libraries to do this. Probably, the two most important today are Three.js and Babylon.js, both of them are free software and its code is hosted at Github ,but, although Babylon.js is written by Microsoft workers, Three.js has a larger developer community with more code examples. Here we have a little code demo to see how to create a similar basic scene in Three.js and Babylon.js:
 
@@ -780,7 +780,6 @@ Once we choose Three.js to write our framework, the next step was to study the f
 
 The next step before to study Three.js was to brush up the Javascript language(\ref{sec:js}) and create a Github repository to contain the project. Once this is done, the best way to learn how to use a framework is to read code and play with it (the Udacity course is very good, but it would take much time), so i preferred to follow the Stemkoski tutorials.
 
-\ref{fig:tutorials}
 \begin{figure}
   \centering
   \includegraphics[width=15cm, keepaspectratio]{img/tutorials}
@@ -999,15 +998,49 @@ One of the most important features is to choose the mesh material, depending on 
  \label{f:animales}
 \end{figure}
 
-Following the next Stemkoski demos, we can learn how to add shadows, create our own shapes, add textures to the meshes and much more. 
+Following the rest of Stemkoski's demos, we can learn how to add shadows, create our own shapes, add textures to the meshes and much more.
 
-\subsection{First demo}
-primera demo con los charts perpendiculares por ejemplo, con captura y explicacion de código
-\subsection{Interactivity and events}
-\subsection{Filtering}
-primero empiezo con el estudio de dc y pongo ejemplos con código y fotos, luego sigo con lo mas tocho de todo
-\subsection{Framework (o Library?¿)}
-\subsection{Panel creation}
+Once we had reviewed Javascript and understood the basics of Three.js, we were able to make our firsts dashboard demos, so let's go to the next subsection.
+
+\subsection{Iteration 1: First demos}
+
+The first real objective was to explore how to render different Charts types with Three.js, the main chart types we will create are the bars chart to represent discrete values, line chart for continues values and pie charts. In order to follow an appropriate  difficulty curve and for simplicity, the first chart we created was the bars chart, because the 'BoxGeometry(or CubeGeometry)' function provides us everything we needed.
+Here we have its constructor:
+
+\textbf{BoxGeometry}(width, height, depth, widthSegments, heightSegments, depthSegments):
+
+\begin{itemize}
+\item width: Width of the sides on the X axis.
+
+\item height: Height of the sides on the Y axis.
+
+\item depth: Depth of the sides on the Z axis.
+
+\item widthSegments: Optional. Number of segmented faces along the width of the sides. Default is 1.
+
+\item heightSegments: Optional. Number of segmented faces along the height of the sides. Default is 1.
+
+\item depthSegments: Optional. Number of segmented faces along the depth of the sides. Default is 1.
+\end{itemize}
+
+All we have to do is to take some data set and assign each value to the height parameter of the BoxGeometry function, the width value and the depth value are not much important for now:
+
+ PONGO  UN EJEMPLO COMPLETO CON EL HTML PARA QUE SE VEAN TODOS LOS SCRIPTS, EXPLICO PARA QUE VALA CADA UNO, LUEGO EL CODIGO(SOLO EL CUSTOM) Y EXPLICO COMO LO PINTO TAMBIEN CON EL JSON, PONGO CAPTURAS Y CÓDIGO DE  LAS DISTINTAS VISUALIZACIONES ENTRE LAS DEMOS 1-5 MAS O MENOS, OBVIANDO LA INTERACTIVIDAD
+
+
+
+
+\subsection{Iteration 2: Interactivity and events}
+Explico como funciona la interactividad en three, y luego como se usa domevents, añado fotos con ejemplos y código
+
+\subsection{Iteration 3: Filtering}
+primero empiezo con el estudio de dc y pongo ejemplos con código y fotos con crossfilter
+\subsection{Iteration 4: Framework (o Library?¿)}
+
+explico la arquitectura de la librería, las diferentes funciones y como se usa las funciones encadenadas
+
+\subsection{Iteration 5: Panel creation}
+explico para que sirven, como se añaden, mueven y como se posicionan los charts con los puntos de anclaje, codigo y fotos
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
