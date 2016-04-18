@@ -1023,7 +1023,74 @@ Here we have its constructor:
 \item depthSegments: Optional. Number of segmented faces along the depth of the sides. Default is 1.
 \end{itemize}
 
-All we have to do is to take some data set and assign each value to the height parameter of the BoxGeometry function, the width value and the depth value are not much important for now:
+All we have to do is to take some data set and assign each value to the height parameter of the BoxGeometry function, the width value and the depth value are not much important for now. 
+
+The data set that we used for the firsts demos had an evolutionary time line with statistics of software development, we extracted the data from a JSON and then built two simple bars charts with two example values: 'commits' facing 'authors' along the time.
+
+Here we have the entire HTML5 code to see the extensions we used in this first demo:
+
+ \begin{lstlisting}[frame=single]
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Threeboard</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel=stylesheet href="../css/base.css"/>
+	</head>
+	<body>
+		<div id="ThreeJS" style="z-index: 1; position: absolute; left:0px; top:0px"></div>
+		<!--only to get the JSON -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="../js/Three.js"></script>
+		<script src="../js/OrbitControls.js"></script>
+		<!-- to handle window size changes -->
+		<script src="../js/THREEx.WindowResize.js"></script>
+		<!-- full screen by pressing 'm' -->
+		<script src="../js/THREEx.FullScreen.js"></script>
+		<!--here is our custom code with the scene -->
+		<script src="script.js"></script>
+	</body>
+</html>
+\end{lstlisting}
+
+
+Once we created the scene in 'script.js' as we learned, we add the custom bars to it:
+
+ \begin{lstlisting}[frame=single]
+ 
+   //we create the COMMITS custom chart
+   		
+//coordinates for each bar
+var z=1;
+var y=0;
+var x=1;
+   
+for (var i = 0; i < json_data.commits.length; i++) {
+	//commit values are normalized for optimal visualization(/10)
+	var geometry = new THREE.CubeGeometry( 1, json_data.commits[i]/10, 10);
+	// we divide by two to properly align the bars
+	y=json_data.commits[i]/10/2;
+	//red color
+	var material = new THREE.MeshLambertMaterial( {color: "#0000ff"} );
+	var commitBar = new THREE.Mesh(geometry, material);
+	commitBar.position.set(x, y, z);
+	scene.add(commitBar);
+	//the next bar will be on the right
+	x+=1;
+};
+\end{lstlisting}
+
+Using the same process to build the authors chart we can see the final result:
+ \ref{fig:demo1}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=16cm, keepaspectratio]{img/demo1}
+  \caption{ Commits(blue) and authors(red) }
+  \label{fig:demo1}
+\end{figure}
+
 
  PONGO  UN EJEMPLO COMPLETO CON EL HTML PARA QUE SE VEAN TODOS LOS SCRIPTS, EXPLICO PARA QUE VALA CADA UNO, LUEGO EL CODIGO(SOLO EL CUSTOM) Y EXPLICO COMO LO PINTO TAMBIEN CON EL JSON, PONGO CAPTURAS Y CÓDIGO DE  LAS DISTINTAS VISUALIZACIONES ENTRE LAS DEMOS 1-5 MAS O MENOS, OBVIANDO LA INTERACTIVIDAD
 
