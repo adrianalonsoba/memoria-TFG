@@ -1023,7 +1023,7 @@ Here we have its constructor:
 \item depthSegments: Optional. Number of segmented faces along the depth of the sides. Default is 1.
 \end{itemize}
 
-All we have to do is to take some data set and assign each value to the height parameter of the BoxGeometry function, the width value and the depth value are not much important for now. 
+All we have to do is to take some data set and assign each value to the height parameter of the BoxGeometry function, the width value and the depth value are not much important for now (they just have visual impact). 
 
 The data set that we used for the firsts demos had an evolutionary time line with statistics of software development, we extracted the data from a JSON and then built two simple bars charts with two example values: 'commits' facing 'authors' along the time.
 
@@ -1054,13 +1054,11 @@ Here we have the entire HTML5 code to see the extensions we used in this first d
 </html>
 \end{lstlisting}
 
-
-Once we created the scene in 'script.js' as we learned, we add the custom bars to it:
+Once we create the scene in 'script.js' as we learned, we add the custom bars to it:
 
  \begin{lstlisting}[frame=single]
  
-   //we create the COMMITS custom chart
-   		
+   //we create the COMMITS custom chart	
 //coordinates for each bar
 var z=1;
 var y=0;
@@ -1083,6 +1081,8 @@ for (var i = 0; i < json_data.commits.length; i++) {
 
 Using the same process to build the authors chart we can see the final result:
  \ref{fig:demo1}
+ 
+And here\footnote{\url{http://adrianalonsoba.github.io/threeboard/demo2/}} you can try it in your browser.
 
 \begin{figure}
   \centering
@@ -1091,11 +1091,35 @@ Using the same process to build the authors chart we can see the final result:
   \label{fig:demo1}
 \end{figure}
 
+With this representation we can see an obvious relationship between commits and authors along the time, but thanks to the 3D renderer we can place them in different ways, for example we can form a 90 degrees angle easily: \ref{f:demo2} 
 
- PONGO  UN EJEMPLO COMPLETO CON EL HTML PARA QUE SE VEAN TODOS LOS SCRIPTS, EXPLICO PARA QUE VALA CADA UNO, LUEGO EL CODIGO(SOLO EL CUSTOM) Y EXPLICO COMO LO PINTO TAMBIEN CON EL JSON, PONGO CAPTURAS Y CÓDIGO DE  LAS DISTINTAS VISUALIZACIONES ENTRE LAS DEMOS 1-5 MAS O MENOS, OBVIANDO LA INTERACTIVIDAD
+\begin{lstlisting}[frame=single]
+var y=-0.5;
+var x=1;
+var z;
+for (var i = 0; i < json_data.authors.length; i++) {
+  //now we use the depth 'dimension' of the cube 
+  var geometry = new THREE.CubeGeometry( 1, 1, json_data.authors[i]/10);
+  z=json_data.authors[i]/10/2;
+  var material = new THREE.MeshLambertMaterial( {color: "#ff0000"} );
+  var authorBar = new THREE.Mesh(geometry, material);
+  authorBar.position.set(x, y, z);
+  scene.add(authorBar);
+  x+=1;
+};
+\end{lstlisting}
 
+In addition, we also explored the possibility of joining both charts by rectangles to see if this brought us some information.
 
-
+\begin{figure}
+ \centering
+  \subfloat[]{
+    \includegraphics[width=0.50\textwidth]{img/demo2.png}}
+  \subfloat[]{
+    \includegraphics[width=0.50\textwidth]{img/demo2b.png}}
+ \caption{Two points of view}
+ \label{f:demo2}
+\end{figure}
 
 \subsection{Iteration 2: Interactivity and events}
 Explico como funciona la interactividad en three, y luego como se usa domevents, añado fotos con ejemplos y código
