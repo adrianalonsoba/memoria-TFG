@@ -680,8 +680,11 @@ Sprints or iterations:
 \end{enumerate}
 
 \subsection{Iteration 0: Investigation and learning} 
+This is not an iteration itself, but it is a necessary part of the development, so we decided to include it as 'iteration 0' and here we will get the tools we will need to make our software. 
 
 At the beginning, there was a lot of things to explore. First of all, we had to choose a webGL framework to avoid its low abstraction level, as we said in the webGL section, there are a lot of javascript libraries to do this. Probably, the two most important today are Three.js and Babylon.js, both of them are free software and its code is hosted at Github ,but, although Babylon.js is written by Microsoft workers, Three.js has a larger developer community with more code examples. Here we have a little code demo to see how to create a similar basic scene in Three.js and Babylon.js:
+
+MOVER A APENDICES
 
 - Initialize a blank canvas:
 
@@ -788,7 +791,7 @@ The next step before to study Three.js was to brush up the Javascript language(\
 \end{figure}
 
 Let's take a look to the Stemkoski's 'Hello world' code:
-
+MOVER A APENDICES
  \begin{lstlisting}[frame=single]
 	///////////
 	// SCENE //
@@ -1004,7 +1007,7 @@ Once we had reviewed Javascript and understood the basics of Three.js, we were a
 
 \subsection{Iteration 1: First demos}
 
-The first real objective was to explore how to render different Charts types with Three.js, the main chart types we will create are the bars chart to represent discrete values, line chart for continues values and pie charts. In order to follow an appropriate  difficulty curve and for simplicity, the first chart we created was the bars chart, because the 'BoxGeometry(or CubeGeometry)' function provides us everything we needed.
+The first iteration objective was to explore how to render different Charts types with Three.js, the main chart types we will create are the bars chart to represent discrete values, line chart for continues values and pie charts. In order to follow an appropriate  difficulty curve and for simplicity, the first chart we created was the bars chart, because the 'BoxGeometry(or CubeGeometry)' function provides us everything we need.
 Here we have its constructor:
 
 \textbf{BoxGeometry}(width, height, depth, widthSegments, heightSegments, depthSegments):
@@ -1025,38 +1028,13 @@ Here we have its constructor:
 
 All we have to do is to take some data set and assign each value to the height parameter of the BoxGeometry function, the width value and the depth value are not much important for now (they just have visual impact). 
 
-The data set that we used for the firsts demos had an evolutionary time line with statistics of software development, we extracted the data from a JSON and then built two simple bars charts with two example values: 'commits' facing 'authors' along the time.
+The data set that we used for the firsts demos had an evolutionary time line with statistics from software development, we extracted the data from a JSON and then built two simple bars charts with two example values: 'commits' facing 'authors' along the time.
 
-Here we have the entire HTML5 code to see the extensions we used in this first demo:
-
- \begin{lstlisting}[frame=single]
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Threeboard</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-		<link rel=stylesheet href="../css/base.css"/>
-	</head>
-	<body>
-		<div id="ThreeJS" style="z-index: 1; position: absolute; left:0px; top:0px"></div>
-		<!--only to get the JSON -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<script src="../js/Three.js"></script>
-		<script src="../js/OrbitControls.js"></script>
-		<!-- to handle window size changes -->
-		<script src="../js/THREEx.WindowResize.js"></script>
-		<!-- full screen by pressing 'm' -->
-		<script src="../js/THREEx.FullScreen.js"></script>
-		<!--here is our custom code with the scene -->
-		<script src="script.js"></script>
-	</body>
-</html>
-\end{lstlisting}
+Here: \ref{sec:appendix} we have the entire HTML5 code to see the extensions we used in this first demo if you want to see it.
 
 Once we create the scene in 'script.js' as we learned, we add the custom bars to it:
 
- \begin{lstlisting}[frame=single]
+\begin{lstlisting}[frame=single]
  
    //we create the COMMITS custom chart	
 //coordinates for each bar
@@ -1077,12 +1055,13 @@ for (var i = 0; i < json_data.commits.length; i++) {
 	//the next bar will be on the right
 	x+=1;
 };
+
 \end{lstlisting}
 
 Using the same process to build the authors chart we can see the final result:
  \ref{fig:demo1}
  
-And here\footnote{\url{http://adrianalonsoba.github.io/threeboard/demo2/}} you can try it in your browser.
+And here\footnote{\url{http://adrianalonsoba.github.io/threeboard/demo2/}} you can try it in your browser with some interactivity that we will see in the next section.
 
 \begin{figure}
   \centering
@@ -1091,25 +1070,9 @@ And here\footnote{\url{http://adrianalonsoba.github.io/threeboard/demo2/}} you c
   \label{fig:demo1}
 \end{figure}
 
-With this representation we can see an obvious relationship between commits and authors along the time, but thanks to the 3D renderer we can place them in different ways, for example we can form a 90 degrees angle easily: \ref{f:demo2} 
+With this representation we can see an obvious relationship between commits and authors along the time, but thanks to the 3D renderer we can place them in different ways, for example we can form a 90 degrees angle easily just with changing the height dimension by depth dimension: \ref{f:demo2} 
 
-\begin{lstlisting}[frame=single]
-var y=-0.5;
-var x=1;
-var z;
-for (var i = 0; i < json_data.authors.length; i++) {
-  //now we use the depth 'dimension' of the cube 
-  var geometry = new THREE.CubeGeometry( 1, 1, json_data.authors[i]/10);
-  z=json_data.authors[i]/10/2;
-  var material = new THREE.MeshLambertMaterial( {color: "#ff0000"} );
-  var authorBar = new THREE.Mesh(geometry, material);
-  authorBar.position.set(x, y, z);
-  scene.add(authorBar);
-  x+=1;
-};
-\end{lstlisting}
-
-In addition, we also explored the possibility of joining both charts by rectangles to see if this brought us some information.
+In addition, we also explored the possibility of joining both charts by rectangles to see if this could give us some information, however, we decided to not include this representation for now. You can see the result here \footnote{\url{http://adrianalonsoba.github.io/threeboard/demo5/}}
 
 \begin{figure}
  \centering
@@ -1120,6 +1083,40 @@ In addition, we also explored the possibility of joining both charts by rectangl
  \caption{Two points of view}
  \label{f:demo2}
 \end{figure}
+
+Now we will focus on the continuous line chart representation, this is a rather more complicated representation than the previous because we have to draw the line manually. In this case, there are no defined mesh geometry in Three.js that can serve us, so we have to do it with the object 'THREE.Shape'. With this, we can draw any shape by connecting points with different methods, having done this, we must to give depth to the shape with 'THREE.ExtrudeGeometry', a geometry type for the handmade shapes. Here is a code example of how to make a simple line shape made with straight lines:
+¿LO PASO A APENDICE?¿pongo foto?
+
+\begin{lstlisting}[frame=single]
+var charShape = new THREE.Shape();
+charShape.moveTo( 0,0 );
+
+var x=0;
+
+for (var i = 0; i < json_data.commits.length; i++) {
+  charShape.lineTo( x, json_data.commits[i]/10 );
+  x+=1.5;
+};
+//close the shape
+charShape.lineTo( x, 0 );
+charShape.lineTo( 0, 0 );
+
+var extrusionSettings = {
+  size: 30, height: 4, curveSegments: 3,
+  bevelThickness: 1, bevelSize: 2, bevelEnabled: false,
+  material: 0, extrudeMaterial: 1};
+
+  var charGeometry = new THREE.ExtrudeGeometry( charShape, extrusionSettings );
+  
+  var materialSide = new THREE.MeshLambertMaterial( { color: 0x0000ff } );
+  
+  var extrudeChart = new THREE.Mesh( charGeometry, materialSide );
+  extrudeChart.position.set(0,0,0);
+  scene.add(extrudeChart);
+\end{lstlisting}
+
+To finish this sprint we could use the THREE.Shape and THREE.ExtrudeGeometry to make the pie charts too, but using other method to join the points. In the previous case we don't need to add curves, so we had only to use 'lineTo', but now we need to add curves for each pie part and this is done with the THREE.Shape method 'arc'.
+?PONTO CAPTURAS DE LOS 3 JUNTOS Y CODIGO DE LA TARTA¿ 
 
 \subsection{Iteration 2: Interactivity and events}
 Explico como funciona la interactividad en three, y luego como se usa domevents, añado fotos con ejemplos y código
@@ -1234,9 +1231,33 @@ las tecnologías utilizadas y demás.
 
 \cleardoublepage
 \appendix
-\chapter{Manual de usuario}
-\label{app:manual}
+\chapter{Appendix}
+\label{sec:appendix}
 
+ \begin{lstlisting}[frame=single]
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Threeboard</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel=stylesheet href="../css/base.css"/>
+	</head>
+	<body>
+		<div id="ThreeJS" style="z-index: 1; position: absolute; left:0px; top:0px"></div>
+		<!--only to get the JSON -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="../js/Three.js"></script>
+		<script src="../js/OrbitControls.js"></script>
+		<!-- to handle window size changes -->
+		<script src="../js/THREEx.WindowResize.js"></script>
+		<!-- full screen by pressing 'm' -->
+		<script src="../js/THREEx.FullScreen.js"></script>
+		<!--here is our custom code with the scene -->
+		<script src="script.js"></script>
+	</body>
+</html>
+\end{lstlisting}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
