@@ -1130,7 +1130,17 @@ To finish this sprint we could use the THREE.Shape and THREE.ExtrudeGeometry to 
 
 \subsection{Iteration 2: Interactivity and events}
 
-Now that we have the basic charts, the next sprint requirement was to add interactivity to them. There is a specific method to interact with the scene using the mouse: The 'Raycasting', this method is to create an imaginary ray from the mouse to the scene in the camera direction and it returns an array with all the objects which intersects with the ray. Normally we only take the first intersected object (the first in the array) to do what we need. However, before to create the ray caster object, we need to add some event listeners as we will see. The first interactivity that we added was to change the color to the object in order to clarify which object is selected by mouse hovering, to do this we need two things, add a 'mouse move' event listener to refresh the mouse coordinates (needed by the ray caster)
+Now that we have the basic charts, the next sprint requirement was to add interactivity to them. There is a specific method to interact with the scene using the mouse: The 'Ray-casting', this method is to create an imaginary ray from the mouse to the scene in the camera direction and it returns an array with all the objects which intersects with the ray. Normally we only take the first intersected object (the first in the array) to do what we need. However, before to create the ray caster object, we need to add some event listeners as we will see.
+
+The first interactivity that we added was to change the color to the object in order to clarify which object is selected by mouse hovering, to do this we need two things, add a 'mouse move' event listener to refresh the mouse coordinates (needed by the ray caster) and when the ray returns the array of objects, just change the mesh's color of the first element, you can see an example with code in the appendix \ref{sec:rayexample} 
+
+\begin{figure}
+  \centering
+  \includegraphics[width=16cm, keepaspectratio]{img/raycolor}
+  \caption{ Colour changed with ray caster }
+  \label{fig:colorchange}
+\end{figure}
+
 
 \subsection{Iteration 3: Filtering}
 primero empiezo con el estudio de dc y pongo ejemplos con código y fotos con crossfilter
@@ -1244,6 +1254,7 @@ las tecnologías utilizadas y demás.
 \appendix
 \chapter{Appendix}
 \label{sec:appendix}
+\section{HTML5 sheet}
 
  \begin{lstlisting}[frame=single]
 <!DOCTYPE html>
@@ -1268,6 +1279,38 @@ las tecnologías utilizadas y demás.
 		<script src="script.js"></script>
 	</body>
 </html>
+\end{lstlisting}
+
+\section{Raycasting example}
+\label{sec:rayexample}
+
+\begin{lstlisting}[frame=single]
+var raycaster = new THREE.Raycaster();
+var mouse = new THREE.Vector2();
+
+function onMouseMove( event ) {
+	// calculate mouse position in normalized device coordinates
+	// (-1 to +1) for both components
+
+	mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+	mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;		
+}
+
+function render() {
+	// update the picking ray with the camera and mouse position	
+	raycaster.setFromCamera( mouse, camera );	
+
+	// calculate objects intersecting the picking ray
+	var intersects = raycaster.intersectObjects( scene.children );
+
+	for ( var i = 0; i < intersects.length; i++ ) {
+		//change color of all intersected meshes
+		intersects[ i ].object.material.color.set( 0xff0000 );
+	}
+	renderer.render( scene, camera );
+}
+window.addEventListener( 'mousemove', onMouseMove, false );
+window.requestAnimationFrame(render);
 \end{lstlisting}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
