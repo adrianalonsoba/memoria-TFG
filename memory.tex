@@ -1085,7 +1085,8 @@ In addition, we also explored the possibility of joining both charts by rectangl
 \end{figure}
 
 Now we will focus on the continuous line chart representation, this is a rather more complicated representation than the previous because we have to draw the line manually. In this case, there are no defined mesh geometry in Three.js that can serve us, so we have to do it with the object 'THREE.Shape'. With this, we can draw any shape by connecting points with different methods, having done this, we must to give depth to the shape with 'THREE.ExtrudeGeometry', a geometry type for the handmade shapes. Here is a code example of how to make a simple line shape made with straight lines:
-¿LO PASO A APENDICE?¿pongo foto?
+
+¿LO PASO A APENDICE?
 
 \begin{lstlisting}[frame=single]
 var charShape = new THREE.Shape();
@@ -1115,11 +1116,21 @@ var extrusionSettings = {
   scene.add(extrudeChart);
 \end{lstlisting}
 
-To finish this sprint we could use the THREE.Shape and THREE.ExtrudeGeometry to make the pie charts too, but using other method to join the points. In the previous case we don't need to add curves, so we had only to use 'lineTo', but now we need to add curves for each pie part and this is done with the THREE.Shape method 'arc'.
-?PONTO CAPTURAS DE LOS 3 JUNTOS Y CODIGO DE LA TARTA¿ 
+To finish this sprint we could use the THREE.Shape and THREE.ExtrudeGeometry to make the pie charts too, but using other method to join the points. In the previous case we don't need to add curves, so we had only to use 'lineTo', but now we need to add curves for each pie part and this is done with the THREE.Shape method 'arc'. Let's take a look to the result: \ref{f:demoline}
+
+\begin{figure}
+ \centering
+  \subfloat[]{
+    \includegraphics[width=0.50\textwidth]{img/demo8.png}}
+  \subfloat[]{
+    \includegraphics[width=0.50\textwidth]{img/demo11.png}}
+ \caption{Charts built with line shapes}
+ \label{f:demoline}
+\end{figure}
 
 \subsection{Iteration 2: Interactivity and events}
-Explico como funciona la interactividad en three, y luego como se usa domevents, añado fotos con ejemplos y código
+
+Now that we have the basic charts, the next sprint requirement was to add interactivity to them. There is a specific method to interact with the scene using the mouse: The 'Raycasting', this method is to create an imaginary ray from the mouse to the scene in the camera direction and it returns an array with all the objects which intersects with the ray. Normally we only take the first intersected object (the first in the array) to do what we need. However, before to create the ray caster object, we need to add some event listeners as we will see. The first interactivity that we added was to change the color to the object in order to clarify which object is selected by mouse hovering, to do this we need two things, add a 'mouse move' event listener to refresh the mouse coordinates (needed by the ray caster)
 
 \subsection{Iteration 3: Filtering}
 primero empiezo con el estudio de dc y pongo ejemplos con código y fotos con crossfilter
