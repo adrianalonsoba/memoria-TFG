@@ -1124,32 +1124,52 @@ To finish this sprint we could use the THREE.Shape and THREE.ExtrudeGeometry to 
     \includegraphics[width=0.50\textwidth]{img/demo8.png}}
   \subfloat[]{
     \includegraphics[width=0.50\textwidth]{img/demo11.png}}
- \caption{Charts built with line shapes}
+ \caption{ Line and pie charts built with line shapes}
  \label{f:demoline}
 \end{figure}
 
 \subsection{Iteration 2: Interactivity and events}
 
-Now that we have the basic charts, the next sprint requirement was to add interactivity to them. There is a specific method to interact with the scene using the mouse: The 'Ray-casting', this method is to create an imaginary ray from the mouse to the scene in the camera direction and it returns an array with all the objects which intersects with the ray. Normally we only take the first intersected object (the first in the array) to do what we need. However, before to create the ray caster object, we need to add some event listeners as we will see.
+Now that we have the basic charts, the next sprint requirement was to add interactivity to them:
+\begin{itemize}
+\item Show information about the charts by mouse hovering.
+\item Be able to fix some chart parts by clicking.
+\item Drag the charts.
+\end{itemize}
+There is a specific method to interact with the scene using the mouse: The 'Ray-casting', this method is to create an imaginary ray from the mouse to the scene in the camera direction and it returns an array with all the objects which intersects with the ray. Normally we only take the first intersected object (the first in the array) to do what we need. However, before to create the ray caster object, we need to add some event listeners as we will see.
 
-The first interactivity that we added was to change the color to the object in order to clarify which object is selected by mouse hovering, to do this we need two things, add a 'mouse move' event listener to refresh the mouse coordinates (needed by the ray caster) and when the ray returns the array of objects, just change the mesh's color of the first element, you can see an example with code in the appendix \ref{sec:rayexample} 
+The first interactivity that we added was to change the color to the object in order to clarify which object is selected by mouse hovering, to do this we need two things, add a 'mouse move' event listener to refresh the mouse coordinates each animation frame (needed by the ray caster) and when the ray returns the array of objects, just change the mesh's color of the first element, you can see an example with code in the appendix \ref{sec:rayexample} 
 
 \begin{figure}
   \centering
   \includegraphics[width=16cm, keepaspectratio]{img/raycolor}
-  \caption{ Colour changed with ray caster }
+  \caption{ Color change thanks to ray caster }
   \label{fig:colorchange}
 \end{figure}
+
+Once understood the ray-casting method, we realize that it is unintuitive and too much wired, when the ray returns the array of objects, we eventually need to add an 'if' or 'switch' sentence for each mesh type. Having said this, we thought that to use a DOM events similar method would be interesting, being capable of bind any event to any mesh in any moment. Doing a little research over the network we found all we need: 'threex.domevents'\ref{sec:de} a little Three.js extension which allows us to bind any event to any mesh.
+
+Add events is much easier than before, to change the bars color just need two 'binds', one for the mouse over and one for the mouse out to restore its original color. From now on we will use this extension for add all events.
+
+Now that we have all the tools to handle events let's go to add 3D text label to each mesh showing the number of commits or authors. To do this, we can use 'THREE.TextGeometry', a function that makes simple to add 3D text to the scenes just by passing the text, the font family, the size and other optional parameters. 
+
+\begin{figure}
+  \centering
+  \includegraphics[width=16cm, keepaspectratio]{img/text3D}
+  \caption{ text 3D  }
+  \label{fig:colorchange}
+\end{figure}
+
 
 
 \subsection{Iteration 3: Filtering}
 primero empiezo con el estudio de dc y pongo ejemplos con código y fotos con crossfilter
 \subsection{Iteration 4: Framework (o Library?¿)}
 
-explico la arquitectura de la librería, las diferentes funciones y como se usa las funciones encadenadas
+explico la arquitectura de la librería, las diferentes funciones y como se usa las funciones encadenadas muy resumido
 
 \subsection{Iteration 5: Panel creation}
-explico para que sirven, como se añaden, mueven y como se posicionan los charts con los puntos de anclaje, codigo y fotos
+explico para que sirven, como se añaden, mueven y como se posicionan los charts con los puntos de anclaje,
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
