@@ -1147,19 +1147,23 @@ The first interactivity that we added was to change the color to the object in o
   \label{fig:colorchange}
 \end{figure}
 
-Once understood the ray-casting method, we realize that it is unintuitive and too much wired, when the ray returns the array of objects, we eventually need to add an 'if' or 'switch' sentence for each mesh type. Having said this, we thought that to use a DOM events similar method would be interesting, being capable of bind any event to any mesh in any moment. Doing a little research over the network we found all we need: 'threex.domevents'\ref{sec:de} a little Three.js extension which allows us to bind any event to any mesh.
+Once understood the ray-casting method, we realize that it is unintuitive and too much wired, when the ray returns the array of objects, we eventually need to add an 'if' or 'switch' sentence for each mesh type. Having said this, we thought that to use a DOM events similar method would be interesting, being capable of bind any event to any mesh in any moment. Doing a little research over the network we found all we need: 'threex.domevents'\ref{sec:de} a little Three.js extension which allows us to bind any event to any mesh and forget the ray caster.
 
 Add events is much easier than before, to change the bars color just need two 'binds', one for the mouse over and one for the mouse out to restore its original color. From now on we will use this extension for add all events.
 
-Now that we have all the tools to handle events let's go to add 3D text label to each mesh showing the number of commits or authors. To do this, we can use 'THREE.TextGeometry', a function that makes simple to add 3D text to the scenes just by passing the text, the font family, the size and other optional parameters. 
+Now that we have all the tools to handle events let's go to add a 3D text label to each mesh showing the number of commits or authors. To do this, we can use 'THREE.TextGeometry', a function that makes simple to add 3D text to the scenes just by passing the text, the font family, the size and other optional parameters. 
 
 \begin{figure}
   \centering
   \includegraphics[width=16cm, keepaspectratio]{img/text3D}
-  \caption{ text 3D  }
+  \caption{ e3D text }
   \label{fig:colorchange}
 \end{figure}
 
+
+The second iteration objective is not included in the final version but it gave us an idea of how fast the renderer can add and remove simple meshes from the scene. In this\footnote{\url{http://adrianalonsoba.github.io/threeboard/demo6/}}demo you can try it by doing mouse over and click to fix bars.
+
+The third requirement is probably the most important of the iteration. LO PONGO AQUI O NO¿? TENGO QUE EXPLICAR COMO USO A LA VEZ EL DOM EVENTS Y EL RAYCASTING AQUI
 
 
 \subsection{Iteration 3: Filtering}
