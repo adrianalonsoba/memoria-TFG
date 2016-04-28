@@ -1133,7 +1133,7 @@ To finish this sprint we could use the THREE.Shape and THREE.ExtrudeGeometry to 
 Now that we have the basic charts, the next sprint requirement was to add interactivity to them:
 \begin{itemize}
 \item Show information about the charts by mouse hovering.
-\item Be able to fix some chart parts by clicking.
+\item Be able to fix some chart parts by clicking and test some animation.
 \item Drag the charts.
 \end{itemize}
 There is a specific method to interact with the scene using the mouse: The 'Ray-casting', this method is to create an imaginary ray from the mouse to the scene in the camera direction and it returns an array with all the objects which intersects with the ray. Normally we only take the first intersected object (the first in the array) to do what we need. However, before to create the ray caster object, we need to add some event listeners as we will see.
@@ -1160,8 +1160,8 @@ Now that we have all the tools to handle events let's go to add a 3D text label 
   \label{fig:colorchange}
 \end{figure}
 
-
-The second iteration objective is not included in the final version but it gave us an idea of how fast the renderer can add and remove simple meshes from the scene. In this\footnote{\url{http://adrianalonsoba.github.io/threeboard/demo6/}}demo you can try it by doing mouse over and click to fix bars.
+The second iteration objectives are not included in the final version but they gave us an idea of how fast the renderer can add and remove simple meshes from the scene. In this\footnote{\url{http://adrianalonsoba.github.io/threeboard/demo6/}}demo you can fix the bars by clicking and in this\footnote{\url{http://adrianalonsoba.github.io/threeboard/demo8/}} you can see an animation made with time intervals.
+OJO CAMBIAR ESTO SI AL FINAL AÑADO ANIMACIONES
 
 The third requirement is probably the most important of the iteration. We have to be able to drag the entire charts to put them at any place of the scene. This is not supported by threex.domevents, so this is the only event we must to handle with a ray caster. The process starts like before, adding and event listener to update the mouse coordinates and instantiating the ray caster, but , in addition, now we need to create a plane which will intersect with our meshes or charts.
 
@@ -1186,6 +1186,8 @@ Doing this, we can move any mesh around the plane. Rotating the plane we can mov
 
 
 \subsection{Iteration 3: Filtering}
+In this sprint, we must to integrate crossfilter\ref{sec:cf} in order to achieve a functionality that allow us to filter data sets in real time by interacting with the charts. There is already a library that do this
+
 
 \subsection{Iteration 4: Framework (o Library?¿)}
 
