@@ -1147,27 +1147,46 @@ The first interactivity that we added was to change the color to the object in o
   \label{fig:colorchange}
 \end{figure}
 
-Once understood the ray-casting method, we realize that it is unintuitive and too much wired, when the ray returns the array of objects, we eventually need to add an 'if' or 'switch' sentence for each mesh type. Having said this, we thought that to use a DOM events similar method would be interesting, being capable of bind any event to any mesh in any moment. Doing a little research over the network we found all we need: 'threex.domevents'\ref{sec:de} a little Three.js extension which allows us to bind any event to any mesh and forget the ray caster.
+Once understood the ray-casting method, we realize that it is unintuitive and too much wired, when the ray returns the array of objects, we eventually need to add an 'if' or 'switch' sentence for each mesh type. Having said this, we thought that to use a DOM events similar method would be interesting, being capable of bind any event to any mesh at any moment. Doing a little research over the network we found all we need: 'threex.domevents'\ref{sec:de} a little Three.js extension which allows us to bind any event to any mesh and forget the ray caster.
 
 Add events is much easier than before, to change the bars color just need two 'binds', one for the mouse over and one for the mouse out to restore its original color. From now on we will use this extension for add all events.
 
-Now that we have all the tools to handle events let's go to add a 3D text label to each mesh showing the number of commits or authors. To do this, we can use 'THREE.TextGeometry', a function that makes simple to add 3D text to the scenes just by passing the text, the font family, the size and other optional parameters. 
+Now that we have all the tools to handle events let's go to add a 3D text label to each mesh showing the number of commits or authors. To do this, we can use 'THREE.TextGeometry', a function which makes simple to add 3D text to the scenes just by passing the text, the font family, the size and other optional parameters. 
 
 \begin{figure}
   \centering
   \includegraphics[width=16cm, keepaspectratio]{img/text3D}
-  \caption{ e3D text }
+  \caption{ 3D text }
   \label{fig:colorchange}
 \end{figure}
 
 
 The second iteration objective is not included in the final version but it gave us an idea of how fast the renderer can add and remove simple meshes from the scene. In this\footnote{\url{http://adrianalonsoba.github.io/threeboard/demo6/}}demo you can try it by doing mouse over and click to fix bars.
 
-The third requirement is probably the most important of the iteration. LO PONGO AQUI O NO¿? TENGO QUE EXPLICAR COMO USO A LA VEZ EL DOM EVENTS Y EL RAYCASTING AQUI
+The third requirement is probably the most important of the iteration. We have to be able to drag the entire charts to put them at any place of the scene. This is not supported by threex.domevents, so this is the only event we must to handle with a ray caster. The process starts like before, adding and event listener to update the mouse coordinates and instantiating the ray caster, but , in addition, now we need to create a plane which will intersect with our meshes or charts.
+
+\begin{lstlisting}[frame=single]
+function onMouseMove( event ) {
+  mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+  mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;   
+  raycaster.setFromCamera( mouse, camera );
+  //we select a mesh with a click event using threex.domevents
+  if(SELECTED){
+    var intersects = raycaster.intersectObject( plane );
+    if ( intersects.length > 0 ) {
+      //update the mesh position
+      SELECTED.position.copy( intersects[ 0 ].point.sub( offset ) );
+    }
+    return;
+  }
+}
+\end{lstlisting}
+
+Doing this, we can move any mesh around the plane. Rotating the plane we can move the meshes in any direction, you can check it here\footnote{\url{http://adrianalonsoba.github.io/threeboard/demo15/}}.
 
 
 \subsection{Iteration 3: Filtering}
-primero empiezo con el estudio de dc y pongo ejemplos con código y fotos con crossfilter
+
 \subsection{Iteration 4: Framework (o Library?¿)}
 
 explico la arquitectura de la librería, las diferentes funciones y como se usa las funciones encadenadas muy resumido
