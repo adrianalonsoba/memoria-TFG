@@ -1219,8 +1219,21 @@ dimByOrg= cf.dimension(function(p) {return p.org;});
 groupByOrg= dimByOrg.group();
 \end{lstlisting}
 
-Now we can use the groups to build our charts, one chart will contain the number of commits by month and the other the number of commits by organization. In the first 
+Now we can use the groups to build our charts, one chart will contain the number of commits per month(a bars chart for example) and the other, the number of commits per organization(pie chart). Therefore, if we click on a particular month, crossfilter applies this filter to its index, then we call the function responsible for drawing with \textbf{no} changes needed, and we will obtain a pie chart that shows the number of commits per organization in this particular month, on the other hand, if we click on a particular organization we will see a bars chart with the number of commits per month of this organization.
 
+\begin{figure}
+ \centering
+  \subfloat[before click]{
+    \includegraphics[width=0.50\textwidth]{img/cf_example1.png}}
+  \subfloat[after click]{
+    \includegraphics[width=0.50\textwidth]{img/cf_example2.png}}
+ \caption{Example of filtering, note that the bars chart is ordered from top to bottom for now}
+ \label{f:cf_example}
+\end{figure}
+
+In this \ref{f:cf_example} figure we can see that  not only the bars are lower than before, the chart is shorter too, this means there are months with no commits in the clicked organization.
+
+You can try this simple demo in here \footnote{\url{http://adrianalonsoba.github.io/threeboard/demo13/}}
 
 
 \subsection{Iteration 4: Framework (o Library?¿)}
