@@ -1187,7 +1187,9 @@ Doing this, we can move any mesh around the plane. Rotating the plane we can mov
 
 \subsection{Iteration 3: Filtering}
 
-In this sprint, we must to integrate crossfilter \ref{sec:cf} in order to achieve a functionality that allow us to filter data sets in real time by interacting with the charts. There is already a library that do this: dc.js, a charting library with native crossfilter support and allowing highly efficient exploration on large multi-dimensional dataset (inspired by crossfilter's demo). It leverages d3.js engine to render charts in css friendly svg format. The main objective of our library is to provide similar functionality to that of DC in 3D, so first we need to understand how dcOJO and crossfilter works. 
+In this sprint, we must to integrate crossfilter(\ref{sec:cf}) in order to achieve a functionality that allow us to filter data sets in real time by interacting with the charts. There is already a library that do this: dc.js, a charting library with native crossfilter support and allowing highly efficient exploration on large multi-dimensional dataset (inspired by crossfilter's demo). It leverages d3.js engine to render charts in css friendly svg format.
+
+The main objective is to provide similar functionality to that of dc.js in 3D, so first we need to understand how dc.js and crossfilter.js works. 
 
 \begin{figure}
   \centering
@@ -1196,9 +1198,15 @@ In this sprint, we must to integrate crossfilter \ref{sec:cf} in order to achiev
   \label{fig:dcexample}
 \end{figure}
 
-The basic idea is 
+The basic idea is to filter the data set by clicking the charts, if we click on the line chart for example, we can filter the entire data set using the selected value and we see how the charts change in real time. Also, we can add interval filters by selecting the interval with the mouse. Crossfilter.js use the selected values to filter its data set automatically, so when a filter is added, we just need to call the function responsible for drawing the charts.
 
+To create a demo with this, first we need a data set in the format that Crossfilter understands, this is an array of objects with the same number of key-value pairs and the same keys, here we have an example where each object represents a commit:
+\begin{lstlisting}[frame=single]
+var payments = crossfilter([
+{author: 8, date: "Mon Oct 20 2014 14:42:24 GMT+0200 (CEST)", hour: 12, id: 11340, month: "Wed Oct 01 2014 00:00:00 GMT+0200 (CEST)",org: 958,repo: 12,tz: 2}
+\end{lstlisting}
 
+The data set contains 12677 objects like this
 
 
 
@@ -1274,7 +1282,6 @@ comentar en un párrafo los conocimientos y habilidades puestos en práctica.
   \item b
 \end{enumerate}
 
-
 \section{Lecciones aprendidas}
 \label{sec:lecciones_aprendidas}
 
@@ -1301,8 +1308,6 @@ Es un apartado que sirve para dar ideas de cara a futuros TFGs/TFMs.
 Finalmente (y de manera opcional), hay gente que se anima a dar su punto de
 vista sobre el proyecto, lo que ha aprendido, lo que le gustaría haber aprendido,
 las tecnologías utilizadas y demás.
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
