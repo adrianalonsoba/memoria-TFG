@@ -1202,12 +1202,24 @@ The basic idea is to filter the data set by clicking the charts, if we click on 
 
 To create a demo with this, first we need a data set in the format that Crossfilter understands, this is an array of objects with the same number of key-value pairs and the same keys, here we have an example where each object represents a commit:
 \begin{lstlisting}[frame=single]
-var payments = crossfilter([
-{author: 8, date: "Mon Oct 20 2014 14:42:24 GMT+0200 (CEST)", hour: 12, id: 11340, month: "Wed Oct 01 2014 00:00:00 GMT+0200 (CEST)",org: 958,repo: 12,tz: 2}
+var commits=[
+{author: 8, date: "Mon Oct 20 2014 14:42:24 GMT+0200 (CEST)", hour: 12, id: 11340, month: "Wed Oct 01 2014 00:00:00 GMT+0200 (CEST)",org: 958,repo: 12,tz: 2},
+...]
 \end{lstlisting}
 
-The data set contains 12677 objects like this
+The data set contains 12677 objects like this with different values but the same keys. Now we must to create one crossfilter index, a crossfilter dimension for each chart and a group for each dimension:
+\begin{lstlisting}[frame=single]
+//crossfilter index
+cf=crossfilter(commits);
+//create a dimension and a group by month
+dimByMonth= cf.dimension(function(p) {return p.month;});
+groupByMonth= dimByMonth.group();
+//create a dimension and a group by organization
+dimByOrg= cf.dimension(function(p) {return p.org;});
+groupByOrg= dimByOrg.group();
+\end{lstlisting}
 
+Now we can use the groups to build our charts, one chart will contain the number of commits by month and the other the number of commits by organization. In the first 
 
 
 
