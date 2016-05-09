@@ -40,7 +40,7 @@
 \contentsline {subsection}{\numberline {5.0.5}Iteration 3: Filtering}{40}{subsection.5.0.5}
 \contentsline {subsection}{\numberline {5.0.6}Iteration 4: Framework (o Library?\IeC {\textquestiondown })}{42}{subsection.5.0.6}
 \contentsline {subsection}{\numberline {5.0.7}Iteration 5: Panel creation}{42}{subsection.5.0.7}
-\contentsline {chapter}{\numberline {6}Dise\~no e implementaci\'on}{43}{chapter.6}
+\contentsline {chapter}{\numberline {6}Design and implementation}{43}{chapter.6}
 \contentsline {section}{\numberline {6.1}Arquitectura general}{43}{section.6.1}
 \contentsline {chapter}{\numberline {7}Resultados}{45}{chapter.7}
 \contentsline {chapter}{\numberline {8}Conclusiones}{47}{chapter.8}

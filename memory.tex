@@ -1207,7 +1207,7 @@ var commits=[
 ...]
 \end{lstlisting}
 
-The data set contains 12677 objects like this with different values but the same keys. Now we must to create one crossfilter index, a crossfilter dimension for each chart and a group for each dimension:
+The data set contains 12677 objects like this with different values but the same keys. Now we must to create a single crossfilter index, a crossfilter dimension for each chart and a group for each dimension:
 \begin{lstlisting}[frame=single]
 //crossfilter index
 cf=crossfilter(commits);
@@ -1236,21 +1236,29 @@ In this \ref{f:cf_example} figure we can see that  not only the bars are lower t
 You can try this simple demo in here \footnote{\url{http://adrianalonsoba.github.io/threeboard/demo13/}}
 
 
-\subsection{Iteration 4: Framework (o Library?¿)}
+\subsection{Iteration 4: Framework creation}
+ 
+Now we have all the needed elements to create our library, so the main requirement for this sprint is to build its architecture and implement it. However we will talk about this in the next chapter(\ref{chap:dai}) to avoid repeating information.
 
-explico la arquitectura de la librería, las diferentes funciones y como se usa las funciones encadenadas muy resumido
+\subsection{Iteration 5: Panel creation and additional features}
 
-\subsection{Iteration 5: Panel creation}
-explico para que sirven, como se añaden, mueven y como se posicionan los charts con los puntos de anclaje,
+\begin{itemize}
+Once
 
-lo junto todo?
+\item Implement interval filters.
+\item Add customizable grids and labels.
+\item Add panels to contain related charts
+\end{itemize}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % DISEÑO E IMPLEMENTACIÓN %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \cleardoublepage
-\chapter{Diseño e implementación}
+\chapter{Design and implementation}
+\label{chap:dai}
+In this chapter we will describe the 
 
 \section{Arquitectura general} 
 \label{sec:arquitectura}
