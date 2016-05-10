@@ -1240,8 +1240,13 @@ You can try this simple demo in here \footnote{\url{http://adrianalonsoba.github
 
 AQUI MUESTRO COMO HAGO LO MISMO QUE ANTES PERO USANDO EL FRAMEWORK
  
-Now we have all the needed elements to create our library, so the main requirement for this sprint is to build the architecture and implement it. 
+Now we have all the needed elements to create our library, so the main requirement for this sprint is to build the main architecture and implement it, after this sprint, we should be able to create the previous iteration's demo with a few code lines. 
+//CAMBIAR ESTO DE SITIO
 Is have been used two remarkable techniques widely used in Javascript, a \textbf{mixin} to provide us inheritance between the different chart types avoiding the need of repeating common code and the method \textbf{chaining}, a technique that can be used to simplify code in scenarios that involve calling multiple functions on the same object consecutively.
+
+The first thing we need is a global object that will contain the data structures, functions and give name to the framework, this object is \textbf{THREEDC}
+
+
 
 \subsection{Iteration 5: Panel creation and additional features}
 
@@ -1269,7 +1274,7 @@ Let's take a look to a simplification of the library's architecture \ref{fig:Arc
 
 \begin{figure}
   \centering
-  \includegraphics[width=16cm, keepaspectratio]{img/diagram}
+  \includegraphics[width=12cm, keepaspectratio]{img/diagram}
   \caption{Basic structure}
   \label{fig:Architecture}
 \end{figure}

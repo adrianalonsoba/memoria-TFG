@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.1.26)  10 MAY 2016 12:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.1.26)  10 MAY 2016 12:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2864,20 +2864,8 @@ Package babel Info: Redefining spanish shorthand "?
 <img/diagram.png, id=1093, 994.71625pt x 723.70375pt>
 File: img/diagram.png Graphic file (type png)
  <use img/diagram.png>
-Package pdftex.def Info: img/diagram.png used on input line 1272.
-(pdftex.def)             Requested size: 455.24408pt x 331.21822pt.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 1276.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 1276.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 1276.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 1276.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 1276.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 1276.
+Package pdftex.def Info: img/diagram.png used on input line 1273.
+(pdftex.def)             Requested size: 341.43306pt x 248.40814pt.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 1284.
 Package babel Info: Redefining spanish shorthand >>
@@ -3237,9 +3225,15 @@ LaTeX Info: Redefining \% on input line 23.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1434.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1434.
 
-Package rerunfilecheck Info: File `memory.out' has not changed.
-(rerunfilecheck)             Checksum: 1266B05A387821AA47B193801B1A4DCF;3539.
 
+
+Package rerunfilecheck Warning: File `memory.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `memory.out':
+(rerunfilecheck)             Before: 1266B05A387821AA47B193801B1A4DCF;3539
+(rerunfilecheck)             After:  F04F2238282D8339C8309F6B654AD299;3466.
 
 LaTeX Warning: There were undefined references.
 
@@ -3256,15 +3250,18 @@ Here is how much of TeX's memory you used:
  35655 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,13n,49p,1091b,1903s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/ut
-mb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on memory.pdf (68 pages, 1995497 bytes).
+pdfTeX warning (dest): name{subsection.6.1.1} has been referenced but does no
+t exist, replaced by a fixed one
+
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
+w/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb
+8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on memory.pdf (68 pages, 1995469 bytes).
 PDF statistics:
  1348 PDF objects out of 1440 (max. 8388607)
  1233 compressed objects within 13 object streams
