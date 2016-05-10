@@ -1231,14 +1231,17 @@ Now we can use the groups to build our charts, one chart will contain the number
  \label{f:cf_example}
 \end{figure}
 
-In this \ref{f:cf_example} figure we can see that  not only the bars are lower than before, the chart is shorter too, this means there are months with no commits in the clicked organization.
+In this \ref{f:cf_example} figure we can see that not only the bars are lower than before, the chart is shorter too, this means there are months with no commits in the clicked organization.
 
 You can try this simple demo in here \footnote{\url{http://adrianalonsoba.github.io/threeboard/demo13/}}
 
 
 \subsection{Iteration 4: Framework creation}
+
+AQUI MUESTRO COMO HAGO LO MISMO QUE ANTES PERO USANDO EL FRAMEWORK
  
-Now we have all the needed elements to create our library, so the main requirement for this sprint is to build the architecture and implement it. However, we will talk about this in the next chapter(\ref{chap:dai}) to avoid repeating information.
+Now we have all the needed elements to create our library, so the main requirement for this sprint is to build the architecture and implement it. 
+Is have been used two remarkable techniques widely used in Javascript, a \textbf{mixin} to provide us inheritance between the different chart types avoiding the need of repeating common code and the method \textbf{chaining}, a technique that can be used to simplify code in scenarios that involve calling multiple functions on the same object consecutively.
 
 \subsection{Iteration 5: Panel creation and additional features}
 
@@ -1258,22 +1261,20 @@ Once we built the basic architecture, in the final iteration we will add some ad
 \cleardoublepage
 \chapter{Design and implementation}
 \label{chap:dai}
+\section{Introduction}
+\label{sec:dint}
 
-In this chapter we will describe the library's architecture in detail, showing how it works with the basic functions and data structures. Is have been used two remarkable techniques widely used in Javascript, a \textbf{mixin} to provide us inheritance between the different chart types avoiding the need of repeating common code and the method \textbf{chaining}, a technique that can be used to simplify code in scenarios that involve calling multiple functions on the same object consecutively.
-Having this in mind, let's take a look to a simplification of the library's architecture:
-
-\section{Arquitectura general} 
-\label{sec:arquitectura}
-
-figura~\ref{fig:Architecture}.
+In this chapter we will describe the library's architecture in detail, showing how it works with the basic functions and data structures. 
+Let's take a look to a simplification of the library's architecture \ref{fig:Architecture}:
 
 \begin{figure}
   \centering
   \includegraphics[width=16cm, keepaspectratio]{img/diagram}
   \caption{Basic structure}
-  \label{fig:arquitectura}
+  \label{fig:Architecture}
 \end{figure}
-
+\subsection{General description}
+\label{sec:html5gd}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
