@@ -1245,15 +1245,17 @@ Now we have all the needed elements to create our library, so the main requireme
 The first thing we need is a global object that will contain the data structures, methods and it gives name to the framework, this object is \textbf{THREEDC}(three dimension 'dynamic' charting). THREEDC shall have three main methods and one data structure at least:
 \begin{itemize}
 \item \textbf{THREEDC.allCharts:[]}: This array will contain each chart instantiation.
-\item \textbf{THREEDC.renderAll()} : This method will use THREEDC.allcharts to call the particular render method of each chart type.
+\item \textbf{THREEDC.renderAll()} : This method will use THREEDC.allCharts to call the particular render method of each chart type.
 \item \textbf{THREEDC.removeAll()} : The same as the previous , but to remove all charts.
 \item \textbf{THREEDC.baseMixin()} : A "mixin" object that will be explained next.
 \end{itemize}
 
 Is have been used two remarkable techniques widely used in Javascript, a \textbf{mixin} to provide us inheritance between the different chart types avoiding the need of repeating common code and the method \textbf{chaining}, a technique that can be used to simplify code in scenarios that involve calling multiple functions on the same object consecutively.
 
-The mixin will act like a father class, containing the common features in all charts, like render methods, labels, grids, etc... This also makes an easier abstraction. 
-TODO LO QUE TENEMOS QUE HACER ES ISNTANCIARLO Y AÑADIRLE METODOS
+The mixin will act like a father class, containing the common features in all charts, like render methods, events, etc... This also results in an easier abstraction. 
+
+The basic component of a chart will be a 'part,' a single mesh that will contain info of the crossfilter's groups, this is, keys and values, so the mixin must have another data structure to save this parts. Every single chart must build each part separately because the interaction events have to be bonded 
+
 
 \subsection{Iteration 5: Panel creation and additional features}
 
