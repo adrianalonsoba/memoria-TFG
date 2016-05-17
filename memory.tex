@@ -1236,8 +1236,6 @@ In this \ref{f:cf_example} figure we can see that not only the bars are lower th
 You can try this simple demo in here \footnote{\url{http://adrianalonsoba.github.io/threeboard/demo13/}}
 
 \subsection{Iteration 4: Framework creation}
-
-AQUI MUESTRO COMO HAGO LO MISMO QUE ANTES PERO USANDO EL FRAMEWORK
  
 Now we have all the needed elements to create our library, so the main requirement for this sprint is to build the main architecture and implement it, after this sprint, we should be able to create the previous iteration's demo with a few code lines. 
 
@@ -1260,9 +1258,17 @@ The mixin will act like a father class, containing the common features in all ch
   \label{fig:mixinstructure}
 \end{figure}
 
-Once we have the mixin structure(\ref{fig:mixinstructure}), we'll implement the different chart types. All chart types will instantiate a mixin, and then they will add its own build method and parameters. The basic component of a chart will be a 'part,' a single mesh that will contain info of the crossfilter's groups, this is, keys and values, so the mixin must have another data structure to save this parts. Every chart must build each part separately because the interaction events have to be bound to each part. The charts parts have common events in every chart type
+Once we have the mixin structure(\ref{fig:mixinstructure}), we'll implement the different chart types. All chart types will instantiate a mixin, and then they will add its own build method and parameters. The basic component of a chart will be a '\textbf{part},' a single mesh that will contain info of the crossfilter's groups, this is, keys and values, so the mixin must have another data structure to save this parts. Every chart must build each part separately because the interaction events have to be bound to each part. After call a specific chart type function, this is added to the global data structure (THREEDC.allCharts),then it calls its build function, which creates every chart part, add the basic events using the mixin methods and finally will be rendered if we call the specific render method of this chart or the global render method (THREEDC.renderAll()).
 
-UNA VEZ SE CREA UNA PARTE, SE LE AÑADEN LOS EVENTOS, SE AÑADE A LA ESTRUCTURA DE PARTES DEL CHART Y FINALMENTE A LA ESTRUCTURA DE DATOS GLOBAL DE THREE
+Here we have a code example which creates the previous iteration demo using the framework:
+\begin{lstlisting}[frame=single]
+//crossfilter index,dimensions and groups previously created
+...
+var barsCharts=
+\end{lstlisting}
+
+
+
 
 \subsection{Iteration 5: Panel creation and additional features}
 
