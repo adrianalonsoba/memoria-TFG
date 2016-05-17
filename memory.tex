@@ -1235,7 +1235,6 @@ In this \ref{f:cf_example} figure we can see that not only the bars are lower th
 
 You can try this simple demo in here \footnote{\url{http://adrianalonsoba.github.io/threeboard/demo13/}}
 
-
 \subsection{Iteration 4: Framework creation}
 
 AQUI MUESTRO COMO HAGO LO MISMO QUE ANTES PERO USANDO EL FRAMEWORK
@@ -1250,12 +1249,20 @@ The first thing we need is a global object that will contain the data structures
 \item \textbf{THREEDC.baseMixin()} : A "mixin" object that will be explained next.
 \end{itemize}
 
-Is have been used two remarkable techniques widely used in Javascript, a \textbf{mixin} to provide us inheritance between the different chart types avoiding the need of repeating common code and the method \textbf{chaining}, a technique that can be used to simplify code in scenarios that involve calling multiple functions on the same object consecutively.
+Is have been used two remarkable techniques widely used in Javascript, a \textbf{mixin} to provide us inheritance between the different chart types avoiding the need of repeating common code(and for abstraction) and the method \textbf{chaining}, a technique that can be used to simplify code in scenarios that involve calling multiple functions on the same object consecutively.
 
-The mixin will act like a father class, containing the common features in all charts, like render methods, events, etc... This also results in an easier abstraction. 
+The mixin will act like a father class, containing the common features in all charts: Render and build methods, events, and the parameters of the chart:The crossfilter dimensions and groups, chart size and chart color. The parameter methods will return the own mixin in order to make possible the method chaining. 
 
-The basic component of a chart will be a 'part,' a single mesh that will contain info of the crossfilter's groups, this is, keys and values, so the mixin must have another data structure to save this parts. Every single chart must build each part separately because the interaction events have to be bonded 
+\begin{figure}
+  \centering
+  \includegraphics[width=12cm, keepaspectratio]{img/mixin}
+  \caption{ Basic mixin structure }
+  \label{fig:mixinstructure}
+\end{figure}
 
+Once we have the mixin structure(\ref{fig:mixinstructure}), we'll implement the different chart types. All chart types will instantiate a mixin, and then they will add its own build method and parameters. The basic component of a chart will be a 'part,' a single mesh that will contain info of the crossfilter's groups, this is, keys and values, so the mixin must have another data structure to save this parts. Every chart must build each part separately because the interaction events have to be bound to each part. The charts parts have common events in every chart type
+
+UNA VEZ SE CREA UNA PARTE, SE LE AÑADEN LOS EVENTOS, SE AÑADE A LA ESTRUCTURA DE PARTES DEL CHART Y FINALMENTE A LA ESTRUCTURA DE DATOS GLOBAL DE THREE
 
 \subsection{Iteration 5: Panel creation and additional features}
 
