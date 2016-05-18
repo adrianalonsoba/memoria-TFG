@@ -1244,7 +1244,7 @@ The first thing we need is a global object that will contain the data structures
 \item \textbf{THREEDC.allCharts:[]}: This array will contain each chart instantiation.
 \item \textbf{THREEDC.renderAll()} : This method will use THREEDC.allCharts to call the particular render method of each chart type.
 \item \textbf{THREEDC.removeAll()} : The same as the previous , but to remove all charts.
-\item \textbf{THREEDC.baseMixin()} : A "mixin" object that will be explained next.
+\item \textbf{THREEDC.baseMixin()} : A mixin object that will be explained next.
 \end{itemize}
 
 Is have been used two remarkable techniques widely used in Javascript, a \textbf{mixin} to provide us inheritance between the different chart types avoiding the need of repeating common code(and for abstraction) and the method \textbf{chaining}, a technique that can be used to simplify code in scenarios that involve calling multiple functions on the same object consecutively.
@@ -1253,7 +1253,7 @@ The mixin will act like a father class, containing the common features in all ch
 
 \begin{figure}
   \centering
-  \includegraphics[width=12cm, keepaspectratio]{img/mixin}
+  \includegraphics[width=10cm, keepaspectratio]{img/mixin}
   \caption{ Basic mixin structure }
   \label{fig:mixinstructure}
 \end{figure}
@@ -1264,11 +1264,24 @@ Here we have a code example which creates the previous iteration demo using the 
 \begin{lstlisting}[frame=single]
 //crossfilter index,dimensions and groups previously created
 ...
-var barsCharts=
+//we pass coordinates for place the chart for now
+var bars = THREEDC.barsChart([0,0,0]);
+    bars.group(groupOne)
+        .dimension(dimemsionOne)
+        .width(200)
+        .height(200)
+        .color(0xff8000);
+        
+var pie = THREEDC.pieChart([300,100,0]);
+    pie.group(groupTwo)
+      .dimension(dimTwo)
+      .radius(100)
+      .color(0xff0000);
+
+THREEDC.renderAll();
 \end{lstlisting}
 
-
-
+Now we can render a lot of charts with a few code lines, and also we can set size and color settings as we prefer.
 
 \subsection{Iteration 5: Panel creation and additional features}
 
@@ -1276,6 +1289,8 @@ Once we built the basic architecture, in the final iteration we will add some ad
 
 \begin{itemize}
 \item Implement interval filters.
+\item ordenacion de tiempos
+\item Add a new type of chart, the smooth curve chart.
 \item Add customizable grids and labels.
 \item Add panels to contain related charts
 \end{itemize}
