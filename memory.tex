@@ -1260,11 +1260,11 @@ The mixin will act like a father class, containing the common features in all ch
 
 Once we have the mixin structure(\ref{fig:mixinstructure}), we'll implement the different chart types. All chart types will instantiate a mixin, and then they will add its own build method and parameters. The basic component of a chart will be a '\textbf{part},' a single mesh that will contain info of the crossfilter's groups, this is, keys and values, so the mixin must have another data structure to save this parts. Every chart must build each part separately because the interaction events have to be bound to each part. After call a specific chart type function, this is added to the global data structure (THREEDC.allCharts),then it calls its build function, which creates every chart part, add the basic events using the mixin methods and finally will be rendered if we call the specific render method of this chart or the global render method (THREEDC.renderAll()).
 
-Here we have a code example which creates the previous iteration demo using the framework:
+Here we have a code example which creates the previous iteration's demo using the framework:
 \begin{lstlisting}[frame=single]
 //crossfilter index,dimensions and groups previously created
 ...
-//we pass coordinates for place the chart for now
+//we pass coordinates to place the chart for now
 var bars = THREEDC.barsChart([0,0,0]);
     bars.group(groupOne)
         .dimension(dimemsionOne)
@@ -1288,13 +1288,24 @@ Now we can render a lot of charts with a few code lines, and also we can set siz
 Once we built the basic architecture, in the final iteration we will add some additional features:
 
 \begin{itemize}
-\item Implement interval filters.
-\item ordenacion de tiempos
 \item Add a new type of chart, the smooth curve chart.
 \item Add customizable grids and labels.
 \item Add panels to contain related charts
 \end{itemize}
 
+We have three basic chart types as we have seen, all of them rendered in 3D, but it would be interesting have some type of chart rendered in 2D, this is supported by Three.js in many ways, one of them is to build a CatmullRom spline, it is a type of interpolating spline (a curve that goes through its control points) defined by four control points. This results on a smooth curve along the given points. However, this chart does not have interactivity because the construction process does not allow to create single parts, so we can just drag the chart and see how it changes when other filters are applied.
+
+Now that we have various types of charts, we will create a process to add grids and labels to the charts automatically. The grids and the labels are common in all chart types, except for the pie chart, so we need to add more methods to the mixin \ref{fig:mixinstructure2}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=16cm, keepaspectratio]{img/mixin2}
+  \caption{ Extended mixin structure }
+  \label{fig:mixinstructure2}
+\end{figure}
+
+The creation process of the grids is similar to the chart creation process, using THREE.LineBasicMaterial and THREE.Line, we create single lines which are saved in a new data structure (like the chart parts ) and then are placed properly if we call the method gridsOn() at the creation time.
+ 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % DISEÑO E IMPLEMENTACIÓN %
@@ -1326,7 +1337,6 @@ Let's take a look to a simplification of the library's architecture \ref{fig:Arc
 \cleardoublepage
 \chapter{Resultados}
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CONCLUSIONES %
@@ -1335,7 +1345,6 @@ Let's take a look to a simplification of the library's architecture \ref{fig:Arc
 \cleardoublepage
 \chapter{Conclusiones}
 \label{chap:conclusiones}
-
 
 \section{Consecución de objetivos}
 \label{sec:consecucion-objetivos}
@@ -1346,7 +1355,6 @@ donde se planteaba el objetivo general y se elaboraban los específicos.
 Es aquí donde hay que debatir qué se ha conseguido y qué no. Cuando algo no
 se ha conseguido, se ha de justificar, en términos de qué problemas se han
 encontrado y qué medidas se han tomado para mitigar esos problemas.
-
 
 \section{Aplicación de lo aprendido}
 \label{sec:aplicacion}
@@ -1370,7 +1378,6 @@ Aquí viene lo que has aprendido en el Trabajo Fin de Grado/Máster.
   \item b
 \end{enumerate}
 
-
 \section{Trabajos futuros}
 \label{sec:trabajos_futuros}
 
@@ -1378,7 +1385,6 @@ Ningún software se termina, así que aquí vienen ideas y funcionalidades
 que estaría bien tener implementadas en el futuro.
 
 Es un apartado que sirve para dar ideas de cara a futuros TFGs/TFMs.
-
 
 \section{Valoración personal}
 \label{sec:valoracion}
