@@ -9,29 +9,30 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces The scrum framework\relax }}{22}{figure.caption.11}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Index of Stemkoski tutorials \relax }}{26}{figure.caption.12}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Three.js 'Hello world' by Stemkoski \relax }}{32}{figure.caption.13}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Different materials, same light source (the white sphere)\relax }}{32}{figure.caption.14}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Basic}}}{32}{subfigure.4.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Lambert}}}{32}{subfigure.4.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Phong}}}{32}{subfigure.4.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Wireframe}}}{32}{subfigure.4.4}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Commits(blue) and authors(red) \relax }}{35}{figure.caption.15}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Two points of view\relax }}{35}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{35}{subfigure.6.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{35}{subfigure.6.2}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Line and pie charts built with line shapes\relax }}{37}{figure.caption.17}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{37}{subfigure.7.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{37}{subfigure.7.2}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Color change thanks to ray caster \relax }}{38}{figure.caption.18}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces 3D text \relax }}{39}{figure.caption.19}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces dc.js example \relax }}{40}{figure.caption.20}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Example of filtering, note that the bars chart is ordered from top to bottom for now\relax }}{41}{figure.caption.21}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {before click}}}{41}{subfigure.11.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {after click}}}{41}{subfigure.11.2}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Basic mixin structure \relax }}{43}{figure.caption.22}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Extended mixin structure \relax }}{45}{figure.caption.23}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Three.js 'Hello world' by Stemkoski \relax }}{26}{figure.caption.13}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Different materials, same light source (the white sphere)\relax }}{27}{figure.caption.14}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Basic}}}{27}{subfigure.4.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Lambert}}}{27}{subfigure.4.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Phong}}}{27}{subfigure.4.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Wireframe}}}{27}{subfigure.4.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Commits(blue) and authors(red) \relax }}{29}{figure.caption.15}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Two points of view\relax }}{30}{figure.caption.16}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{30}{subfigure.6.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{30}{subfigure.6.2}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Line and pie charts built with line shapes\relax }}{31}{figure.caption.17}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{31}{subfigure.7.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{31}{subfigure.7.2}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Color change thanks to ray caster \relax }}{32}{figure.caption.18}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces 3D text \relax }}{33}{figure.caption.19}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces dc.js example \relax }}{35}{figure.caption.20}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Example of filtering, note that the bars chart is ordered from top to bottom for now\relax }}{36}{figure.caption.21}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {before click}}}{36}{subfigure.11.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {after click}}}{36}{subfigure.11.2}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Basic mixin structure \relax }}{37}{figure.caption.22}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Extended mixin structure \relax }}{39}{figure.caption.23}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Example with panels, labels and grids \relax }}{40}{figure.caption.24}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Basic structure\relax }}{48}{figure.caption.24}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Basic structure\relax }}{42}{figure.caption.25}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
