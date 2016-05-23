@@ -8,48 +8,47 @@
 \BOOKMARK [1][-]{section.2.1}{Free software}{chapter.2}% 8
 \BOOKMARK [1][-]{section.2.2}{Objetivos espec\355ficos}{chapter.2}% 9
 \BOOKMARK [1][-]{section.2.3}{Planificaci\363n temporal}{chapter.2}% 10
-\BOOKMARK [0][-]{chapter.3}{Objetivos}{}% 11
-\BOOKMARK [1][-]{section.3.1}{Objetivo general}{chapter.3}% 12
-\BOOKMARK [1][-]{section.3.2}{Objetivos espec\355ficos}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.3}{Planificaci\363n temporal}{chapter.3}% 14
-\BOOKMARK [0][-]{chapter.4}{Used technologies}{}% 15
-\BOOKMARK [1][-]{section.4.1}{HTML5}{chapter.4}% 16
-\BOOKMARK [2][-]{subsection.4.1.1}{General description}{section.4.1}% 17
-\BOOKMARK [2][-]{subsection.4.1.2}{In this project}{section.4.1}% 18
-\BOOKMARK [1][-]{section.4.2}{Javascript}{chapter.4}% 19
-\BOOKMARK [2][-]{subsection.4.2.1}{Main features}{section.4.2}% 20
-\BOOKMARK [2][-]{subsection.4.2.2}{In this project}{section.4.2}% 21
-\BOOKMARK [1][-]{section.4.3}{JQuery}{chapter.4}% 22
-\BOOKMARK [1][-]{section.4.4}{WebGL}{chapter.4}% 23
-\BOOKMARK [2][-]{subsection.4.4.1}{Support}{section.4.4}% 24
-\BOOKMARK [2][-]{subsection.4.4.2}{In this project}{section.4.4}% 25
-\BOOKMARK [1][-]{section.4.5}{Three}{chapter.4}% 26
-\BOOKMARK [2][-]{subsection.4.5.1}{Usage example}{section.4.5}% 27
-\BOOKMARK [2][-]{subsection.4.5.2}{In this project}{section.4.5}% 28
-\BOOKMARK [1][-]{section.4.6}{Domevents}{chapter.4}% 29
-\BOOKMARK [1][-]{section.4.7}{Crossfilter}{chapter.4}% 30
-\BOOKMARK [2][-]{subsection.4.7.1}{General description}{section.4.7}% 31
-\BOOKMARK [2][-]{subsection.4.7.2}{In this project}{section.4.7}% 32
-\BOOKMARK [1][-]{section.4.8}{Orbitcontrols}{chapter.4}% 33
-\BOOKMARK [0][-]{chapter.5}{Development}{}% 34
-\BOOKMARK [1][-]{subsection.5.0.1}{Scrum methodology}{chapter.5}% 35
-\BOOKMARK [2][-]{subsection.5.0.2}{Iteration 0: Investigation and learning}{subsection.5.0.1}% 36
-\BOOKMARK [2][-]{subsection.5.0.3}{Iteration 1: First demos}{subsection.5.0.1}% 37
-\BOOKMARK [2][-]{subsection.5.0.4}{Iteration 2: Interactivity and events}{subsection.5.0.1}% 38
-\BOOKMARK [2][-]{subsection.5.0.5}{Iteration 3: Filtering}{subsection.5.0.1}% 39
-\BOOKMARK [2][-]{subsection.5.0.6}{Iteration 4: Framework creation}{subsection.5.0.1}% 40
-\BOOKMARK [2][-]{subsection.5.0.7}{Iteration 5: Panel creation and additional features}{subsection.5.0.1}% 41
-\BOOKMARK [0][-]{chapter.6}{Design and implementation}{}% 42
-\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 43
-\BOOKMARK [2][-]{subsection.6.1.1}{General description}{section.6.1}% 44
-\BOOKMARK [0][-]{chapter.7}{Resultados}{}% 45
-\BOOKMARK [0][-]{chapter.8}{Conclusiones}{}% 46
-\BOOKMARK [1][-]{section.8.1}{Consecuci\363n de objetivos}{chapter.8}% 47
-\BOOKMARK [1][-]{section.8.2}{Aplicaci\363n de lo aprendido}{chapter.8}% 48
-\BOOKMARK [1][-]{section.8.3}{Lecciones aprendidas}{chapter.8}% 49
-\BOOKMARK [1][-]{section.8.4}{Trabajos futuros}{chapter.8}% 50
-\BOOKMARK [1][-]{section.8.5}{Valoraci\363n personal}{chapter.8}% 51
-\BOOKMARK [0][-]{appendix.Alph1}{Appendix}{}% 52
-\BOOKMARK [1][-]{section.Alph1.1}{HTML5 sheet}{appendix.Alph1}% 53
-\BOOKMARK [1][-]{section.Alph1.2}{Three.js's Hello world!}{appendix.Alph1}% 54
-\BOOKMARK [1][-]{section.Alph1.3}{Raycasting example}{appendix.Alph1}% 55
+\BOOKMARK [0][-]{chapter.3}{Used technologies}{}% 11
+\BOOKMARK [1][-]{section.3.1}{HTML5}{chapter.3}% 12
+\BOOKMARK [2][-]{subsection.3.1.1}{General description}{section.3.1}% 13
+\BOOKMARK [2][-]{subsection.3.1.2}{In this project}{section.3.1}% 14
+\BOOKMARK [1][-]{section.3.2}{Javascript}{chapter.3}% 15
+\BOOKMARK [2][-]{subsection.3.2.1}{Main features}{section.3.2}% 16
+\BOOKMARK [2][-]{subsection.3.2.2}{In this project}{section.3.2}% 17
+\BOOKMARK [1][-]{section.3.3}{JQuery}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.4}{WebGL}{chapter.3}% 19
+\BOOKMARK [2][-]{subsection.3.4.1}{Support}{section.3.4}% 20
+\BOOKMARK [2][-]{subsection.3.4.2}{In this project}{section.3.4}% 21
+\BOOKMARK [1][-]{section.3.5}{Three}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.5.1}{Usage example}{section.3.5}% 23
+\BOOKMARK [2][-]{subsection.3.5.2}{In this project}{section.3.5}% 24
+\BOOKMARK [1][-]{section.3.6}{Domevents}{chapter.3}% 25
+\BOOKMARK [1][-]{section.3.7}{Crossfilter}{chapter.3}% 26
+\BOOKMARK [2][-]{subsection.3.7.1}{General description}{section.3.7}% 27
+\BOOKMARK [2][-]{subsection.3.7.2}{In this project}{section.3.7}% 28
+\BOOKMARK [1][-]{section.3.8}{Orbitcontrols}{chapter.3}% 29
+\BOOKMARK [0][-]{chapter.4}{Development}{}% 30
+\BOOKMARK [1][-]{subsection.4.0.1}{Scrum methodology}{chapter.4}% 31
+\BOOKMARK [2][-]{subsection.4.0.2}{Iteration 0: Investigation and learning}{subsection.4.0.1}% 32
+\BOOKMARK [2][-]{subsection.4.0.3}{Iteration 1: First demos}{subsection.4.0.1}% 33
+\BOOKMARK [2][-]{subsection.4.0.4}{Iteration 2: Interactivity and events}{subsection.4.0.1}% 34
+\BOOKMARK [2][-]{subsection.4.0.5}{Iteration 3: Filtering}{subsection.4.0.1}% 35
+\BOOKMARK [2][-]{subsection.4.0.6}{Iteration 4: Framework creation}{subsection.4.0.1}% 36
+\BOOKMARK [2][-]{subsection.4.0.7}{Iteration 5: Panel creation and additional features}{subsection.4.0.1}% 37
+\BOOKMARK [0][-]{chapter.5}{Design and implementation}{}% 38
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 39
+\BOOKMARK [2][-]{subsection.5.1.1}{Panel creation}{section.5.1}% 40
+\BOOKMARK [2][-]{subsection.5.1.2}{Bars chart}{section.5.1}% 41
+\BOOKMARK [2][-]{subsection.5.1.3}{Line chart}{section.5.1}% 42
+\BOOKMARK [2][-]{subsection.5.1.4}{Pie chart}{section.5.1}% 43
+\BOOKMARK [2][-]{subsection.5.1.5}{Smooth curve chart}{section.5.1}% 44
+\BOOKMARK [0][-]{chapter.6}{Resultados}{}% 45
+\BOOKMARK [0][-]{chapter.7}{Conclusions}{}% 46
+\BOOKMARK [1][-]{section.7.1}{Achievement of objectives}{chapter.7}% 47
+\BOOKMARK [1][-]{section.7.2}{Application of lessons learned}{chapter.7}% 48
+\BOOKMARK [1][-]{section.7.3}{Lessons learned}{chapter.7}% 49
+\BOOKMARK [1][-]{section.7.4}{Future work}{chapter.7}% 50
+\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 51
+\BOOKMARK [1][-]{section.A.1}{HTML5 sheet}{appendix.A}% 52
+\BOOKMARK [1][-]{section.A.2}{Three.js's Hello world!}{appendix.A}% 53
+\BOOKMARK [1][-]{section.A.3}{Raycasting example}{appendix.A}% 54

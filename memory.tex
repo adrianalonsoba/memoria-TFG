@@ -23,7 +23,7 @@
 \usepackage[a4paper, left=2.5cm, right=2.5cm, top=3cm, bottom=3cm]{geometry}
 \usepackage{times}
 \usepackage[latin1]{inputenc}
-\usepackage[spanish]{babel} % Comenta esta línea si tu memoria es en inglés
+%\usepackage[spanish]{babel} % Comenta esta línea si tu memoria es en inglés
 \usepackage{url}
 %\usepackage[dvipdfm]{graphicx}
 \usepackage{graphicx}
@@ -48,7 +48,7 @@
 
 \begin{document}
 
-\renewcommand{\refname}{Bibliografía}  %% Renombrando
+%\renewcommand{\refname}{Bibliografía}  %% Renombrando
 \renewcommand{\appendixname}{Apéndice}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -161,7 +161,7 @@ mi familia / mi abuelo / mi abuela}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% Agradecimientos
 
-\chapter*{Agradecimientos}
+\chapter*{Gratefulness}
 %\addcontentsline{toc}{chapter}{Agradecimientos} % si queremos que aparezca en el índice
 \markboth{AGRADECIMIENTOS}{AGRADECIMIENTOS} % encabezado 
 
@@ -301,6 +301,8 @@ Sobre el uso de las comas\footnote{\url{http://narrativabreve.com/2015/02/opinio
 \chapter{Proyect context}
 \label{chap:pcontext}
 
+
+
 \section{Free software}
 \label{sec:objetivos-especificos}
 
@@ -311,29 +313,6 @@ Sobre el uso de las comas\footnote{\url{http://narrativabreve.com/2015/02/opinio
 
 \section{Planificación temporal}
 \label{sec:planificacion-temporal}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% OBJETIVOS %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\cleardoublepage
-\chapter{Objetivos}
-\label{chap:objetivos}
-
-\section{Objetivo general}
-label{sec:objetivo-general}
-
-
-\section{Objetivos específicos}
-label{sec:objetivos-especificos}
-
-
-\section{Planificación temporal}
-label{sec:planificacion-temporal}
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -418,7 +397,6 @@ inc(); // returns 3
 \subsection{In this project}
 
 Is have been used JavaScript for all the scripts in the project, and also, all the libraries we have included are written in JavaScript, these libraries are described in detail on the following sections.  
-
 
 \section{JQuery}
 \label{sec:jquery}
@@ -624,21 +602,14 @@ Since most interactions only involve a single dimension, and then only small adj
 \subsection{In this project}
 As we will see in its corresponding section, we can filter the dimensions of our data sets, leading to re-render (or rebuild) the charts related to this dimension, so, in order to improve the performance, we need to handle the data sets as fast as we can, and Crossfilter allow us to do it extremely fast.
 
-
-AÑADO UN EJEMPLO DE USO CON CODIGO?¿
-
 \section{Orbitcontrols}
-
-LO PONGO?¿
+LO PONGO?
 \label{sec:oc}
 
-Puedes citar libros, como el de Bonabeau et al. sobre procesos estigmérgicos~\cite{bonabeau:_swarm}. % Nota que el ~ añade un espacio en blanco, pero no deja que exista un salto de línea. Imprescindible ponerlo para las citas.
-
-También existe la posibilidad de poner notas al pie de página, por ejemplo, 
-una para indicarte que visite la página de 
-LibreSoft\footnote{\url{http://www.libresoft.es}}.
-
 \chapter{Development}
+
+In this chapter we will describe our work methodology and the development process, in the next section we'll explain our methodology and in the next the development.
+
 \subsection{Scrum methodology}
 Scrum is an iterative and incremental agile software development framework for managing product development. It defines "a flexible, holistic product development strategy where a development team works as a unit to reach a common goal", challenges assumptions of the "traditional, sequential approach" to product development, and enables teams to self-organize by encouraging physical co-location or close online collaboration of all team members, as well as daily face-to-face communication among all team members and disciplines in the project.
 
@@ -676,15 +647,13 @@ Sprints or iterations:
 \item \textbf{Iteration 2}: Add interactivity, handle events.
 \item \textbf{Iteration 3}: Add Crossfilter functionality.
 \item \textbf{Iteration 4}: Create the framework architecture and implement it.
-\item \textbf{Iteration 5}: Add panels to contain related charts.
+\item \textbf{Iteration 5}: Add panels to contain related charts and additional features.
 \end{enumerate}
 
 \subsection{Iteration 0: Investigation and learning} 
 This is not an iteration itself, but it is a necessary part of the development, so we decided to include it as 'iteration 0' and here we will get the tools we will need to make our software. 
 
 At the beginning, there was a lot of things to explore. First of all, we had to choose a webGL framework to avoid its low abstraction level, as we said in the webGL section, there are a lot of javascript libraries to do this. Probably, the two most important today are Three.js and Babylon.js, both of them are free software and its code is hosted at Github ,but, although Babylon.js is written by Microsoft workers, Three.js has a larger developer community with more code examples. Here we have a little code demo to see how to create a similar basic scene in Three.js and Babylon.js:
-
-MOVER A APENDICES
 
 - Initialize a blank canvas:
 
@@ -910,8 +879,6 @@ In addition, we also explored the possibility of joining both charts by rectangl
 
 Now we will focus on the continuous line chart representation, this is a rather more complicated representation than the previous because we have to draw the line manually. In this case, there are no defined mesh geometry in Three.js that can serve us, so we have to do it with the object 'THREE.Shape'. With this, we can draw any shape by connecting points with different methods, having done this, we must to give depth to the shape with 'THREE.ExtrudeGeometry', a geometry type for the handmade shapes. Here is a code example of how to make a simple line shape made with straight lines:
 
-¿LO PASO A APENDICE?
-
 \begin{lstlisting}[frame=single]
 var charShape = new THREE.Shape();
 charShape.moveTo( 0,0 );
@@ -1130,7 +1097,7 @@ Now that we have various types of charts, we will create a process to add grids 
 
 The creation process of the grids is similar to the chart creation process, using THREE.LineBasicMaterial and THREE.Line, we create single lines which are saved in a new data structure (like the chart parts) and then are placed properly if we call the method gridsOn() at the creation time. The same with the labels, we need another data structure to save them, then they are placed using the coordinates used to place the grids, but with the labels, we have an additional problem, we don't know the label's size a priori, leading to an overlap possibility. At this point, we had two options, use some type of size normalization or calculate each label size and place them properly according to this size. We opted for the second option because the first option would lead to different size labels or cut labels, maybe the the choice possibility will be implemented in the future.
 
-Finally we will focus on one of the most important features of the framework, the \textbf{panel creation}. Up to now, the charts were dragged individually and we used only coordinates to place them, but we thought that have panels to place the charts as if it were a HTML div allowing us to drag them together(for example), would be useful. 
+Finally we will focus on one of the most important features of the framework, the \textbf{panel creation}. Up to now, the charts were dragged individually and we used only coordinates to place them, but we thought that have panels to place the charts as if it were a HTML div allowing us to drag them together(for example), would be useful. To make this, first we need a new THREEDC object, to contain the panels, the \textbf{THREEDC.addPanel}
 
 \begin{figure}
   \centering
@@ -1159,8 +1126,22 @@ Let's take a look to a simplification of the library's architecture \ref{fig:Arc
   \caption{Basic structure}
   \label{fig:Architecture}
 \end{figure}
-\subsection{General description}
+
+
+\subsection{Panel creation}
 \label{sec:html5gd}
+
+\subsection{Bars chart}
+\label{sec:bars}
+
+\subsection{Line chart}
+\label{sec:line}
+
+\subsection{Pie chart}
+\label{sec:pie}
+
+\subsection{Smooth curve chart}
+\label{sec:smooth}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1176,11 +1157,11 @@ Let's take a look to a simplification of the library's architecture \ref{fig:Arc
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \cleardoublepage
-\chapter{Conclusiones}
-\label{chap:conclusiones}
+\chapter{Conclusions}
+\label{chap:conclusions}
 
-\section{Consecución de objetivos}
-\label{sec:consecucion-objetivos}
+\section{Achievement of objectives}
+\label{sec:aoo}
 
 Esta sección es la sección espejo de las dos primeras del capítulo de objetivos,
 donde se planteaba el objetivo general y se elaboraban los específicos.
@@ -1189,8 +1170,8 @@ Es aquí donde hay que debatir qué se ha conseguido y qué no. Cuando algo no
 se ha conseguido, se ha de justificar, en términos de qué problemas se han
 encontrado y qué medidas se han tomado para mitigar esos problemas.
 
-\section{Aplicación de lo aprendido}
-\label{sec:aplicacion}
+\section{Application of lessons learned}
+\label{sec:aplication}
 
 Aquí viene lo que has aprendido durante el Grado/Máster y que has aplicado
 en el TFG/TFM. Una buena idea es poner las asignaturas más relacionadas y
@@ -1201,8 +1182,8 @@ comentar en un párrafo los conocimientos y habilidades puestos en práctica.
   \item b
 \end{enumerate}
 
-\section{Lecciones aprendidas}
-\label{sec:lecciones_aprendidas}
+\section{Lessons learned}
+\label{sec:ll}
 
 Aquí viene lo que has aprendido en el Trabajo Fin de Grado/Máster.
 
@@ -1211,26 +1192,21 @@ Aquí viene lo que has aprendido en el Trabajo Fin de Grado/Máster.
   \item b
 \end{enumerate}
 
-\section{Trabajos futuros}
-\label{sec:trabajos_futuros}
+\section{Future work}
+\label{sec:fw}
 
-Ningún software se termina, así que aquí vienen ideas y funcionalidades
-que estaría bien tener implementadas en el futuro.
-
-Es un apartado que sirve para dar ideas de cara a futuros TFGs/TFMs.
-
-\section{Valoración personal}
-\label{sec:valoracion}
-
-Finalmente (y de manera opcional), hay gente que se anima a dar su punto de
-vista sobre el proyecto, lo que ha aprendido, lo que le gustaría haber aprendido,
-las tecnologías utilizadas y demás.
+\begin{enumerate}
+  \item Mejora de dragging con grupos
+  \item mejora grafica y optimización
+  \item mas tipos de graficos
+  \item añadir animaciones
+  \item integracion con elastic search y kibana
+\end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % APÉNDICE(S) %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \cleardoublepage
 \appendix
 \chapter{Appendix}
