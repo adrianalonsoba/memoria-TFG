@@ -396,11 +396,7 @@ inc(); // returns 3
 \end{lstlisting}
 \subsection{In this project}
 
-Is have been used JavaScript for all the scripts in the project, and also, all the libraries we have included are written in JavaScript, these libraries are described in detail on the following sections.  
-
-\section{JQuery}
-\label{sec:jquery}
-PREGUNTAR SI LO INCLUYO, YA QUE SOLO SE USA EVENTUALENTE PARA RECOGER LOS DATOS Y NO ES PARTE DE LA LIBRERIA
+Is have been used JavaScript for all the scripts in the project, and also, all the libraries we have included are written in JavaScript, these libraries are described in detail in the following sections.  
 
 \section{WebGL}
 \label{sec:wgl}
@@ -565,7 +561,6 @@ In addition, we have a very complete Udacity course where we can learn the found
 
 %ERROR DE COMPILACION?¿ Other option to see the Three fundamentals is this \footnote{\url{http://davidscottlyons.com/threejs/presentations/frontporch14/#slide-0}} complete slide presentation 
 
-
 \section{Domevents}
 \label{sec:de}
 
@@ -603,7 +598,7 @@ Since most interactions only involve a single dimension, and then only small adj
 As we will see in its corresponding section, we can filter the dimensions of our data sets, leading to re-render (or rebuild) the charts related to this dimension, so, in order to improve the performance, we need to handle the data sets as fast as we can, and Crossfilter allow us to do it extremely fast.
 
 \section{Orbitcontrols}
-LO PONGO?
+This is a Three's extension used to drag, rotate, zoom and move around the scene.
 \label{sec:oc}
 
 \chapter{Development}
@@ -643,7 +638,7 @@ Sprints or iterations:
 
 \begin{enumerate}
 \item \textbf{Iteration 0}: This step mostly consist of investigation and learning.
-\item \textbf{Iteration 1}: First simple but functional demo with no interactivity.
+\item \textbf{Iteration 1}: First simple but functional demos with no interactivity.
 \item \textbf{Iteration 2}: Add interactivity, handle events.
 \item \textbf{Iteration 3}: Add Crossfilter functionality.
 \item \textbf{Iteration 4}: Create the framework architecture and implement it.
@@ -973,8 +968,7 @@ function onMouseMove( event ) {
 }
 \end{lstlisting}
 
-Doing this, we can move any mesh around the plane. Rotating the plane we can move the meshes in any direction, you can check it here\footnote{\url{http://adrianalonsoba.github.io/threeboard/demo15/}}.
-
+Doing this, we can move any mesh around the plane. Rotating the plane we can move the meshes in any direction, you can check it here and you can rotate the plane by changing the controls \footnote{\url{http://adrianalonsoba.github.io/threeboard/demo15/}}.
 
 \subsection{Iteration 3: Filtering}
 
@@ -1097,7 +1091,7 @@ Now that we have various types of charts, we will create a process to add grids 
 
 The creation process of the grids is similar to the chart creation process, using THREE.LineBasicMaterial and THREE.Line, we create single lines which are saved in a new data structure (like the chart parts) and then are placed properly if we call the method gridsOn() at the creation time. The same with the labels, we need another data structure to save them, then they are placed using the coordinates used to place the grids, but with the labels, we have an additional problem, we don't know the label's size a priori, leading to an overlap possibility. At this point, we had two options, use some type of size normalization or calculate each label size and place them properly according to this size. We opted for the second option because the first option would lead to different size labels or cut labels, maybe the the choice possibility will be implemented in the future.
 
-Finally we will focus on one of the most important features of the framework, the \textbf{panel creation}. Up to now, the charts were dragged individually and we used only coordinates to place them, but we thought that have panels to place the charts as if it were a HTML div allowing us to drag them together(for example), would be useful. To make this, first we need a new THREEDC object, to contain the panels, the \textbf{THREEDC.addPanel}
+Finally we will focus on one of the most important features of the framework, the \textbf{panel creation}. Up to now, the charts were dragged individually and we used only coordinates to place them, but we thought that have panels to place the charts as if it were a HTML div allowing us to drag them together(for example), would be useful. To make this, first we need a new THREEDC object, to contain the panels, the \textbf{THREEDC.addPanel}. This method will have a "panel", a single mesh which will contain the charts we want add to it. The panel need its own render and remove methods besides an array to contain its charts, when a chart is added to the panel, it is saved to the array and placed in the plane using the method "panel.makeAnchorPoints" which depending on the number of charts we want to add to the panel it creates anchor points to put them, so when a new chart is added, it is automatically placed at the next available anchor point.
 
 \begin{figure}
   \centering
@@ -1129,6 +1123,7 @@ Let's take a look to a simplification of the library's architecture \ref{fig:Arc
 
 
 \subsection{Panel creation}
+añadir que se puede hacer drag tanto de los charts de forma individual como de un panel entero
 \label{sec:html5gd}
 
 \subsection{Bars chart}
@@ -1159,16 +1154,6 @@ Let's take a look to a simplification of the library's architecture \ref{fig:Arc
 \cleardoublepage
 \chapter{Conclusions}
 \label{chap:conclusions}
-
-\section{Achievement of objectives}
-\label{sec:aoo}
-
-Esta sección es la sección espejo de las dos primeras del capítulo de objetivos,
-donde se planteaba el objetivo general y se elaboraban los específicos.
-
-Es aquí donde hay que debatir qué se ha conseguido y qué no. Cuando algo no
-se ha conseguido, se ha de justificar, en términos de qué problemas se han
-encontrado y qué medidas se han tomado para mitigar esos problemas.
 
 \section{Application of lessons learned}
 \label{sec:aplication}
