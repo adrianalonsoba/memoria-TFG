@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.1.26)  26 MAY 2016 10:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.1.26)  26 MAY 2016 11:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -786,7 +786,7 @@ Chapter 5.
 <img/diagram.png, id=932, 994.71625pt x 723.70375pt>
 File: img/diagram.png Graphic file (type png)
  <use img/diagram.png>
-Package pdftex.def Info: img/diagram.png used on input line 1119.
+Package pdftex.def Info: img/diagram.png used on input line 1122.
 (pdftex.def)             Requested size: 341.43306pt x 248.40814pt.
 
 [41
@@ -801,7 +801,7 @@ Chapter 6.
 ]
 Chapter 7.
 
-Overfull \hbox (18.91838pt too wide) in paragraph at lines 1161--1163
+Overfull \hbox (18.91838pt too wide) in paragraph at lines 1164--1166
 \OT1/ptm/m/n/12 maci[]on"(Information Sys-tems En-gi-neer-ing) or "De-sar-rollo
  de Apli-ca-ciones Telem[]aticas"(Telematic
  []
@@ -832,11 +832,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [52]
 [53] [54]
 No file memory.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1446.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1446.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1449.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1449.
 (./memory.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1446.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1446.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1449.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1449.
 
 Package rerunfilecheck Info: File `memory.out' has not changed.
 (rerunfilecheck)             Checksum: A91E7ECC89B4165C78E4CFEC332B07F0;3391.
@@ -844,7 +844,7 @@ Package rerunfilecheck Info: File `memory.out' has not changed.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1446.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1449.
  ) 
 Here is how much of TeX's memory you used:
  10170 strings out of 493105
@@ -862,7 +862,7 @@ urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/ut
 mb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on memory.pdf (72 pages, 2207161 bytes).
+Output written on memory.pdf (72 pages, 2207221 bytes).
 PDF statistics:
  1393 PDF objects out of 1440 (max. 8388607)
  1269 compressed objects within 13 object streams
