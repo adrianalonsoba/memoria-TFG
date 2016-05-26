@@ -45,7 +45,7 @@
 \contentsline {chapter}{\numberline {7}Conclusions}{45}{chapter.7}
 \contentsline {section}{\numberline {7.1}Application of lessons learned}{45}{section.7.1}
 \contentsline {section}{\numberline {7.2}Lessons learned}{45}{section.7.2}
-\contentsline {section}{\numberline {7.3}Future work}{45}{section.7.3}
+\contentsline {section}{\numberline {7.3}Future work}{46}{section.7.3}
 \contentsline {chapter}{\numberline {A}Appendix}{47}{appendix.A}
 \contentsline {section}{\numberline {A.1}HTML5 sheet}{47}{section.A.1}
 \contentsline {section}{\numberline {A.2}Three.js's Hello world!}{48}{section.A.2}
