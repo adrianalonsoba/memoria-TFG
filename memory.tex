@@ -1151,7 +1151,7 @@ var _chart = THREEDC.baseMixin({});
 \end{lstlisting}
 Then, each chart type will add its necessary properties and methods to the instantiated mixin.
 
-Here we have its properties:
+Here we have its \underline{properties}:
 \begin{itemize}
 \item \textbf{parts}: Array with the meshes that making up the chart.
 \item \textbf{xLabels}: Array with the 3D labels in the x axis.
@@ -1161,29 +1161,42 @@ Here we have its properties:
 \item \textbf{\_gridsOn}: Boolean that enables the grids, false by default.
 \item \textbf{\_numberOfXLabels}: Number of labels rendered in the x axis, 9 by default (10 are showed).
 \item \textbf{\_numberOfYLabels}: Number of labels rendered in the y axis, 9 by default (10 are showed).
-\item \textbf{\_width}: The chart width in the Three.js's relative units,100 by default. 
-\item \textbf{\_height}: The chart height in the Three.js's relative units,100 by default.
+\item \textbf{\_width}: The chart width in the Three.js's relative units, 100 by default. 
+\item \textbf{\_height}: The chart height in the Three.js's relative units, 100 by default.
 \end{itemize}
-and methods:
+\underline{Methods}:
 
 \begin{itemize}
-\item \textbf{parts}: Array with all instantiated charts.
-\item \textbf{xLabels}: Array with all instantiated panels.
-\item \textbf{yLabels}: The single 3D text showed with info of a chart part.
-\item \textbf{xGrids}: Current chart to be dragged.
-\item \textbf{yGrids}: Filter value or values to be applied
-\item \textbf{\_gridsOn}: Filter value or values to be applied
-\item \textbf{\_numberOfXLabels}: Filter value or values to be applied
-\item \textbf{\_numberOfYLabels}: Filter value or values to be applied
-\item \textbf{\_width}: Filter value or values to be applied
-\item \textbf{\_height}: Filter value or values to be applied
+\item \textbf{render}: It calls the specific build method of the chart and adds it to the scene.
+\item \textbf{remove}: This method removes the chart and all its elements before remove it from THREEDC.allCharts.
+\item \textbf{reBuild}: This method rebuilds the chart when a filter is added.
+\item \textbf{addEvents}: This method adds the basic events to every part of the chart.
+\item \textbf{removeEvents}: Remove the events from all parts of the chart.
+\item \textbf{addGrids}: It builds the grids of the chart in function of the number of labels
+\item \textbf{renderGrids}: Renders the grids.
+\item \textbf{removeGrids}: Removes the grids
+\item \textbf{addLabels}: Builds the labels of the chart, the number of labels is passed by a chaining method.
+\item \textbf{renderLabels}: Renders the labels.
+\item \textbf{removeLabels}: It removes the label.
 \end{itemize}
 
 
+\underline{Chaining methods}, this methods are called by the user:
 
-\section{Panel creation}
-añadir que se puede hacer drag tanto de los charts de forma individual como de un panel entero
-\label{sec:html5gd}
+\begin{itemize}
+\item \textbf{group}:Sets the Crossfilters's group of the chart, mandatory.
+\item \textbf{dimension}:Sets the Crossfilters's dimension, mandatory.
+\item \textbf{width}: Sets the chart's width, 100 by default as we have seen in its corresponding property.
+\item \textbf{height}: Sets the chart's height, 100 by default as we have seen in its corresponding property too.
+\item \textbf{gridsOn}: It enables the grids of the chart, it is disabled by default.
+\item \textbf{gridsOff}: Disables the grids.
+\item \textbf{numberOfXLabels}: Sets the number of labels that we want to be rendered on the x axis,9 by default.
+\item \textbf{numberOfYLabels}: The same with the y axis.
+\item \textbf{color}: Establishes the main color of the chart,(if it isn't a pie) it can be a string with the main colors ("red","blue"...f.e) but it is recommended use the hexadecimal HTML color codes to achieve a properly events functionality.
+\item \textbf{depth}: Sets the depth of the charts.
+\end{itemize}
+
+In the next sections we will explain how the chart implementations use the mixin and how to use them.
 
 \section{Bars chart}
 \label{sec:bars}
@@ -1196,6 +1209,10 @@ añadir que se puede hacer drag tanto de los charts de forma individual como de u
 
 \section{Smooth curve chart}
 \label{sec:smooth}
+
+\section{Panel creation}
+añadir que se puede hacer drag tanto de los charts de forma individual como de un panel entero
+\label{sec:html5gd}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
