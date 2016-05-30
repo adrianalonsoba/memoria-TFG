@@ -1114,29 +1114,25 @@ Finally we will focus on one of the most important features of the framework, th
 
 In this chapter we will describe the library's final architecture in detail, showing how it works with the basic functions and data structures. 
 
-The code follow an object-oriented programming approximation, as we can see in \ref{fig:Architecture}, we have a global class that contain the data structures and methods, \textbf{THREEDC}
+The code follow an object-oriented programming approximation, as we can see in \ref{fig:Architecture}, we have a global object that contain the data structures and methods, \textbf{THREEDC}
 
  which have the next properties:
  \begin{itemize}
- \item
- \item
- \item 
- \item
- \item
- \item
- \item
+ \item \textbf{allCharts}: Array with all instantiated charts.
+ \item \textbf{allPanels}: Array with all instantiated panels.
+ \item \textbf{textLabel}: The single 3D text showed with info of a chart part.
+ \item \textbf{chartToDrag}: Current chart to be dragged.
+ \item \textbf{intervalFilter}: Filter value or values to be applied
  \end{itemize}
  
  and methods:
  
  \begin{itemize}
- \item
- \item
- \item 
- \item
- \item
- \item
- \item
+ \item \textbf{addPanel(coords,numberOfCharts)}: This method add a panel which will contain related charts, allowing us to handle them together, it receives coordinates to place the panel, the number of the charts that will contain, and the size.
+ \item \textbf{renderAll()}: This method call the render method of each chart contained into "allCharts".
+ \item \textbf{removeAll()}: It removes all charts from the scene.
+ \item \textbf{removeEvents()}: This one removes the events of all charts.
+ \item \textbf{baseMixin(chart)}: This method is a mixin with the common properties and methods of all charts, and it will be explained in the next subsection\ref{sec:tm}.
  \end{itemize}
  
 \begin{figure}
