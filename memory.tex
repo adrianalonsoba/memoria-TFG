@@ -1124,7 +1124,7 @@ The code follow an object-oriented programming approximation, as we can see in \
  \item \textbf{chartToDrag}: Current chart to be dragged.
  \item \textbf{intervalFilter}: Filter value or values to be applied
  \end{itemize}
- 
+
  and methods:
  
  \begin{itemize}
@@ -1132,7 +1132,7 @@ The code follow an object-oriented programming approximation, as we can see in \
  \item \textbf{renderAll()}: This method call the render method of each chart contained into "allCharts".
  \item \textbf{removeAll()}: It removes all charts from the scene.
  \item \textbf{removeEvents()}: This one removes the events of all charts.
- \item \textbf{baseMixin(chart)}: This method is a mixin with the common properties and methods of all charts, and it will be explained in the next subsection\ref{sec:tm}.
+ \item \textbf{baseMixin(\_chart)}: This is a mixin with the common properties and methods of all charts, and it will be explained in the next subsection \ref{sec:tm}.
  \end{itemize}
  
 \begin{figure}
@@ -1142,26 +1142,59 @@ The code follow an object-oriented programming approximation, as we can see in \
   \label{fig:Architecture}
 \end{figure}
 
-and the mixin, which will be described in the next subsection.
-
-\subsection{The mixin}
+\section{The mixin}
 \label{sec:tm}
-aqui explico las funciones del mixin
+This method must be called by all the chart types to get the common features. It is like a father class, each chart type will inherit its properties and functions and it will add its own ones if it needs. Each chart must create a variable with the mixin, passing an empty object like this:
 
-\subsection{Panel creation}
+\begin{lstlisting}[frame=single]
+var _chart = THREEDC.baseMixin({});
+\end{lstlisting}
+Then, each chart type will add its necessary properties and methods to the instantiated mixin.
+
+Here we have its properties:
+\begin{itemize}
+\item \textbf{parts}: Array with the meshes that making up the chart.
+\item \textbf{xLabels}: Array with the 3D labels in the x axis.
+\item \textbf{yLabels}: Array with the 3D labels in the y axis.
+\item \textbf{xGrids}: Array with the 3D grids in the x axis.
+\item \textbf{yGrids}: Array with the 3D grids in the y axis.
+\item \textbf{\_gridsOn}: Boolean that enables the grids, false by default.
+\item \textbf{\_numberOfXLabels}: Number of labels rendered in the x axis, 9 by default (10 are showed).
+\item \textbf{\_numberOfYLabels}: Number of labels rendered in the y axis, 9 by default (10 are showed).
+\item \textbf{\_width}: The chart width in the Three.js's relative units,100 by default. 
+\item \textbf{\_height}: The chart height in the Three.js's relative units,100 by default.
+\end{itemize}
+and methods:
+
+\begin{itemize}
+\item \textbf{parts}: Array with all instantiated charts.
+\item \textbf{xLabels}: Array with all instantiated panels.
+\item \textbf{yLabels}: The single 3D text showed with info of a chart part.
+\item \textbf{xGrids}: Current chart to be dragged.
+\item \textbf{yGrids}: Filter value or values to be applied
+\item \textbf{\_gridsOn}: Filter value or values to be applied
+\item \textbf{\_numberOfXLabels}: Filter value or values to be applied
+\item \textbf{\_numberOfYLabels}: Filter value or values to be applied
+\item \textbf{\_width}: Filter value or values to be applied
+\item \textbf{\_height}: Filter value or values to be applied
+\end{itemize}
+
+
+
+\section{Panel creation}
 añadir que se puede hacer drag tanto de los charts de forma individual como de un panel entero
 \label{sec:html5gd}
 
-\subsection{Bars chart}
+\section{Bars chart}
 \label{sec:bars}
 
-\subsection{Line chart}
+\section{Line chart}
 \label{sec:line}
 
-\subsection{Pie chart}
+\section{Pie chart}
 \label{sec:pie}
 
-\subsection{Smooth curve chart}
+\section{Smooth curve chart}
 \label{sec:smooth}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
