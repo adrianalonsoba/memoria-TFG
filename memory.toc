@@ -38,16 +38,16 @@
 \contentsline {section}{\numberline {5.1}Introduction}{41}{section.5.1}
 \contentsline {section}{\numberline {5.2}The mixin}{42}{section.5.2}
 \contentsline {section}{\numberline {5.3}Bars chart}{44}{section.5.3}
-\contentsline {section}{\numberline {5.4}Line chart}{45}{section.5.4}
-\contentsline {section}{\numberline {5.5}Pie chart}{45}{section.5.5}
-\contentsline {section}{\numberline {5.6}Smooth curve chart}{45}{section.5.6}
-\contentsline {section}{\numberline {5.7}Panel creation}{45}{section.5.7}
-\contentsline {chapter}{\numberline {6}Resultados}{47}{chapter.6}
-\contentsline {chapter}{\numberline {7}Conclusions}{49}{chapter.7}
-\contentsline {section}{\numberline {7.1}Application of lessons learned}{49}{section.7.1}
-\contentsline {section}{\numberline {7.2}Lessons learned}{49}{section.7.2}
-\contentsline {section}{\numberline {7.3}Future work}{50}{section.7.3}
-\contentsline {chapter}{\numberline {A}Appendix}{51}{appendix.A}
-\contentsline {section}{\numberline {A.1}HTML5 sheet}{51}{section.A.1}
-\contentsline {section}{\numberline {A.2}Three.js's Hello world!}{52}{section.A.2}
-\contentsline {section}{\numberline {A.3}Raycasting example}{57}{section.A.3}
+\contentsline {section}{\numberline {5.4}Line chart}{47}{section.5.4}
+\contentsline {section}{\numberline {5.5}Pie chart}{47}{section.5.5}
+\contentsline {section}{\numberline {5.6}Smooth curve chart}{47}{section.5.6}
+\contentsline {section}{\numberline {5.7}Panel creation}{47}{section.5.7}
+\contentsline {chapter}{\numberline {6}Resultados}{49}{chapter.6}
+\contentsline {chapter}{\numberline {7}Conclusions}{51}{chapter.7}
+\contentsline {section}{\numberline {7.1}Application of lessons learned}{51}{section.7.1}
+\contentsline {section}{\numberline {7.2}Lessons learned}{51}{section.7.2}
+\contentsline {section}{\numberline {7.3}Future work}{52}{section.7.3}
+\contentsline {chapter}{\numberline {A}Appendix}{53}{appendix.A}
+\contentsline {section}{\numberline {A.1}HTML5 sheet}{53}{section.A.1}
+\contentsline {section}{\numberline {A.2}Three.js's Hello world!}{54}{section.A.2}
+\contentsline {section}{\numberline {A.3}Raycasting example}{59}{section.A.3}
