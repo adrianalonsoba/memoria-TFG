@@ -1114,7 +1114,7 @@ Finally we will focus on one of the most important features of the framework, th
 
 In this chapter we will describe the library's final architecture in detail, showing how it works with the basic functions and data structures. 
 
-The code follow an object-oriented programming approximation, as we can see in \ref{fig:Architecture}, we have a global object that contain the data structures and methods, \textbf{THREEDC}
+The code follows an object-oriented programming approximation, as we can see in \ref{fig:Architecture}, we have a global object that contain the data structures and methods, \textbf{THREEDC}
 
  which have the next properties:
  \begin{itemize}
@@ -1200,6 +1200,15 @@ In the next sections we will explain how the chart implementations use the mixin
 
 \section{Bars chart}
 \label{sec:bars}
+
+This is the first chart we implemented and we will use it to explain how each chart implementation use the mixin and its own properties and methods. The most important is the \textbf{build} method, it is called by THREEDC.renderAll() method, but every chart type has its own implementation. When a chart is instantiated by the user, first, it creates the mixin, then if it belongs to any panel, it is placed in the panel,then it is registered to THREEDC.allCharts and finally it defines its build method. The build method uses THREE.js, Crossfliter's groups and dimensions and the user parameters passed by the chaining methods to create the chart. Once the chart is built, the events and the labels are added by calling the addEvents and addGrids methods, respectively, the grids are added if we call the gridsOn method at the creation time.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=12cm, keepaspectratio]{img/diagram3}
+  \caption{From instantiation to rendering}
+  \label{fig:process}
+\end{figure}
 
 \section{Line chart}
 \label{sec:line}
