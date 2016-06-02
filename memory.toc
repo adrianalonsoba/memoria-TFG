@@ -23,12 +23,13 @@
 \contentsline {subsection}{\numberline {2.6.1}General description}{17}{subsection.2.6.1}
 \contentsline {subsection}{\numberline {2.6.2}In this project}{17}{subsection.2.6.2}
 \contentsline {section}{\numberline {2.7}Orbitcontrols}{18}{section.2.7}
+\contentsline {section}{\numberline {2.8}dat.GUI}{18}{section.2.8}
 \contentsline {chapter}{\numberline {3}Development}{19}{chapter.3}
 \contentsline {subsection}{\numberline {3.0.1}Scrum methodology}{19}{subsection.3.0.1}
 \contentsline {subsection}{\numberline {3.0.2}Iteration 0: Investigation and learning}{21}{subsection.3.0.2}
 \contentsline {subsection}{\numberline {3.0.3}Iteration 1: First demos}{26}{subsection.3.0.3}
 \contentsline {subsection}{\numberline {3.0.4}Iteration 2: Interactivity and events}{30}{subsection.3.0.4}
-\contentsline {subsection}{\numberline {3.0.5}Iteration 3: Filtering}{33}{subsection.3.0.5}
+\contentsline {subsection}{\numberline {3.0.5}Iteration 3: Filtering}{32}{subsection.3.0.5}
 \contentsline {subsection}{\numberline {3.0.6}Iteration 4: Framework creation}{35}{subsection.3.0.6}
 \contentsline {subsection}{\numberline {3.0.7}Iteration 5: Panel creation and additional features}{37}{subsection.3.0.7}
 \contentsline {chapter}{\numberline {4}Design and results}{41}{chapter.4}
@@ -39,11 +40,11 @@
 \contentsline {section}{\numberline {4.5}Pie chart}{47}{section.4.5}
 \contentsline {section}{\numberline {4.6}Smooth curve chart}{48}{section.4.6}
 \contentsline {section}{\numberline {4.7}Panels}{48}{section.4.7}
-\contentsline {chapter}{\numberline {5}Conclusions}{51}{chapter.5}
-\contentsline {section}{\numberline {5.1}Application of lessons learned}{51}{section.5.1}
-\contentsline {section}{\numberline {5.2}Lessons learned}{52}{section.5.2}
-\contentsline {section}{\numberline {5.3}Future work}{52}{section.5.3}
-\contentsline {chapter}{\numberline {A}Appendix}{53}{appendix.A}
-\contentsline {section}{\numberline {A.1}HTML5 sheet}{53}{section.A.1}
-\contentsline {section}{\numberline {A.2}Three.js's Hello world!}{54}{section.A.2}
-\contentsline {section}{\numberline {A.3}Raycasting example}{59}{section.A.3}
+\contentsline {chapter}{\numberline {5}Conclusions}{53}{chapter.5}
+\contentsline {section}{\numberline {5.1}Application of lessons learned}{53}{section.5.1}
+\contentsline {section}{\numberline {5.2}Lessons learned}{54}{section.5.2}
+\contentsline {section}{\numberline {5.3}Future work}{54}{section.5.3}
+\contentsline {chapter}{\numberline {A}Appendix}{55}{appendix.A}
+\contentsline {section}{\numberline {A.1}HTML5 sheet}{55}{section.A.1}
+\contentsline {section}{\numberline {A.2}Three.js's Hello world!}{56}{section.A.2}
+\contentsline {section}{\numberline {A.3}Raycasting example}{61}{section.A.3}
