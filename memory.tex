@@ -1296,6 +1296,7 @@ THREEDC.renderAll();
 \end{figure}
 
 \section{Panels}
+\label{sec:panels}
 
 The panels are simple plane meshes with anchor points where we can place the related charts to handle them together. This is its interface: \textbf{THREEDC.addPanel(coords,numberOfCharts,size)} 
 
@@ -1303,18 +1304,36 @@ Where the parameters are:
 
 \begin{itemize}
 \item \textbf{coords}: The panel's geometric center where it will be placed, must be a vector([x,y,z]).
-\item \textbf{numberOfCharts}: The number of charts that the panel will contain. With this number, 
-anchor points shall be calculated in function of the panel size, and then, the charts will be placed on them.
+\item \textbf{numberOfCharts}: The number of charts that the panel will contain.
 \item \textbf{size}: The size of the panel in the Three.js's relative units, must be a vector ([width, height]).
-\end{itemize}
+\end{itemize}.
 
+Its methods are:
+\begin{itemize}
+\item \textbf{makeAnchorPoints}: This method calculates points to place the charts in function of the number of charts that it will contain and de the size of the panel.
+\item \textbf{reBuild}: This method updates the anchor points when the panel changes its place.
+\item \textbf{remove}: It removes the panel and all of its charts.
+\end{itemize}.
 
+Here we have an example of an empty panel's instantiation:
 \begin{lstlisting}[frame=single]
-
+var panel=THREEDC.addPanel([0,0,0],4,[500,500]);
 \end{lstlisting}
 
-añadir que se puede hacer drag tanto de los charts de forma individual como de un panel entero
-\label{sec:html5gd}
+\begin{figure}
+  \centering
+  \includegraphics[width=16cm, keepaspectratio]{img/emptypanel}
+  \caption{Empty panel example}
+  \label{fig:ep}
+\end{figure}
+
+Note that the panels are interdependent to the charts and there is no need to call any render method to see them alone.
+
+Until now, the charts are placed just using coordinates, but now we can place them into the panels, to do this, we can pass the the panel which we want to contain the charts instead of the coordinates. 
+
+-añadir que se puede hacer drag tanto de los charts de forma individual como de un panel entero
+PONER VARIOS EJEMPLOS DE CAPTURAS CON DEMOS EN DIFERENTES POSICIONES 
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1322,8 +1341,6 @@ añadir que se puede hacer drag tanto de los charts de forma individual como de u
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \cleardoublepage
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CONCLUSIONES %
@@ -1332,6 +1349,8 @@ añadir que se puede hacer drag tanto de los charts de forma individual como de u
 \cleardoublepage
 \chapter{Conclusions}
 \label{chap:conclusions}
+
+EXTENDEREME MAS AQUI, HAY QUE PONER QUE EN EL CAPITULO ANTERIOR AL FINAL SE VE TODA LA FUNCIONALIDAD Y LA POTENCIA DE LA BIBLIOTECA, CON EJEMPLOS DE COMO SE HARIA CON DC Y COMO SE HACE CON ESTO, QUE SE PUEDE HACER, COMO SE PUEDE HACER Y QUE VENTAJAS TIENE, COMO POR EJEMPLO QUE TENIENDO CUALQUIER ESCENA HECHA EN TRHEE, SE PUEDE AÑADIR CUALQUIER COSA DE ESTA BIBLIOTECA FACILMENTE SIMPLEMENTE LLAMANDO AL CODIGO
 
 We can say we have fulfilled the main objectives we set at the beginning of the project, this is, achieve a similar functionality to DC.js made in 3D with THREE.js and webGL with free software. So, if you have any idea of how to use DC.js and THREE.js, you can create your own 3D dashboards easily, if you don't, just take a look to the API \footnote{\url{https://github.com/adrianalonsoba/threeboard/blob/master/docs/api.md}}.
 
@@ -1356,7 +1375,6 @@ There is also a lot of things that i learned trough the project development, her
 
 \section{Future work}
 \label{sec:fw}
-
 \begin{enumerate}
 
 \item Graphics improve: add shadows, textures, reflections,... Without neglecting performance.
