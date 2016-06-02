@@ -235,6 +235,9 @@ To do this,it has been mainly used the JavaScript programming language , and HTM
 En este capítulo se introduce el proyeto. Debería tener información general sobre 
 el mismo, dando la información sobre el contexto en el que se ha desarrollado.
 
+\section{Proyect context}
+\label{sec:pcontext}
+
 \section{Objectives}
 \label{sec:objec}
 
@@ -290,29 +293,6 @@ Sobre el uso de las comas\footnote{\url{http://narrativabreve.com/2015/02/opinio
     article 3.11
 \end{verbatim}
 }
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% PROYECT CONTEXT %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\cleardoublepage
-\chapter{Proyect context}
-\label{chap:pcontext}
-
-
-
-\section{Free software}
-\label{sec:objetivos-especificos}
-
-
-\section{Objetivos específicos}
-\label{sec:objetivos-especificos}
-
-
-\section{Planificación temporal}
-\label{sec:planificacion-temporal}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1106,7 +1086,7 @@ Finally we will focus on one of the most important features of the framework, th
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \cleardoublepage
-\chapter{Design and implementation}
+\chapter{Design and results}
 \label{chap:dai}
 
 \section{Introduction}
@@ -1209,28 +1189,28 @@ This is the first chart we implemented and we will use it to explain how each ch
   \label{fig:process}
 \end{figure}
 
-Once the process is understood, we will focus on this particular chart type, the bars chart. It is suitable for discrete values, here we have a use example where we render a bars chart with the number of commits per month from some software development.
+Once the process is understood, we will focus on this particular chart type, the bars chart. It is suitable for discrete values, here we have a use example where we render a bars chart with the number of commits per month from some software development project.
 \begin{lstlisting}[frame=single]
 //create the crossfilter's index 
- var cf=crossfilter(data);
+var cf=crossfilter(data);
 
 //create a dimension and a group per month from the data set
- dimPerMonth= cf.dimension(function(p) {return p.month;});
- groupPerMonth= dimPerMonth.group();
+dimPerMonth= cf.dimension(function(p) {return p.month;});
+groupPerMonth= dimPerMonth.group();
 
 //create the bars chart
-  var bars =  THREEDC.barsChart([0,0,0]);
-   bars.group(groupByMonth)
-  .dimension(dimByMonth)
-  .width(500)
-  .numberOfXLabels(83)
-  .numberOfYLabels(5)
-  .gridsOn()
-  .height(200)
-  .color(0xff0000)
-  .depth(20);
+var bars =  THREEDC.barsChart([0,0,0]);
+bars.group(groupByMonth)
+    .dimension(dimByMonth)
+    .width(500)
+    .numberOfXLabels(83)
+    .numberOfYLabels(5)
+    .gridsOn()
+    .height(200)
+    .color(0xff0000)
+    .depth(20);
 
-  THREEDC.renderAll();
+THREEDC.renderAll();
 \end{lstlisting}
 
 and here\ref{fig:bc} he have the result
@@ -1245,11 +1225,75 @@ and here\ref{fig:bc} he have the result
 \section{Line chart}
 \label{sec:line}
 
+The line chart offers a similar visualization to the bars chart, but with a continuous line, here we have a code example with the same data set as the previous example:
+
+\begin{lstlisting}[frame=single]
+var line =  THREEDC.lineChart([0,0,0]);
+line.group(groupByMonth)
+    .dimension(dimByMonth)
+    .width(500)
+    .numberOfXLabels(10)
+    .numberOfYLabels(15)
+    .gridsOn()
+    .height(200)
+    .color(0x0000ff)
+    .depth(20);
+
+THREEDC.renderAll();
+\end{lstlisting}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=16cm, keepaspectratio]{img/linechart}
+  \caption{Line chart example}
+  \label{fig:lc}
+\end{figure}
+
 \section{Pie chart}
 \label{sec:pie}
+The pie chart provides other type of visualization, it is suitable for reduce data groups(a pie chart with too much groups will result in less visual information) and it is divided into slices to illustrate numerical proportion. It adds an extra property which is not common with the other chart types for obvious reasons, the \textbf{radius}.
+
+\begin{lstlisting}[frame=single]
+var pie =  THREEDC.pieChart([0,0,0]);
+pie.group(groupByOrg)
+    .dimension(dimByOrg)
+    .radius(100)
+    .depth(100);
+      
+THREEDC.renderAll();
+\end{lstlisting}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=16cm, keepaspectratio]{img/piechart}
+  \caption{Pie chart example}
+  \label{fig:lc}
+\end{figure}
 
 \section{Smooth curve chart}
 \label{sec:smooth}
+
+This is the simplest chart type, the smooth curve chart uses a CatmullRom spline to draw a curve with a single mesh(it hasn't parts),also, it has no depth and no interactivity (you can't click on it but it can be dragged), however, it changes with the filters like the other chart types. Here we have an example:
+
+\begin{lstlisting}[frame=single]
+var curve =  THREEDC.smoothCurveChart([0,0,0]);
+curve.group(groupByMonth)
+     .dimension(dimByMonth)
+	 .numberOfYLabels(5)
+     .numberOfXLabels(0)
+     .gridsOn()
+     .width(500)
+     .height(200)
+     .color(0xff0000);
+THREEDC.renderAll();
+\end{lstlisting}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=16cm, keepaspectratio]{img/smooth}
+  \caption{Smooth curve chart example}
+  \label{fig:lc}
+\end{figure}
 
 \section{Panel creation}
 añadir que se puede hacer drag tanto de los charts de forma individual como de un panel entero
@@ -1261,7 +1305,7 @@ añadir que se puede hacer drag tanto de los charts de forma individual como de u
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \cleardoublepage
-\chapter{Resultados}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1271,6 +1315,8 @@ añadir que se puede hacer drag tanto de los charts de forma individual como de u
 \cleardoublepage
 \chapter{Conclusions}
 \label{chap:conclusions}
+
+We can say we have fulfilled the main objectives we set at the beginning of the project, this is, achieve a similar functionality to DC.js made in 3D with THREE.js and webGL with free software. So, if you have any idea of how to use DC.js and THREE.js, you can create your own 3D dashboards easily, if you don't, just take a look to the API \footnote{\url{https://github.com/adrianalonsoba/threeboard/blob/master/docs/api.md}}.
 
 \section{Application of lessons learned}
 \label{sec:aplication}
@@ -1283,21 +1329,24 @@ degree, so i have good programming basis to front this project i think. The most
 
 There is also a lot of things that i learned trough the project development, here we have some examples:
 
-\begin{enumerate}
-  \item Deeper knowledge of Javascript programming language and HTML5.
-  \item webGL use and implications, like 3D rendering techniques and concepts.
-  \item Use of \LaTeX by making the memory, an interesting  document preparation system.
-\end{enumerate}
+\begin{itemize}
+\item Deeper knowledge of Javascript programming language and HTML5.
+\item webGL use and implications, like 3D rendering techniques and concepts.
+\item Use of some free dashboards and dynamic charting frameworks, like Freeboard, DC and Kibana.
+\item Use of \LaTeX  by making the memory, an interesting  document preparation system.
+\item English level improved, this is my first text written in English and although it has been difficult , i've learned a lot.
+\end{itemize}
 
 \section{Future work}
 \label{sec:fw}
 
 \begin{enumerate}
-  \item Mejora de dragging con grupos
-  \item mejora grafica y optimización
-  \item mas tipos de graficos
-  \item añadir animaciones
-  \item integracion con elastic search y kibana
+
+\item Graphics improve: add shadows, textures, reflections,... Without neglecting performance.
+\item Add more chart types and charts with more dimensions.
+\item Add some type of animations.
+\item Get the data from Elasticsearch and achieve integrations with Kibana.
+\item Drag improve through making drag groups, this applies the same space transformation to all the meshes contained in the groups, improving the performance.
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
