@@ -1173,7 +1173,7 @@ Here we have its \underline{properties}:
 \item \textbf{numberOfXLabels}: Sets the number of labels that we want to be rendered on the x axis,9 by default.
 \item \textbf{numberOfYLabels}: The same with the y axis.
 \item \textbf{color}: Establishes the main color of the chart,(if it isn't a pie) it can be a string with the main colors ("red","blue"...f.e) but it is recommended use the hexadecimal HTML color codes to achieve a properly events functionality.
-\item \textbf{depth}: Sets the depth of the charts.
+\item \textbf{depth}: Sets the depth of the charts, in Three.js's relative units.
 \end{itemize}
 
 In the next sections we will explain how the chart implementations use the mixin and how to use them.
@@ -1295,7 +1295,24 @@ THREEDC.renderAll();
   \label{fig:lc}
 \end{figure}
 
-\section{Panel creation}
+\section{Panels}
+
+The panels are simple plane meshes with anchor points where we can place the related charts to handle them together. This is its interface: \textbf{THREEDC.addPanel(coords,numberOfCharts,size)} 
+
+Where the parameters are:
+
+\begin{itemize}
+\item \textbf{coords}: The panel's geometric center where it will be placed, must be a vector([x,y,z]).
+\item \textbf{numberOfCharts}: The number of charts that the panel will contain. With this number, 
+anchor points shall be calculated in function of the panel size, and then, the charts will be placed on them.
+\item \textbf{size}: The size of the panel in the Three.js's relative units, must be a vector ([width, height]).
+\end{itemize}
+
+
+\begin{lstlisting}[frame=single]
+
+\end{lstlisting}
+
 añadir que se puede hacer drag tanto de los charts de forma individual como de un panel entero
 \label{sec:html5gd}
 
@@ -1322,7 +1339,7 @@ We can say we have fulfilled the main objectives we set at the beginning of the 
 \label{sec:aplication}
 
 There is a lot of subjects related to this project in my degree, at least one-third of the subjects have some type of programming, big number if we consider that this is not a computer engineering
-degree, so i have good programming basis to front this project i think. The most related subjects would be the ones based on Javascript, like "Ingeniería de Sistemas de Información"(Information Systems Engineering) or "Desarrollo de Aplicaciones Telemáticas"(Telematic Application Development) where we learned web development mainly using Javacript. Other related examples would be "Ingeniería de Sistemas Telemáticos"(Telematic Systems Engineering) and "Servicios y Aplicaciones Telemáticas"(Telematic Applications and Services) where we learned object-oriented programming using Java and Python respectively.
+degree, so i have good programming basis to front this project, i think. The most related subjects would be the ones based on Javascript, like "Ingeniería de Sistemas de Información"(Information Systems Engineering) or "Desarrollo de Aplicaciones Telemáticas"(Telematic Application Development) where we learned web development mainly using Javacript. Other related examples would be "Ingeniería de Sistemas Telemáticos"(Telematic Systems Engineering) and "Servicios y Aplicaciones Telemáticas"(Telematic Applications and Services) where we learned object-oriented programming using Java and Python respectively.
 
 \section{Lessons learned}
 \label{sec:ll}

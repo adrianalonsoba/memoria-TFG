@@ -38,7 +38,7 @@
 \contentsline {section}{\numberline {4.4}Line chart}{46}{section.4.4}
 \contentsline {section}{\numberline {4.5}Pie chart}{47}{section.4.5}
 \contentsline {section}{\numberline {4.6}Smooth curve chart}{48}{section.4.6}
-\contentsline {section}{\numberline {4.7}Panel creation}{48}{section.4.7}
+\contentsline {section}{\numberline {4.7}Panels}{48}{section.4.7}
 \contentsline {chapter}{\numberline {5}Conclusions}{51}{chapter.5}
 \contentsline {section}{\numberline {5.1}Application of lessons learned}{51}{section.5.1}
 \contentsline {section}{\numberline {5.2}Lessons learned}{52}{section.5.2}
