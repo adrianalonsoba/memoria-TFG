@@ -957,6 +957,7 @@ function onMouseMove( event ) {
 Doing this, we can move any mesh around the plane. Rotating the plane we can move the meshes in any direction, you can check it here and you can rotate the plane by changing the controls \footnote{\url{http://adrianalonsoba.github.io/threeboard/demo15/}}.
 
 \subsection{Iteration 3: Filtering}
+\label{sec:filt}
 
 In this sprint, we must to integrate crossfilter(\ref{sec:cf}) in order to achieve a functionality that allow us to filter data sets in real time by interacting with the charts. There is already a library that do this: dc.js, a charting library with native crossfilter support and allowing highly efficient exploration on large multi-dimensional dataset (inspired by crossfilter's demo). It leverages d3.js engine to render charts in css friendly svg format.
 
@@ -1306,7 +1307,44 @@ THREEDC.renderAll();
 \section{The filters}
 \label{sec:tf}
 
-We can filter our data sets by clicking or dragging the charts
+We can filter our data sets by clicking on the charts. We have two filter types:
+\begin{itemize}
+\item \textbf{Single filter}: To apply it, we must to click on some chart's part, and its dimension's value will be added to the Crossfilter's filter, when the filter is applied, the charts are rebuilt with its values filtered.
+\item \textbf{Interval filter}: It works like the single filter, but now we filter a dimension interval by making mouse down in the first interval value and mouse up in the second interval value. 
+\end{itemize}.
+
+More details in \ref{sec:filt}.
+
+Now we are going to create the same example that we have seen in \ref{sec:filt}, but now using the framework:
+
+\begin{lstlisting}[frame=single]
+  var bars =  THREEDC.barsChart([200,0,0]);
+  bars.group(groupPerMonth)
+      .dimension(dimPerMonth)
+      .width(200)
+      .height(200)
+      .numberOfXLabels(7)
+      .gridsOn()
+      .numberOfYLabels(4)
+      .color(0x00000ff);
+
+  var pie =  THREEDC.pieChart([0,0,0]);
+  pie.group(groupPerOrg)
+      .dimension(dimPerOrg)
+      .radius(100);
+      
+  THREEDC.renderAll();      
+\end{lstlisting}
+
+\begin{figure}
+ \centering
+  \subfloat[before click]{
+    \includegraphics[width=0.50\textwidth]{img/1.png}}
+  \subfloat[after click]{
+    \includegraphics[width=0.50\textwidth]{img/2.png}}
+ \caption{Example of filtering, pie: commits per organization, bars:commits per month. After click on a particular month of the bars chart, the pie chart is rebuilt and we can see what organizations contributed in this particular month. In this case, just two organizations contributed: one with 216 and the other with 33. This proportion is reflected in the pie.}
+ \label{f:fc2}
+\end{figure}
 
 \section{Panels}
 \label{sec:panels}
@@ -1397,7 +1435,7 @@ Now let's take a look to some examples of dashboard configurations, ilustrating
 \chapter{Conclusions}
 \label{chap:conclusions}
 
-EXTENDEREME MAS AQUI, HAY QUE PONER QUE EN EL CAPITULO ANTERIOR AL FINAL SE VE TODA LA FUNCIONALIDAD Y LA POTENCIA DE LA BIBLIOTECA, CON EJEMPLOS DE COMO SE HARIA CON DC Y COMO SE HACE CON ESTO, QUE SE PUEDE HACER, COMO SE PUEDE HACER Y QUE VENTAJAS TIENE, COMO POR EJEMPLO QUE TENIENDO CUALQUIER ESCENA HECHA EN TRHEE, SE PUEDE AÑADIR CUALQUIER COSA DE ESTA BIBLIOTECA FACILMENTE SIMPLEMENTE LLAMANDO AL CODIGO
+EXTENDEREME MAS AQUI, HAY QUE PONER QUE EN EL CAPITULO ANTERIOR AL FINAL SE VE TODA LA FUNCIONALIDAD Y LA POTENCIA DE LA BIBLIOTECA, CON EJEMPLOS DE COMO SE HARIA CON DC Y COMO SE HACE CON ESTO, QUE SE PUEDE HACER, COMO SE PUEDE HACER Y QUE VENTAJAS TIENE, COMO POR EJEMPLO QUE TENIENDO CUALQUIER ESCENA HECHA EN TRHEE, SE PUEDE AÑADIR CUALQUIER COSA DE ESTA BIBLIOTECA FACILMENTE SIMPLEMENTE LLAMANDO AL CODIGO, ES FACIL CREAR TU PROPIOS CHARTS SIGUIENDO EL MIXIN
 
 We can say we have fulfilled the main objectives we set at the beginning of the project, this is, achieve a similar functionality to DC.js made in 3D with THREE.js and webGL with free software. So, if you have any idea of how to use DC.js and THREE.js, you can create your own 3D dashboards easily, if you don't, just take a look to the API \footnote{\url{https://github.com/adrianalonsoba/threeboard/blob/master/docs/api.md}}.
 

@@ -35,8 +35,11 @@
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Line chart example\relax }}{47}{figure.caption.28}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Pie chart example\relax }}{48}{figure.caption.29}
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Smooth curve chart example\relax }}{49}{figure.caption.30}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Empty panel\relax }}{50}{figure.caption.31}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Panel with a chart\relax }}{51}{figure.caption.32}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Drag's user interface\relax }}{52}{figure.caption.33}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Example of filtering, pie: commits per organization, bars:commits per month. After click on a particular month of the bars chart, the pie chart is rebuilt and we can see what organizations contributed in this particular month. In this case, just two organizations contributed: one with 216 and the other with 33. This proportion is reflected in the pie.\relax }}{50}{figure.caption.31}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {before click}}}{50}{subfigure.7.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {after click}}}{50}{subfigure.7.2}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Empty panel\relax }}{51}{figure.caption.32}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Panel with a chart\relax }}{52}{figure.caption.33}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Drag's user interface\relax }}{53}{figure.caption.34}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
