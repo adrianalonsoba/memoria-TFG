@@ -41,12 +41,12 @@
 \contentsline {section}{\numberline {4.6}Smooth curve chart}{48}{section.4.6}
 \contentsline {section}{\numberline {4.7}The filters}{49}{section.4.7}
 \contentsline {section}{\numberline {4.8}Panels}{50}{section.4.8}
-\contentsline {section}{\numberline {4.9}Examples}{53}{section.4.9}
-\contentsline {chapter}{\numberline {5}Conclusions}{55}{chapter.5}
-\contentsline {section}{\numberline {5.1}Application of lessons learned}{55}{section.5.1}
-\contentsline {section}{\numberline {5.2}Lessons learned}{56}{section.5.2}
-\contentsline {section}{\numberline {5.3}Future work}{56}{section.5.3}
-\contentsline {chapter}{\numberline {A}Appendix}{59}{appendix.A}
-\contentsline {section}{\numberline {A.1}HTML5 sheet}{59}{section.A.1}
-\contentsline {section}{\numberline {A.2}Three.js's Hello world!}{60}{section.A.2}
-\contentsline {section}{\numberline {A.3}Raycasting example}{65}{section.A.3}
+\contentsline {section}{\numberline {4.9}Examples}{54}{section.4.9}
+\contentsline {chapter}{\numberline {5}Conclusions}{57}{chapter.5}
+\contentsline {section}{\numberline {5.1}Application of lessons learned}{57}{section.5.1}
+\contentsline {section}{\numberline {5.2}Lessons learned}{58}{section.5.2}
+\contentsline {section}{\numberline {5.3}Future work}{58}{section.5.3}
+\contentsline {chapter}{\numberline {A}Appendix}{61}{appendix.A}
+\contentsline {section}{\numberline {A.1}HTML5 sheet}{61}{section.A.1}
+\contentsline {section}{\numberline {A.2}Three.js's Hello world!}{62}{section.A.2}
+\contentsline {section}{\numberline {A.3}Raycasting example}{67}{section.A.3}
