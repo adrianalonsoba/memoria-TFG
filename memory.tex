@@ -1170,8 +1170,8 @@ Here we have its \underline{properties}:
 \underline{Chaining methods}, this methods are called by the user:
 
 \begin{itemize}
-\item \textbf{group}:Sets the Crossfilters's group of the chart, mandatory.
-\item \textbf{dimension}:Sets the Crossfilters's dimension, mandatory.
+\item \textbf{group}:Sets the Crossfilters's group of the chart, necessary to build the charts, mandatory.
+\item \textbf{dimension}:Sets the Crossfilters's dimension, necessary to build the charts, mandatory.
 \item \textbf{width}: Sets the chart's width, 100 by default as we have seen in its corresponding property.
 \item \textbf{height}: Sets the chart's height, 100 by default as we have seen in its corresponding property too.
 \item \textbf{gridsOn}: It enables the grids of the chart, it is disabled by default.
@@ -1180,6 +1180,8 @@ Here we have its \underline{properties}:
 \item \textbf{numberOfYLabels}: The same with the y axis.
 \item \textbf{color}: Establishes the main color of the chart,(if it isn't a pie) it can be a string with the main colors ("red","blue"...f.e) but it is recommended use the hexadecimal HTML color codes to achieve a properly events functionality.
 \item \textbf{depth}: Sets the depth of the charts, in Three.js's relative units.
+\item \textbf{opacity}: The chart's opacity, 0.8 by default.
+
 \end{itemize}
 
 In the next sections we will explain how the chart implementations use the mixin and how to use them.
@@ -1301,6 +1303,11 @@ THREEDC.renderAll();
   \label{fig:lc}
 \end{figure}
 
+\section{The filters}
+\label{sec:tf}
+
+We can filter our data sets by clicking or dragging the charts
+
 \section{Panels}
 \label{sec:panels}
 
@@ -1312,6 +1319,8 @@ Where the parameters are:
 \item \textbf{coords}: The panel's geometric center where it will be placed, must be a vector([x,y,z]).
 \item \textbf{numberOfCharts}: The number of charts that the panel will contain.
 \item \textbf{size}: The size of the panel in the Three.js's relative units, must be a vector ([width, height]).
+\item \textbf{opacity}: The panel's opacity, 0.8 by default.
+
 \end{itemize}.
 
 Its methods are:
@@ -1358,8 +1367,8 @@ THREEDC.renderAll();
   \label{fig:p1}
 \end{figure}
 
-As we can see in \ref{fig:p1}, the chart has been placed in the first free anchor point, and if you take a look to top right of the capture, you will see this \ref{fig:gui}.
-
+As we can see in \ref{fig:p1}, the chart has been placed in the first free anchor point, and if you take a look to top right of the capture, you will see this \ref{fig:gui}, a simple graphical user's interface where we can set the drag settings. The drag have to be enabled because if we want to drag a single chart, we need to click on it, but may we don't want to apply a filter, so, by activating the drag we disable the filter events to make sure we drag the charts easily without apply any filter. Then, when we finish the drag, we must disable it to get back the filter events.
+ 
 \begin{figure}
   \centering
   \includegraphics[width=16cm, keepaspectratio]{img/gui}
@@ -1367,9 +1376,11 @@ As we can see in \ref{fig:p1}, the chart has been placed in the first free ancho
   \label{fig:gui}
 \end{figure}
 
--añadir que se puede hacer drag tanto de los charts de forma individual como de un panel entero
-PONER VARIOS EJEMPLOS DE CAPTURAS CON DEMOS EN DIFERENTES POSICIONES 
+When we click on a chart or a panel with the drag activated and holding the button, we will see a white plane where we can drag around. We have the 'XY' and the 'XZ' planes to switch in the user's interface, they can be switched at any time. Finally, once we choose the position to drop the chart or the panel, just need to release the button.
 
+\section{Examples}
+\label{sec:examples}
+Now let's take a look to some examples of dashboard configurations, ilustrating 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1413,11 +1424,14 @@ There is also a lot of things that i learned trough the project development, her
 \label{sec:fw}
 \begin{enumerate}
 
-\item Graphics improve: add shadows, textures, reflections,... Without neglecting performance.
+\item Graphics improve: add shadows, textures, reflections,... Without neglecting the performance.
 \item Add more chart types and charts with more dimensions.
 \item Add some type of animations.
-\item Get the data from Elasticsearch and achieve integrations with Kibana.
-\item Drag improve through making drag groups, this applies the same space transformation to all the meshes contained in the groups, improving the performance.
+\item Add customization settings to the graphical user's interface to change the chart's colors, sizes,...etc in real time.
+\item Get the data from Elasticsearch and achieve integration with Kibana.
+\item Drag improve through making drag groups, this applies the same space transformation to all the meshes contained in the groups.
+\item Implement charts rotation.
+\item General optimization in order to improve the performance.
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

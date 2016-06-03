@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.1.26)  2 JUN 2016 13:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.1.26)  3 JUN 2016 11:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -835,34 +835,36 @@ File: img/panel1.png Graphic file (type png)
 Package pdftex.def Info: img/panel1.png used on input line 1356.
 (pdftex.def)             Requested size: 455.24408pt x 255.94386pt.
 
-<img/gui.png, id=1039, 1098.1025pt x 422.57875pt>
-File: img/gui.png Graphic file (type png)
- <use img/gui.png>
-Package pdftex.def Info: img/gui.png used on input line 1365.
-(pdftex.def)             Requested size: 455.24408pt x 175.18636pt.
- [50 <./img/emptypanel.png>] [51 <./img/panel1.png> <./img/gui.png>] [52
+Underfull \vbox (badness 1231) has occurred while \output is active []
 
-]
+ [50 <./img/emptypanel.png>] <img/gui.png, id=1055, 1098.1025pt x 422.57875pt>
+File: img/gui.png Graphic file (type png)
+
+<use img/gui.png>
+Package pdftex.def Info: img/gui.png used on input line 1367.
+(pdftex.def)             Requested size: 455.24408pt x 175.18636pt.
+ [51 <./img/panel1.png>] [52 <./img/gui.png>]
 Chapter 5.
 
-Overfull \hbox (18.6873pt too wide) in paragraph at lines 1389--1390
+Overfull \hbox (18.6873pt too wide) in paragraph at lines 1391--1392
 \OT1/ptm/m/n/12 EJEM-PLO QUE TE-NIENDO CUALQUIER ES-CENA HECHA EN TRHEE, SE PUE
 DE A[]NADIR
  []
 
 
-Overfull \hbox (4.44467pt too wide) in paragraph at lines 1389--1390
+Overfull \hbox (4.44467pt too wide) in paragraph at lines 1391--1392
 \OT1/ptm/m/n/12 CUALQUIER COSA DE ESTA BIB-LIOTECA FACIL-MENTE SIM-PLE-MENTE LL
 A-MANDO
  []
 
 
-Overfull \hbox (18.91838pt too wide) in paragraph at lines 1396--1398
+Overfull \hbox (18.91838pt too wide) in paragraph at lines 1398--1400
 \OT1/ptm/m/n/12 maci[]on"(Information Sys-tems En-gi-neer-ing) or "De-sar-rollo
  de Apli-ca-ciones Telem[]aticas"(Telematic
  []
 
 [53
+
 
 
 ] [54]
@@ -889,11 +891,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [60]
 [61] [62]
 No file memory.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1683.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1683.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1685.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1685.
 (./memory.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1683.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1683.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1685.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1685.
 
 Package rerunfilecheck Info: File `memory.out' has not changed.
 (rerunfilecheck)             Checksum: F2D0483000B1B51DB3ECDD13263301DC;3213.
@@ -901,7 +903,7 @@ Package rerunfilecheck Info: File `memory.out' has not changed.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1683.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1685.
  ) 
 Here is how much of TeX's memory you used:
  10309 strings out of 493105
@@ -919,7 +921,7 @@ urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/ut
 mb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on memory.pdf (78 pages, 2558868 bytes).
+Output written on memory.pdf (78 pages, 2559606 bytes).
 PDF statistics:
  1523 PDF objects out of 1728 (max. 8388607)
  1383 compressed objects within 14 object streams
