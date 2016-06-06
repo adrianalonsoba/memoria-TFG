@@ -1432,7 +1432,17 @@ We can have as many panels and charts as you want, the limit is your computer ha
 
 EXTENDEREME MAS AQUI, HAY QUE PONER QUE EN EL CAPITULO ANTERIOR AL FINAL SE VE TODA LA FUNCIONALIDAD Y LA POTENCIA DE LA BIBLIOTECA, CON EJEMPLOS DE COMO SE HARIA CON DC Y COMO SE HACE CON ESTO, QUE SE PUEDE HACER, COMO SE PUEDE HACER Y QUE VENTAJAS TIENE, COMO POR EJEMPLO QUE TENIENDO CUALQUIER ESCENA HECHA EN TRHEE, SE PUEDE AÑADIR CUALQUIER COSA DE ESTA BIBLIOTECA FACILMENTE SIMPLEMENTE LLAMANDO AL CODIGO, ES FACIL CREAR TU PROPIOS CHARTS SIGUIENDO LA ESTRUCTURA DEL MIXIN EL MIXIN
 
-We can say we have fulfilled the main objectives we set at the beginning of the project, this is, achieve a similar functionality to DC.js made in 3D with THREE.js and webGL with free software. So, if you have any idea of how to use DC.js and THREE.js, you can create your own 3D dashboards easily, if you don't, just take a look to the API \footnote{\url{https://github.com/adrianalonsoba/threeboard/blob/master/docs/api.md}}.
+We can say we have fulfilled the main objectives we set at the beginning of the project, this is, achieve a similar functionality to DC.js made in 3D with THREE.js and webGL with free software. This means create a framework that allow us to create custom 3D dashboards with filters possibility inside any web browser, thanks to the webGL's open graphics library.
+ So, if you have any idea of how to use DC.js and THREE.js, you can create your own 3D dashboards easily with few code lines, if you don't, just take a look to the API \footnote{\url{https://github.com/adrianalonsoba/threeboard/blob/master/docs/api.md}}.
+ 
+ However, there is additional features provided by the 3D rendering which are not possible in 2D, like overlapping charts, we can see trough them thanks to the opacity setting, the 3D drag and the camera rotation features, also we can rotate the charts to place them in different angles (not implemented yet, but it will be in the near future). Of course we can place the charts and the panels at any 3D coordinate.
+ 
+ It's important to mention
+ 
+  You can see examples of this possibilities with real data sets in the previous chapter: \ref{sec:examples}.
+
+
+
 
 \section{Application of lessons learned}
 \label{sec:aplication}
@@ -1455,8 +1465,9 @@ There is also a lot of things that i learned trough the project development, her
 
 \section{Future work}
 \label{sec:fw}
-\begin{enumerate}
 
+"A software project is never finished" said several times by several teachers along the degree, there always something to add, something to improve or something to fix, and here we have some examples:
+\begin{enumerate}
 \item Graphics improve: add shadows, textures, reflections,... Without neglecting the performance.
 \item Add more chart types and charts with more dimensions.
 \item Add some type of animations.
