@@ -48,4 +48,7 @@
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Translucent panels and charts, we can see how the light goes across the first panel}}}{52}{subfigure.12.2}
 \contentsline {figure}{\numberline {4.13}{\ignorespaces Although the charts rotation is not implemented in the framework yet, i made a simple demo to show its possibilities, in the future we will be able to put panels in different angles, forming structures, like for example, a house where the walls would be panels.\relax }}{53}{figure.caption.36}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Two pie charts with the same data.\relax }}{56}{figure.caption.37}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Pie rendered with dc.js}}}{56}{subfigure.1.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Pie rendered with THREEDC.js}}}{56}{subfigure.1.2}
 \addvspace {10\p@ }
