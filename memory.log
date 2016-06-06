@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.1.26)  6 JUN 2016 16:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.1.26)  6 JUN 2016 16:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -914,9 +914,9 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 1483--1486
  []
 
 
-Overfull \hbox (18.91838pt too wide) in paragraph at lines 1493--1495
-\OT1/ptm/m/n/12 maci[]on"(Information Sys-tems En-gi-neer-ing) or "De-sar-rollo
- de Apli-ca-ciones Telem[]aticas"(Telematic
+Overfull \hbox (9.12653pt too wide) in paragraph at lines 1493--1495
+\OT1/ptm/m/n/12 us-ing Javacript. Other re-lated ex-am-ples would be "In-ge-nie
+r[]^^Pa de Sis-temas Telem[]aticos"(Telematic
  []
 
 
@@ -963,7 +963,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1784.
 Here is how much of TeX's memory you used:
  10421 strings out of 493105
  154081 string characters out of 6137072
- 390337 words of memory out of 5000000
+ 390338 words of memory out of 5000000
  12914 multiletter control sequences out of 15000+600000
  35655 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -976,7 +976,7 @@ urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/ut
 mb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on memory.pdf (84 pages, 3339710 bytes).
+Output written on memory.pdf (84 pages, 3339799 bytes).
 PDF statistics:
  1645 PDF objects out of 1728 (max. 8388607)
  1491 compressed objects within 15 object streams

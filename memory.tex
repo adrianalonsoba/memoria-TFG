@@ -563,7 +563,7 @@ A light weight graphical user interface for changing variables in JavaScript. Ra
 
 \chapter{Development}
 
-In this chapter we will describe our work methodology and the development process, in the next section we'll explain our methodology and in the next the development.
+In this chapter we will describe our work methodology and the development process, in the next section we will explain our methodology and in the following sections we will explain the development.
 
 \subsection{Scrum methodology}
 Scrum is an iterative and incremental agile software development framework for managing product development. It defines "a flexible, holistic product development strategy where a development team works as a unit to reach a common goal", challenges assumptions of the "traditional, sequential approach" to product development, and enables teams to self-organize by encouraging physical co-location or close online collaboration of all team members, as well as daily face-to-face communication among all team members and disciplines in the project.
@@ -578,7 +578,7 @@ In scrum there are three main roles defined:
 \item \textbf{Development team}: A cross-functional group of people responsible for delivering potentially shippable increments of product at the end of every sprint.
 \end{enumerate}
 
-However, in our case the product owner and the scrum master are represented by the project tutor, so the development team is the project author. Apart from this, we follow the scrum methodology more faithfully.
+However, in our case the product owner and the scrum master are represented by the project tutor, so the development team is the project author. Apart from that, we follow the scrum methodology faithfully.
 
 A sprint (or iteration) is the basic unit of development in scrum. The sprint is a time-boxed effort; that is, it is restricted to a specific duration. The duration is fixed in advance for each sprint and is normally between one week and one month, with two weeks being the most common.
 
@@ -597,9 +597,9 @@ Scrum emphasizes working product at the end of the sprint that is really done. I
 Sprints or iterations:
 
 \begin{enumerate}
-\item \textbf{Iteration 0}: This step mostly consist of investigation and learning.
+\item \textbf{Iteration 0}: This step mostly consists of investigation and learning.
 \item \textbf{Iteration 1}: First simple but functional demos with no interactivity.
-\item \textbf{Iteration 2}: Add interactivity, handle events.
+\item \textbf{Iteration 2}: Add interactivity and handle events.
 \item \textbf{Iteration 3}: Add Crossfilter functionality.
 \item \textbf{Iteration 4}: Create the framework architecture and implement it.
 \item \textbf{Iteration 5}: Add panels to contain related charts and additional features.
@@ -608,7 +608,7 @@ Sprints or iterations:
 \subsection{Iteration 0: Investigation and learning} 
 This is not an iteration itself, but it is a necessary part of the development, so we decided to include it as 'iteration 0' and here we will get the tools we will need to make our software. 
 
-At the beginning, there was a lot of things to explore. First of all, we had to choose a webGL framework to avoid its low abstraction level, as we said in the webGL section, there are a lot of javascript libraries to do this. Probably, the two most important today are Three.js and Babylon.js, both of them are free software and its code is hosted at Github ,but, although Babylon.js is written by Microsoft workers, Three.js has a larger developer community with more code examples. Here we have a little code demo to see how to create a similar basic scene in Three.js and Babylon.js:
+At the beginning, there was a lot of things to explore. First of all, we had to choose a webGL framework to avoid its low abstraction level, as we said in the webGL section, there are loads of javascript libraries to do this. Probably, the two most important libraries nowadays are Three.js and Babylon.js, both of them are free software and its code is hosted at Github ,but, although Babylon.js is written by Microsoft workers, Three.js has a larger developer community with more code examples. Here we have a little code demo to see how to create a similar basic scene in Three.js and Babylon.js:
 
 - Initialize a blank canvas:
 
@@ -624,9 +624,9 @@ Babylon:
 //<canvas id="babylonCanvas"></canvas></div>
 var container = document.getElementById('babylonCanvas');
 \end{lstlisting}
-With Three.js we simply create an empty div as our container for the animation. Babylon.js, on the other hand, makes use of an explicitly defined HTML5 canvas to hold its 3D graphics.
+On one hand, by using Three.js we simply create an empty div as our container for the animation. Babylon.js, on the other hand, makes use of an explicitly defined HTML5 canvas to hold its 3D graphics.
 
--Next, we load the renderer (engine in the case of Babylon) which will draw to the canvas:
+-After that, we load the renderer (engine in the case of Babylon) which will draw on the canvas:
 
 Three:
  \begin{lstlisting}[frame=single]
@@ -698,11 +698,11 @@ engine.runRenderLoop(function () {
 });
 \end{lstlisting}
 
-As we can see in this example, the two frameworks have strong syntax likeness, but finally we opted for Three.js because as we said,  it has a bigger developer community  than Babylon.js.  
+As we can see in this example, the two frameworks have strong syntax likenesses, but finally we opted for Three.js because as we said,  it has a bigger developer community than Babylon.js.  
 
-Once we choose Three.js to write our framework, the next step was to study the foundations of 3D interactive graphics. If you are a passionate video game player (better known as 'gamer' nowadays) like me, you will be familiar with concepts like rendering, game engine, fps(frames per second), image resolution, pixels, GPU(graphics processing unit)... etc. If you don't, the first lesson of the Udacity course mentioned in the Three.js section~\ref{sec:titp} would be helpful.
+Once we choose Three.js to write our framework, the next step was to study the foundations of 3D interactive graphics. If you are a passionate video games player (better known as 'gamer') like me, you will be familiar with concepts like rendering, game engine, fps(frames per second), image resolution, pixels, GPU(graphics processing unit)... etc. If you don't, the first lesson of the Udacity course mentioned in the Three.js section~\ref{sec:titp}, would be helpful.
 
-The next step before to study Three.js was to brush up the Javascript language(\ref{sec:js}) and create a Github repository to contain the project. Once this is done, the best way to learn how to use a framework is to read code and play with it (the Udacity course is very good, but it would take much time), so i preferred to follow the Stemkoski tutorials.
+The next step before studying Three.js was to remember the Javascript language(\ref{sec:js}) and to  a Github repository to contain the project. Once that is done, the best way to learn how to use a framework is to read code and play with it (the Udacity course is very good, but it would take much time), so i preferred to follow the Stemkoski tutorials.
 
 \begin{figure}
   \centering
@@ -711,9 +711,9 @@ The next step before to study Three.js was to brush up the Javascript language(\
   \label{fig:car}
 \end{figure}
 
-Let's take a look to the Stemkoski's 'Hello world' code housed in the appendices: \ref{sec:threehw}
+Let's have a look to the Stemkoski's 'Hello world' code housed in the appendices: \ref{sec:threehw}
 
-In this heavily commented code we can see the fundamental aspects of a Three.js scene with no interactivity except for the mouse controls provided by the Three.js extension 'Orbit Controls' which allow us to rotate, zoom and displace the scene, you can see the final result here \ref{fig:tut} and try the demo into your web browser here\footnote{\url{http://stemkoski.github.io/Three.js/HelloWorld.html}}  
+In this heavily commented code we can see the fundamental aspects of a Three.js scene with no interactivity except for the mouse controls provided by the Three.js extension 'Orbit Controls' which allows us to rotate, zoom and displace the scene, you can see the final result here \ref{fig:tut} and try the demo into your web browser here\footnote{\url{http://stemkoski.github.io/Three.js/HelloWorld.html}}  
 
 \begin{figure}
   \centering
@@ -755,7 +755,7 @@ Once we had reviewed Javascript and understood the basics of Three.js, we were a
 
 \subsection{Iteration 1: First demos}
 
-The first iteration objective was to explore how to render different Charts types with Three.js, the main chart types we will create are the bars chart to represent discrete values, line chart for continues values and pie charts. In order to follow an appropriate  difficulty curve and for simplicity, the first chart we created was the bars chart, because the 'BoxGeometry(or CubeGeometry)' function provides us everything we need.
+The first iteration objective was to explore how to render different Charts types with Three.js, the main chart types we will create are the bars chart to represent discrete values, line chart for continues values and pie charts. In order to follow an appropriate  difficulty curve and for simplicity, the first chart we created was the bars chart, because the 'BoxGeometry(or CubeGeometry)' function provides us everything we needed.
 Here we have its constructor:
 
 \textbf{BoxGeometry}(width, height, depth, widthSegments, heightSegments, depthSegments):
@@ -776,11 +776,11 @@ Here we have its constructor:
 
 All we have to do is to take some data set and assign each value to the height parameter of the BoxGeometry function, the width value and the depth value are not much important for now (they just have visual impact). 
 
-The data set that we used for the firsts demos had an evolutionary time line with statistics from software development, we extracted the data from a JSON and then built two simple bars charts with two example values: 'commits' facing 'authors' along the time.
+The data set that we used for the firsts demos had an evolutionary time line with statistics from software development, we extracted the data from a JSON and then we built two simple bars charts with two example values: 'commits' facing 'authors' along the time.
 
 Here: \ref{sec:appendix} we have the entire HTML5 code to see the extensions we used in this first demo if you want to see it.
 
-Once we create the scene in 'script.js' as we learned, we add the custom bars to it:
+Once we created the scene in 'script.js' as we learned, we added the custom bars to it:
 
 \begin{lstlisting}[frame=single]
  
@@ -820,7 +820,7 @@ And here\footnote{\url{http://adrianalonsoba.github.io/threeboard/demo2/}} you c
 
 With this representation we can see an obvious relationship between commits and authors along the time, but thanks to the 3D renderer we can place them in different ways, for example we can form a 90 degrees angle easily just with changing the height dimension by depth dimension: \ref{f:demo2} 
 
-In addition, we also explored the possibility of joining both charts by rectangles to see if this could give us some information, however, we decided to not include this representation for now. You can see the result here \footnote{\url{http://adrianalonsoba.github.io/threeboard/demo5/}}
+In addition, we also explored the possibility of joining both charts by rectangles to see if this could give us some information, however, we decided not to include this representation for the moment. You can see the result here \footnote{\url{http://adrianalonsoba.github.io/threeboard/demo5/}}
 
 \begin{figure}
  \centering
@@ -832,7 +832,8 @@ In addition, we also explored the possibility of joining both charts by rectangl
  \label{f:demo2}
 \end{figure}
 
-Now we will focus on the continuous line chart representation, this is a rather more complicated representation than the previous because we have to draw the line manually. In this case, there are no defined mesh geometry in Three.js that can serve us, so we have to do it with the object 'THREE.Shape'. With this, we can draw any shape by connecting points with different methods, having done this, we must to give depth to the shape with 'THREE.ExtrudeGeometry', a geometry type for the handmade shapes. Here is a code example of how to make a simple line shape made with straight lines:
+Now we will focus on the continuous line chart representation, this is a rather more complicated representation than the previous one because we have to draw the line manually. In this case, there is no defined mesh geometry in Three.js that could be useful, so we had to do it with the object 'THREE.Shape'. With that, we can draw any shape by connecting points with different methods,
+.Once this is donde, we must give depth to the shape with 'THREE.ExtrudeGeometry', a geometry type for the handmade shapes. Here is a code example of how to make a simple line shape made with straight lines:
 
 \begin{lstlisting}[frame=single]
 var charShape = new THREE.Shape();
@@ -862,7 +863,7 @@ var extrusionSettings = {
   scene.add(extrudeChart);
 \end{lstlisting}
 
-To finish this sprint we could use the THREE.Shape and THREE.ExtrudeGeometry to make the pie charts too, but using other method to join the points. In the previous case we don't need to add curves, so we had only to use 'lineTo', but now we need to add curves for each pie part and this is done with the THREE.Shape method 'arc'. Let's take a look to the result: \ref{f:demoline}
+To finish this sprint we could use the THREE.Shape and THREE.ExtrudeGeometry to make the pie charts too, but using other method to join the points. In the previous case we don't need to add curves, so we only had to use 'lineTo', but now we need to add curves for each pie part and this is done with the THREE.Shape method 'arc'. Let's have a look to the result: \ref{f:demoline}
 
 \begin{figure}
  \centering
@@ -882,7 +883,7 @@ Now that we have the basic charts, the next sprint requirement was to add intera
 \item Be able to fix some chart parts by clicking and test some animation.
 \item Drag the charts.
 \end{itemize}
-There is a specific method to interact with the scene using the mouse: The 'Ray-casting', this method is to create an imaginary ray from the mouse to the scene in the camera direction and it returns an array with all the objects which intersects with the ray. Normally we only take the first intersected object (the first in the array) to do what we need. However, before to create the ray caster object, we need to add some event listeners as we will see.
+There is a specific method to interact with the scene using the mouse: The 'Ray-casting', this method is to create an imaginary ray from the mouse to the scene in the camera direction and it returns an array with all the objects which intersects with the ray. Normally we only take the first intersected object (the first in the array) to do what we need. However, before  creating the ray caster object, we need to add some event listeners as we will see.
 
 The first interactivity that we added was to change the color to the object in order to clarify which object is selected by mouse hovering, to do this we need two things, add a 'mouse move' event listener to refresh the mouse coordinates each animation frame (needed by the ray caster) and when the ray returns the array of objects, just change the mesh's color of the first element, you can see an example with code in the appendix \ref{sec:rayexample} 
 
@@ -893,9 +894,9 @@ The first interactivity that we added was to change the color to the object in o
   \label{fig:colorchange}
 \end{figure}
 
-Once understood the ray-casting method, we realize that it is unintuitive and too much wired, when the ray returns the array of objects, we eventually need to add an 'if' or 'switch' sentence for each mesh type. Having said this, we thought that to use a DOM events similar method would be interesting, being capable of bind any event to any mesh at any moment. Doing a little research over the network we found all we need: 'threex.domevents'\ref{sec:de} a little Three.js extension which allows us to bind any event to any mesh and forget the ray caster.
+Once the ray-casting method was understood, we realize that it was  unintuitive and too much wired. When the ray returns the array of objects, we eventually need to add an 'if' or 'switch' sentence for each mesh type. Having said this, we thought that to use a DOM events similar method would be interesting, being capable of bind any event to any mesh at any moment. Doing a little research over the network we found all we needed: 'threex.domevents'\ref{sec:de} a little Three.js extension which allowed us to bind any event to any mesh and forget the ray caster.
 
-Add events is much easier than before, to change the bars color just need two 'binds', one for the mouse over and one for the mouse out to restore its original color. From now on we will use this extension for add all events.
+Adding events is much easier than before, to change the bars color just need two 'binds', one for the mouse over and one for the mouse out to restore its original color. From now on we will use this extension to add all events.
 
 Now that we have all the tools to handle events let's go to add a 3D text label to each mesh showing the number of commits or authors. To do this, we can use 'THREE.TextGeometry', a function which makes simple to add 3D text to the scenes just by passing the text, the font family, the size and other optional parameters. 
 
@@ -908,7 +909,7 @@ Now that we have all the tools to handle events let's go to add a 3D text label 
 
 The second iteration objectives are not included in the final version but they gave us an idea of how fast the renderer can add and remove simple meshes from the scene. In this\footnote{\url{http://adrianalonsoba.github.io/threeboard/demo6/}}demo you can fix the bars by clicking and in this\footnote{\url{http://adrianalonsoba.github.io/threeboard/demo8/}} you can see an animation made with time intervals.
 
-The third requirement is probably the most important of the iteration. We have to be able to drag the entire charts to put them at any place of the scene. This is not supported by threex.domevents, so this is the only event we must to handle with a ray caster. The process starts like before, adding and event listener to update the mouse coordinates and instantiating the ray caster, but , in addition, now we need to create a plane which will intersect with our meshes or charts.
+The third requirement is probably the most important of the iteration. We have to be able to drag the entire charts to put them at any place of the scene. This is not supported by threex.domevents, so that is the only event we must  handle with a ray caster. The process starts like before, adding an event listener to update the mouse coordinates and instantiating the ray caster, but , in addition, now we need to create a plane which will intersect with our meshes or charts.
 
 \begin{lstlisting}[frame=single]
 function onMouseMove( event ) {
@@ -926,13 +927,12 @@ function onMouseMove( event ) {
   }
 }
 \end{lstlisting}
-
-Doing this, we can move any mesh around the plane. Rotating the plane we can move the meshes in any direction, you can check it here and you can rotate the plane by changing the controls \footnote{\url{http://adrianalonsoba.github.io/threeboard/demo15/}}.
+By doing that, we can move any mesh around the plane. Rotating the plane we can move the meshes in any direction, you can check it here and you can rotate the plane by changing the controls \footnote{\url{http://adrianalonsoba.github.io/threeboard/demo15/}}.
 
 \subsection{Iteration 3: Filtering}
 \label{sec:filt}
 
-In this sprint, we must to integrate crossfilter(\ref{sec:cf}) in order to achieve a functionality that allow us to filter data sets in real time by interacting with the charts. There is already a library that do this: dc.js, a charting library with native crossfilter support and allowing highly efficient exploration on large multi-dimensional dataset (inspired by crossfilter's demo). It leverages d3.js engine to render charts in css friendly svg format.
+In this sprint, we must integrate crossfilter(\ref{sec:cf}) in order to achieve a functionality that allow us to filter data sets in real time by interacting with the charts. There is already a library that do this: dc.js, a charting library with native crossfilter support and allowing highly efficient exploration on large multi-dimensional dataset (inspired by crossfilter's demo). It leverages d3.js engine to render charts in css friendly svg format.
 
 The main objective is to provide similar functionality to that of dc.js in 3D, so first we need to understand how dc.js and crossfilter.js works. 
 
@@ -945,14 +945,14 @@ The main objective is to provide similar functionality to that of dc.js in 3D, s
 
 The basic idea is to filter the data set by clicking the charts, if we click on the line chart for example, we can filter the entire data set using the selected value and we see how the charts change in real time. Also, we can add interval filters by selecting the interval with the mouse. Crossfilter.js use the selected values to filter its data set automatically, so when a filter is added, we just need to call the function responsible for drawing the charts.
 
-To create a demo with this, first we need a data set in the format that Crossfilter understands, this is an array of objects with the same number of key-value pairs and the same keys, here we have an example where each object represents a commit:
+To create a demo with that, first we need a data set in the format that Crossfilter understands, that is an array of objects with the same number of key-value pairs and the same keys, here we have an example where each object represents a commit:
 \begin{lstlisting}[frame=single]
 var commits=[
 {author: 8, date: "Mon Oct 20 2014 14:42:24 GMT+0200 (CEST)", hour: 12, id: 11340, month: "Wed Oct 01 2014 00:00:00 GMT+0200 (CEST)",org: 958,repo: 12,tz: 2},
 ...]
 \end{lstlisting}
 
-The data set contains 12677 objects like this one with different values but the same keys. Now we must to create a single crossfilter index, a crossfilter dimension for each chart and a group for each dimension:
+The data set contains 12677 objects like this one with different values but the same keys. Now we must create a single crossfilter index, a crossfilter dimension for each chart and a group for each dimension:
 \begin{lstlisting}[frame=single]
 //crossfilter index
 cf=crossfilter(commits);
@@ -964,7 +964,7 @@ dimByOrg= cf.dimension(function(p) {return p.org;});
 groupByOrg= dimByOrg.group();
 \end{lstlisting}
 
-Now we can use the groups to build our charts, one chart will contain the number of commits per month(a bars chart for example) and the other, the number of commits per organization(pie chart). Therefore, if we click on a particular month, crossfilter applies this filter to its index, then we call the function responsible for drawing with \textbf{no} changes needed, and we will obtain a pie chart that shows the number of commits per organization in this particular month, on the other hand, if we click on a particular organization we will see a bars chart with the number of commits per month of this organization.
+Now we can use the groups to build our charts, one chart will contain the number of commits per month(a bars chart for example) and the other, the number of commits per organization(pie chart). Therefore, if we click on a particular month, crossfilter applies this filter to its index, then we call the function responsible for drawing with \textbf{no} changes needed, and we will obtain a pie chart that shows the number of commits per organization in this particular month. What is more, if we click on a particular organization we will see a bars chart with the number of commits per month of this organization.
 
 \begin{figure}
  \centering
@@ -982,17 +982,17 @@ You can try this simple demo in here \footnote{\url{http://adrianalonsoba.github
 
 \subsection{Iteration 4: Framework creation}
  
-Now we have all the needed elements to create our library, so the main requirement for this sprint is to build the main architecture and implement it, after this sprint, we should be able to create the previous iteration's demo with a few code lines. 
+Now we have all the needed elements to create our library, so the main requirement for this sprint is to build the main architecture and implement it, after this sprint, we should be able to create the previous demo iteration with a few code lines. 
 
-The first thing we need is a global object that will contain the data structures, methods and it gives name to the framework, this object is \textbf{THREEDC}(three dimension 'dynamic' charting). THREEDC shall have three main methods and one data structure at least:
+The first thing we needed is a global object that will contain the data structures, methods and it gives name to the framework, this object is \textbf{THREEDC}(three dimension 'dynamic' charting). THREEDC shall have three main methods and one data structure at least:
 \begin{itemize}
 \item \textbf{THREEDC.allCharts:[]}: This array will contain each chart instantiation.
 \item \textbf{THREEDC.renderAll()} : This method will use THREEDC.allCharts to call the particular render method of each chart type.
-\item \textbf{THREEDC.removeAll()} : The same as the previous , but to remove all charts.
+\item \textbf{THREEDC.removeAll()} : The same as the previous , but removing all charts.
 \item \textbf{THREEDC.baseMixin()} : A mixin object that will be explained next.
 \end{itemize}
 
-Is have been used two remarkable techniques widely used in Javascript, a \textbf{mixin} to provide us inheritance between the different chart types avoiding the need of repeating common code(and for abstraction) and the method \textbf{chaining}, a technique that can be used to simplify code in scenarios that involve calling multiple functions on the same object consecutively.
+ I have used two remarkable techniques which are widely used in Javascript, a \textbf{mixin} to provide us inheritance between the different chart types avoiding the need of repeating common code(and for abstraction) and the method \textbf{chaining}, a technique that can be used to simplify code in scenarios that involve calling multiple functions on the same object consecutively.
 
 The mixin will act like a father class, containing the common features in all charts: Render and build methods, events, and the parameters of the chart:The crossfilter dimensions and groups, chart size and chart color. The parameter methods will return the own mixin in order to make possible the method chaining. 
 
@@ -1003,9 +1003,9 @@ The mixin will act like a father class, containing the common features in all ch
   \label{fig:mixinstructure}
 \end{figure}
 
-Once we have the mixin structure(\ref{fig:mixinstructure}), we'll implement the different chart types. All chart types will instantiate a mixin, and then they will add its own build method and parameters. The basic component of a chart will be a '\textbf{part},' a single mesh that will contain info of the crossfilter's groups, this is, keys and values, so the mixin must have another data structure to save this parts. Every chart must build each part separately because the interaction events have to be bound to each part. After call a specific chart type function, this is added to the global data structure (THREEDC.allCharts),then it calls its build function, which creates every chart part, add the basic events using the mixin methods and finally will be rendered if we call the specific render method of this chart or the global render method (THREEDC.renderAll()).
+Once we have the mixin structure(\ref{fig:mixinstructure}), we'll implement the different chart types. All chart types will instantiate a mixin, and then they will add its own building method and parameters. The basic component of a chart will be a '\textbf{part},' a single mesh that will contain data of the crossfilter's groups, that is, keys and values, so the mixin must have another data structure to save this parts. Every chart must build each part separately because the interaction events have to be bound to each part. After call a specific chart type function, it is added to the global data structure (THREEDC.allCharts),then it calls its build function, which creates every chart part, add the basic events using the mixin methods and finally it will be rendered if we call the specific render method of this chart or the global render method (THREEDC.renderAll()).
 
-Here we have a code example which creates the previous iteration's demo using the framework:
+Here we have a code example which creates the previous demo iteration using the framework:
 \begin{lstlisting}[frame=single]
 //crossfilter index,dimensions and groups previously created
 ...
@@ -1038,7 +1038,7 @@ Once we built the basic architecture, in the final iteration we will add some ad
 \item Add panels to contain related charts
 \end{itemize}
 
-We have three basic chart types as we have seen, all of them rendered in 3D, but it would be interesting have some type of chart rendered in 2D, this is supported by Three.js in many ways, one of them is to build a CatmullRom spline, it is a type of interpolating spline (a curve that goes through its control points) defined by four control points. This results on a smooth curve along the given points. However, this chart does not have interactivity because the construction process does not allow to create single parts, so we can just drag the chart and see how it changes when other filters are applied.
+We have three basic chart types as we have seen before, all of them rendered in 3D, but it would be interesting have some type of chart rendered in 2D, this is supported by Three.js in many ways, one of them is to build a CatmullRom spline, it is a type of interpolating spline (a curve that goes through its control points) defined by four control points. This results on a smooth curve along the given points. However, this chart does not have interactivity because the construction process does not allow to create single parts, so we can just drag the chart and see how it changes when other filters are applied.
 
 Now that we have various types of charts, we will create a process to add grids and labels to the charts automatically. The grids and the labels are common in all chart types, except for the pie chart, so we need to add more methods to the mixin: \ref{fig:mixinstructure2}
 
@@ -1049,9 +1049,9 @@ Now that we have various types of charts, we will create a process to add grids 
   \label{fig:mixinstructure2}
 \end{figure}
 
-The creation process of the grids is similar to the chart creation process, using THREE.LineBasicMaterial and THREE.Line, we create single lines which are saved in a new data structure (like the chart parts) and then are placed properly if we call the method gridsOn() at the creation time. The same with the labels, we need another data structure to save them, then they are placed using the coordinates used to place the grids, but with the labels, we have an additional problem, we don't know the label's size a priori, leading to an overlap possibility. At this point, we had two options, use some type of size normalization or calculate each label size and place them properly according to this size. We opted for the second option because the first option would lead to different size labels or cut labels, maybe the the choice possibility will be implemented in the future.
+The creation process of the grids is similar to the chart creation process, using THREE.LineBasicMaterial and THREE.Line, we create single lines which are saved in a new data structure (like the chart parts) and then are placed properly if we call the method gridsOn() at the creation time. The same with the labels, we need another data structure to save them, then they are placed using the coordinates used to place the grids. But with the labels, we have an additional problem, we don't know the label's size "a priori", leading to an overlap possibility. At this point, we had two options,first option,to use some type of size normalization or ,second option , to calculate each label size and place them properly according to this size. We opted for the second option because the first option would lead to different size labels or cut labels, maybe the choice possibility will be implemented in the future.
 
-Finally we will focus on one of the most important features of the framework, the \textbf{panel creation}. Up to now, the charts were dragged individually and we used only coordinates to place them, but we thought that have panels to place the charts as if it were a HTML div allowing us to drag them together(for example), would be useful. To make this, first we need a new THREEDC object, to contain the panels, the \textbf{THREEDC.addPanel}. This method will have a "panel", a single mesh which will contain the charts we want add to it. The panel need its own render and remove methods besides an array to contain its charts, when a chart is added to the panel, it is saved to the array and placed in the plane using the method "panel.makeAnchorPoints" which depending on the number of charts we want to add to the panel it creates anchor points to put them, so when a new chart is added, it is automatically placed at the next available anchor point.
+Finally we will focus on one of the most important features of the framework, the \textbf{panel creation}. Up to now, the charts were dragged individually and we used only coordinates to place them, but we thought that having panels to place the charts as if they were a HTML div allowing us to drag them together(for example), would be useful. To make this, first we need a new THREEDC object, to contain the panels, the \textbf{THREEDC.addPanel}. This method will have a "panel", a single mesh which will contain the charts we want add to it. The panel need its own render and remove methods besides an array to contain its charts, when a chart is added to the panel, it is saved to the array and placed in the plane using the method "panel.makeAnchorPoints" which depending on the number of charts we want to add to the panel it creates anchor points to put them, so when a new chart is added, it is automatically placed at the next available anchor point.
 
 \begin{figure}
   \centering
