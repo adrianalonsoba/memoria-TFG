@@ -35,7 +35,7 @@
 \contentsline {chapter}{\numberline {4}Design and results}{41}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{41}{section.4.1}
 \contentsline {section}{\numberline {4.2}The mixin}{42}{section.4.2}
-\contentsline {section}{\numberline {4.3}Bars chart}{44}{section.4.3}
+\contentsline {section}{\numberline {4.3}Bars chart}{45}{section.4.3}
 \contentsline {section}{\numberline {4.4}Line chart}{46}{section.4.4}
 \contentsline {section}{\numberline {4.5}Pie chart}{47}{section.4.5}
 \contentsline {section}{\numberline {4.6}Smooth curve chart}{48}{section.4.6}

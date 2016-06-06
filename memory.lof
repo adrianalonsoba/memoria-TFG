@@ -43,10 +43,10 @@
 \contentsline {figure}{\numberline {4.11}{\ignorespaces We can drag any chart out of the panel, if we want to get it back to its place, we can drag it manually or click on the panel and all the charts will return to their place automatically\relax }}{54}{figure.caption.34}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Chart out of the panel}}}{54}{subfigure.11.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {chart inside the panel}}}{54}{subfigure.11.2}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces If we set the opacity property in charts and panels, we will can see trough them, so we can put panels and charts behind others and compare them easily\relax }}{54}{figure.caption.35}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces If we set the opacity property in charts and panels, we will can see through them, so we can put panels and charts behind others and compare them easily\relax }}{54}{figure.caption.35}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Two panels}}}{54}{subfigure.12.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Translucent panels and charts, we can see how the light goes across the first panel}}}{54}{subfigure.12.2}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Although the charts rotation is not implemented in the framework yet, i made a simple demo to show its possibilities, in the future we will be able to put panels in different angles, forming structures, like for example, a house where the walls would be panels.\relax }}{55}{figure.caption.36}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Although the charts rotation is not implemented in the framework yet, I made a simple demo to show its possibilities, in the future we will be able to put panels in different angles, forming structures, like for example, a house where the walls would be panels.\relax }}{55}{figure.caption.36}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Two pie charts with the same data.\relax }}{58}{figure.caption.37}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Pie rendered with dc.js}}}{58}{subfigure.1.1}

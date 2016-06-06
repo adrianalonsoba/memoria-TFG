@@ -1080,7 +1080,7 @@ The code follows an object-oriented programming approximation, as we can see in 
  \begin{itemize}
  \item \textbf{allCharts}: Array with all instantiated charts.
  \item \textbf{allPanels}: Array with all instantiated panels.
- \item \textbf{textLabel}: The single 3D text showed with info of a chart part.
+ \item \textbf{textLabel}: The single 3D text showed with data of a chart part.
  \item \textbf{chartToDrag}: Current chart to be dragged.
  \item \textbf{intervalFilter}: Filter value or values to be applied
  \end{itemize}
@@ -1088,7 +1088,7 @@ The code follows an object-oriented programming approximation, as we can see in 
  and methods:
  
  \begin{itemize}
- \item \textbf{addPanel(coords,numberOfCharts)}: This method add a panel which will contain related charts, allowing us to handle them together, it receives coordinates to place the panel, the number of the charts that will contain, and the size.
+ \item \textbf{addPanel(coords,numberOfCharts)}: This method adds a panel which will contain related charts, allowing us to handle them together, it receives coordinates to place the panel, the number of the charts that will contain, and the size.
  \item \textbf{renderAll()}: This method call the render method of each chart contained into "allCharts".
  \item \textbf{removeAll()}: It removes all charts from the scene.
  \item \textbf{removeEvents()}: This one removes the events of all charts.
@@ -1104,7 +1104,7 @@ The code follows an object-oriented programming approximation, as we can see in 
 
 \section{The mixin}
 \label{sec:tm}
-This method must be called by all the chart types to get the common features. It is like a father class, each chart type will inherit its properties and functions and it will add its own ones if it needs. Each chart must create a variable with the mixin, passing an empty object like this:
+This method must be called by all the chart types to get the common features. It is like a father class, each chart type will inherit its properties and functions and it will add its own ones if it needs them. Each chart must create a variable with the mixin, passing an empty object like this:
 
 \begin{lstlisting}[frame=single]
 var _chart = THREEDC.baseMixin({});
@@ -1128,11 +1128,11 @@ Here we have its \underline{properties}:
 
 \begin{itemize}
 \item \textbf{render}: It calls the specific build method of the chart and adds it to the scene.
-\item \textbf{remove}: This method removes the chart and all its elements before remove it from THREEDC.allCharts.
+\item \textbf{remove}: This method removes the chart and all its elements before removing it from THREEDC.allCharts.
 \item \textbf{reBuild}: This method rebuilds the chart when a filter is added.
 \item \textbf{addEvents}: This method adds the basic events to every part of the chart.
 \item \textbf{removeEvents}: Remove the events from all parts of the chart.
-\item \textbf{addGrids}: It builds the grids of the chart in function of the number of labels
+\item \textbf{addGrids}: It builds the grids of the chart in function of the number of labels.
 \item \textbf{renderGrids}: Renders the grids.
 \item \textbf{removeGrids}: Removes the grids
 \item \textbf{addLabels}: Builds the labels of the chart, the number of labels is passed by a chaining method.
@@ -1144,8 +1144,8 @@ Here we have its \underline{properties}:
 \underline{Chaining methods}, this methods are called by the user:
 
 \begin{itemize}
-\item \textbf{group}:Sets the Crossfilters's group of the chart, necessary to build the charts, mandatory.
-\item \textbf{dimension}:Sets the Crossfilters's dimension, necessary to build the charts, mandatory.
+\item \textbf{group}:Sets the Crossfilters's group of the chart, necessary to build the charts, that is mandatory.
+\item \textbf{dimension}:Sets the Crossfilters's dimension, necessary to build the charts,that is mandatory.
 \item \textbf{width}: Sets the chart's width, 100 by default as we have seen in its corresponding property.
 \item \textbf{height}: Sets the chart's height, 100 by default as we have seen in its corresponding property too.
 \item \textbf{gridsOn}: It enables the grids of the chart, it is disabled by default.
@@ -1282,7 +1282,7 @@ THREEDC.renderAll();
 
 We can filter our data sets by clicking on the charts. We have two filter types:
 \begin{itemize}
-\item \textbf{Single filter}: To apply it, we must to click on some chart's part, and its dimension's value will be added to the Crossfilter's filter, when the filter is applied, the charts are rebuilt with its values filtered.
+\item \textbf{Single filter}: To apply it, we must click on some chart's part, and its dimension's value will be added to the Crossfilter's filter, when the filter is applied, the charts are rebuilt with its values filtered.
 \item \textbf{Interval filter}: It works like the single filter, but now we filter a dimension interval by making mouse down in the first interval value and mouse up in the second interval value. 
 \end{itemize}.
 
@@ -1378,7 +1378,7 @@ THREEDC.renderAll();
   \label{fig:p1}
 \end{figure}
 
-As we can see in \ref{fig:p1}, the chart has been placed in the first free anchor point, and if you take a look to top right of the capture, you will see this \ref{fig:gui}, a simple graphical user's interface where we can set the drag settings. The drag have to be enabled because if we want to drag a single chart, we need to click on it, but may we don't want to apply a filter, so, by activating the drag we disable the filter events to make sure we drag the charts easily without apply any filter. Then, when we finish the drag, we must disable it to get back the filter events.
+As we can see in \ref{fig:p1}, the chart has been placed in the first free anchor point, and if you have a look to the upper right corner of the capture, you will see this \ref{fig:gui}, a simple graphical user's interface where we can set the drag settings. The drag have to be enabled because if we want to drag a single chart, we need to click on it, but maybe we don't want to apply a filter, so, by activating the drag we disable the filter events to make sure we drag the charts easily without applying any filter. Then, when we finish the drag, we must disable it to get back the filter events.
  
 \begin{figure}
   \centering
@@ -1394,7 +1394,7 @@ When we click on a chart or a panel with the drag activated and holding the butt
 \section{Examples}
 \label{sec:examples}
 
-Now let's take a look to some examples of dashboard configurations, illustrating the 3D dashboard possibilities.
+Now let's have a look to some examples of dashboard configurations, illustrating the 3D dashboard possibilities.
 
 \begin{figure}
  \centering
@@ -1414,14 +1414,14 @@ We can have as many panels and charts as you want, the limit is your computer ha
     \includegraphics[width=0.50\textwidth]{img/ex4.png}}
   \subfloat[Translucent panels and charts, we can see how the light goes across the first panel]{
     \includegraphics[width=0.50\textwidth]{img/ex3.png}}
- \caption{If we set the opacity property in charts and panels, we will can see trough them, so we can put panels and charts behind others and compare them easily}
+ \caption{If we set the opacity property in charts and panels, we will can see through them, so we can put panels and charts behind others and compare them easily}
  \label{f:ex1}
 \end{figure}
 
 \begin{figure}
   \centering
   \includegraphics[width=16cm, keepaspectratio]{img/rotatexample}
-  \caption{Although the charts rotation is not implemented in the framework yet, i made a simple demo to show  its possibilities, in the future we will be able to put panels in different angles, forming structures, like for example, a house where the walls would be panels.}
+  \caption{Although the charts rotation is not implemented in the framework yet, I made a simple demo to show  its possibilities, in the future we will be able to put panels in different angles, forming structures, like for example, a house where the walls would be panels.}
   \label{fig:gui}
 \end{figure}
 
