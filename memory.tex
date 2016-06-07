@@ -41,7 +41,7 @@
 }
 \usepackage{listings}
 
-\title{Memoria del Proyecto}
+\title{Project Memory}
 \author{Adrián Alonso Barriuso}
 
 \renewcommand{\baselinestretch}{1.5}  %% Interlineado
@@ -49,7 +49,7 @@
 \begin{document}
 
 %\renewcommand{\refname}{Bibliografía}  %% Renombrando
-\renewcommand{\appendixname}{Apéndice}
+\renewcommand{\appendixname}{Appendix}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PORTADA
@@ -161,25 +161,16 @@ mi familia / mi abuelo / mi abuela}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% Agradecimientos
 
-\chapter*{Gratefulness}
+\chapter*{Acknowledgment}
 %\addcontentsline{toc}{chapter}{Agradecimientos} % si queremos que aparezca en el índice
-\markboth{AGRADECIMIENTOS}{AGRADECIMIENTOS} % encabezado 
+\markboth{Acknowledgment}{Acknowledgment} % encabezado 
 
 Aquí vienen los agradecimientos\ldots Aunque está bien acordarse de la pareja,
 no hay que olvidarse de dar las gracias a tu madre, que aunque a veces no lo 
 parezca disfrutará tanto de tus logros como tú\ldots Además, la pareja quizás
 no sea para siempre, pero tu madre sí.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%% Resumen
 
-\chapter*{Resumen}
-%\addcontentsline{toc}{chapter}{Resumen} % si queremos que aparezca en el índice
-\markboth{RESUMEN}{RESUMEN} % encabezado
-
-El presente proyecto tiene como objetivo facilitar la visualización de datos y estadísticas de desarrollo de software usando una interfaz y funcionalidad similares dc.js, sierviéndose de las posibilidades que ofrece la creación de gráficos en 3D. Esto será posible dentro de casi cualquier navegador web sin la necesidad de instalar ningún controlador, plugin o software adicional gracias a la tecnología webGL, una librería de código abierto que nos permite renderizar gráficos en 3D con aceleración gráfica de forma nativa.
-
-Para realizarlo se ha utilizado principalmente el lenguaje de programación JavaScript y HTML5 como base para poder servirse de webGL, No obstante, dado que webGL es de relativo bajo nivel y sería muy complicado realizar aplicaciones directamente sobre su API, se ha utilizado una librería que proporciona un mayor nivel de abstracción que webGL, esta librería es Three.js.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% Resumen en inglés
@@ -191,6 +182,16 @@ This project aims to facilitate the visualization of data and statistics from so
 
 To do this,it has been mainly used the JavaScript programming language , and HTML5 as the basis to use WebGL, a library that allow us to render 3D graphics with hardware acceleration natively in almost any browser. However , since webGL is relatively low level and would be very difficult to make applications directly on its API , it has been used a library that provides a higher level of abstraction than WebGL, this library is Three.js.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% Resumen
+
+\chapter*{Resumen}
+%\addcontentsline{toc}{chapter}{Resumen} % si queremos que aparezca en el índice
+\markboth{RESUMEN}{RESUMEN} % encabezado
+
+El presente proyecto tiene como objetivo facilitar la visualización de datos y estadísticas de desarrollo de software usando una interfaz y funcionalidad similares dc.js, sierviéndose de las posibilidades que ofrece la creación de gráficos en 3D. Esto será posible dentro de casi cualquier navegador web sin la necesidad de instalar ningún controlador, plugin o software adicional gracias a la tecnología webGL, una librería de código abierto que nos permite renderizar gráficos en 3D con aceleración gráfica de forma nativa.
+
+Para realizarlo se ha utilizado principalmente el lenguaje de programación JavaScript y HTML5 como base para poder servirse de webGL, No obstante, dado que webGL es de relativo bajo nivel y sería muy complicado realizar aplicaciones directamente sobre su API, se ha utilizado una librería que proporciona un mayor nivel de abstracción que webGL, esta librería es Three.js.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -246,7 +247,7 @@ This project has as main objective achieve a tool which allows create 3D dashboa
 The project has the following basic requirements:
 
 \begin{itemize}
-\item Have an object-oriented structure to facilitate future chart types thanks to the inheritance.
+\item Have an object-oriented structure to facilitate future chart types thanks to the inheritance and abstraction.
 \item Fast filter response thanks to Crossfilter.
 \item Be able to drag, zoom, and displace around the dashboard.
 \item Have a dc.js similar interface, in order to facilitate the use if you know dc.js.
