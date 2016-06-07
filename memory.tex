@@ -241,23 +241,27 @@ basis before to dive into the technical details.
 \subsection{Problem description}
 \label{subsec:probdescr}
 
-There are a lot of dashboards which have as objective facilitate abstractions to create charts
-
-En la red podemos encontrar un muchos frameworks que tienen como objetivo proveer abstracciones que nos permitan crear nuestros propios dashboards de manera sencilla y con pocas líneas de código. Un dashboard es un interfaz de usuario que nos permite gestionar un determinado software y en nuestro caso, nos permite crear diferentes tipos de gráficos que nos muestren datos de desarrollo de software libre y que además pueden interactuar entre sí. Algunos ejemplos populares de estos frameworks pueden ser Kibana, una herramienta para visualizar y explorar los datos que se encuentran indexados en ElasticSearch, Freeboard, a internet of things data visualization oriented dashboard,or dc.js, una librería que nos permite visualizar graficos con un gran número de datos y poder filtralos en tiempo real. Sin embargo, todas estas librerías tienen algo en común, nos muestran los gráficos en 2D, lo cual tiene sus ventajas, ya que al ser en 2D no se necesita ninguna aceleración gráfica ni plugin extra, por lo que el 2D además de por su simplicidad de renderización(sin apenas impacto en el rendimiento de la computadora) ha sido el método mas común de representación de datos. No obstante, la representación en 2D también tiene sus desventajas, nunca podremos visualizar gráficos que tengan maa de dos dimensiones por razones obvias, además de limitar las posibilidades de colocación y de visualización.
-
- Estas desventajas son el motivo de inspiración de este proyecto, desmarcarse del resto de este tipo de librerías en 2D y crear una que muestre las gráficas en 3D, lo cuál es ya posible sin la necesidad de ningún plugin o controlador adicional gracias a webGL, que nos permite renderizar gráficos en 3D en casi cualquier navegador web.
-
-On the web we can find lot of frameworks which objective is to provide abstraction that  allow us to create our own dashboards in an easy way with not to many code lines. A dashboard is an user interface that let us manage an specific software and in our case it allow us to create different kinds of charts that show free software developing data and also, they can interact between them. Some popular examples of this frameworks could be Kibana, a tool to visualize and explore data indexed on ElasticSearch, Freeboard, a dashboard orientated to data visualization of internet of things or dc.js a library that allows us to visualize charts with a huge amount of data and filter them in real time. However, all these libraries have something in common, they show us 2D charts, which has its advantages. Due to the fact that they are created in 2D, there is no need of graphic acceleration nor extra plugin, so that, despite the simplicity of 2D rendering(with  barely impact in hardware performance) it has been the most common method of data representation. Furthermore, 2D representation also has its disadvantages, we could never visualize charts with more than 2 dimensions for obvious reasons; and collocation and visualization possibilities are limited too.
+On the web we can find lot of frameworks which objective is to provide abstractions that  allow us to create our own dashboards in an easy way with not to many code lines. A dashboard is an user interface that let us manage a specific software and in our case it allow us to create different kinds of charts that show free software developing data and also, they can interact between them. Some popular examples of this frameworks could be Kibana, a tool to visualize and explore data indexed on ElasticSearch, Freeboard, a dashboard orientated to data visualization of internet of things or dc.js a library that allows us to visualize charts with a huge amount of data and filter them in real time. However, all these libraries have something in common, they show us 2D charts, which has its advantages. Due to the fact that they are created in 2D, there is no need of graphic acceleration nor extra plugin, so that, despite the simplicity of 2D rendering(with  barely impact in hardware performance) it has been the most common method of data representation. Furthermore, 2D representation also has its disadvantages, we could never visualize charts with more than 2 dimensions for obvious reasons; and collocation and visualization possibilities are limited too.
 
 Those disadvantages are the inspiring reason of this project, be different of the other kinds of libraries and to create one which render 3D charts, what is already possible without any plugin or additional driver thanks to webGL, that allow us to render 3D graphics in almost any web browser.
 
 \subsection{Main Objective}
 \label{subsec:mainobj}
 
-El principal objetivo es conseguir una funcionalidad 
+This project has as main objective achieve a tool which allows create 3D dashboards to visualize and filter data from free software development inside any web browser. However, the data can be extracted from any source, just it must be in the Crossfilter's(\ref{sec:cf}) format to be understood by our tool.
 
 \subsection{Requeriments}
 \label{subsec:mainobj}
+
+The project has the following basic requirements:
+
+\begin{itemize}
+\item Have an object-oriented structure to facilitate future chart types thanks to the inheritance.
+\item Fast filter response thanks to Crossfilter.
+\item Be able to drag, zoom, and displace around the dashboard.
+\item Have a dc.js similar interface, in order to facilitate the use if you know dc.js.
+\item 
+\end{itemize}
 
 \section{Proyect context}
 \label{sec:pcontext}
@@ -608,97 +612,9 @@ Sprints or iterations:
 \subsection{Iteration 0: Investigation and learning} 
 This is not an iteration itself, but it is a necessary part of the development, so we decided to include it as 'iteration 0' and here we will get the tools we will need to make our software. 
 
-At the beginning, there was a lot of things to explore. First of all, we had to choose a webGL framework to avoid its low abstraction level, as we said in the webGL section, there are loads of javascript libraries to do this. Probably, the two most important libraries nowadays are Three.js and Babylon.js, both of them are free software and its code is hosted at Github ,but, although Babylon.js is written by Microsoft workers, Three.js has a larger developer community with more code examples. Here we have a little code demo to see how to create a similar basic scene in Three.js and Babylon.js:
+At the beginning, there was a lot of things to explore. First of all, we had to choose a webGL framework to avoid its low abstraction level, as we said in the webGL section, there are loads of javascript libraries to do this. Probably, the two most important libraries nowadays are Three.js and Babylon.js, both of them are free software and its code is hosted at Github ,but, although Babylon.js is written by Microsoft workers, Three.js has a larger developer community with more code examples. Here \ref{sec:comparison} we have a little code demo to see how to create a similar basic scene in Three.js and Babylon.js:
 
-- Initialize a blank canvas:
-
-Three:
- \begin{lstlisting}[frame=single]
-//<div id="ThreeJS"></div>
-var container = document.getElementById('ThreeJS');
-\end{lstlisting}
-
-Babylon:
- \begin{lstlisting}[frame=single]
-//<div style="height:250px; width: 250px;" id="babylon">
-//<canvas id="babylonCanvas"></canvas></div>
-var container = document.getElementById('babylonCanvas');
-\end{lstlisting}
-On one hand, by using Three.js we simply create an empty div as our container for the animation. Babylon.js, on the other hand, makes use of an explicitly defined HTML5 canvas to hold its 3D graphics.
-
--After that, we load the renderer (engine in the case of Babylon) which will draw on the canvas:
-
-Three:
- \begin{lstlisting}[frame=single]
-var renderer = new THREE.WebGLRenderer();
-renderer.setSize(width, height);
-container.appendChild(renderer.domElement);
-\end{lstlisting}
-
-Babylon:
- \begin{lstlisting}[frame=single]
-var engine = new BABYLON.Engine(container, true);
-\end{lstlisting}
-
--Add scene and cameras:
-
-Three:
- \begin{lstlisting}[frame=single]
-var scene = new THREE.Scene();
-var camera = new THREE.PerspectiveCamera(100, width / height, 1, 1000);
-camera.position.set(0,150,400);
-camera.lookAt(scene.position);
-\end{lstlisting}
-
-Babylon:
- \begin{lstlisting}[frame=single]
-var scene = new BABYLON.Scene(engine);
-var camera = new BABYLON.ArcRotateCamera
-("camera", 1, 0.8, 10, new BABYLON.Vector3(0, 0, 0), scene);
-scene.activeCamera.attachControl(canvas);
-\end{lstlisting}
-
--Create a simple cube and add it to the scene:
-
-Three:
- \begin{lstlisting}[frame=single]
-var geometry = new THREE.CubeGeometry(100, 100, 100);
-var texture = THREE.ImageUtils.loadTexture('texture.gif');
-texture.anisotropy = renderer.getMaxAnisotropy();
-var material = new THREE.MeshBasicMaterial({ map: texture });
-var cube = new THREE.Mesh(cube, material);
-scene.add(mesh);
-\end{lstlisting}
-
-Babylon:
- \begin{lstlisting}[frame=single]
-var box = BABYLON.Mesh.CreateBox("box", 3.0, sceneB);
-var material = new BABYLON.StandardMaterial("texture", sceneB);
-box.material = material;
-material.diffuseTexture = new BABYLON.Texture("texture.gif", sceneB);
-\end{lstlisting}
-
--Finally, add a simple rotate animation and call the animate loop:
-Three:
- \begin{lstlisting}[frame=single]
-function animate() {
-     requestAnimationFrame(animate);
-     cube.rotation.x += 0.005;
-     cube.rotation.y += 0.01;
-     renderer.render(scene, camera);
-}
-\end{lstlisting}
-
-Babylon:
- \begin{lstlisting}[frame=single]
-engine.runRenderLoop(function () {
-     box.rotation.x += 0.005;
-     box.rotation.y += 0.01;
-     scene.render();
-});
-\end{lstlisting}
-
-As we can see in this example, the two frameworks have strong syntax likenesses, but finally we opted for Three.js because as we said,  it has a bigger developer community than Babylon.js.  
+As we can see in the mentioned example, the two frameworks have strong syntax likenesses, but finally we opted for Three.js because as we said,  it has a bigger developer community than Babylon.js.  
 
 Once we choose Three.js to write our framework, the next step was to study the foundations of 3D interactive graphics. If you are a passionate video games player (better known as 'gamer') like me, you will be familiar with concepts like rendering, game engine, fps(frames per second), image resolution, pixels, GPU(graphics processing unit)... etc. If you don't, the first lesson of the Udacity course mentioned in the Three.js section~\ref{sec:titp}, would be helpful.
 
@@ -1554,6 +1470,99 @@ There is also a lot of things that i learned through the project development, he
 		<script src="script.js"></script>
 	</body>
 </html>
+\end{lstlisting}
+
+
+
+\section{Three.js and Babylon.js comparison}
+\label{sec:comparison}
+
+- Initialize a blank canvas:
+
+Three:
+ \begin{lstlisting}[frame=single]
+//<div id="ThreeJS"></div>
+var container = document.getElementById('ThreeJS');
+\end{lstlisting}
+
+Babylon:
+ \begin{lstlisting}[frame=single]
+//<div style="height:250px; width: 250px;" id="babylon">
+//<canvas id="babylonCanvas"></canvas></div>
+var container = document.getElementById('babylonCanvas');
+\end{lstlisting}
+On one hand, by using Three.js we simply create an empty div as our container for the animation. Babylon.js, on the other hand, makes use of an explicitly defined HTML5 canvas to hold its 3D graphics.
+
+-After that, we load the renderer (engine in the case of Babylon) which will draw on the canvas:
+
+Three:
+ \begin{lstlisting}[frame=single]
+var renderer = new THREE.WebGLRenderer();
+renderer.setSize(width, height);
+container.appendChild(renderer.domElement);
+\end{lstlisting}
+
+Babylon:
+ \begin{lstlisting}[frame=single]
+var engine = new BABYLON.Engine(container, true);
+\end{lstlisting}
+
+-Add scene and cameras:
+
+Three:
+ \begin{lstlisting}[frame=single]
+var scene = new THREE.Scene();
+var camera = new THREE.PerspectiveCamera(100, width / height, 1, 1000);
+camera.position.set(0,150,400);
+camera.lookAt(scene.position);
+\end{lstlisting}
+
+Babylon:
+ \begin{lstlisting}[frame=single]
+var scene = new BABYLON.Scene(engine);
+var camera = new BABYLON.ArcRotateCamera
+("camera", 1, 0.8, 10, new BABYLON.Vector3(0, 0, 0), scene);
+scene.activeCamera.attachControl(canvas);
+\end{lstlisting}
+
+-Create a simple cube and add it to the scene:
+
+Three:
+ \begin{lstlisting}[frame=single]
+var geometry = new THREE.CubeGeometry(100, 100, 100);
+var texture = THREE.ImageUtils.loadTexture('texture.gif');
+texture.anisotropy = renderer.getMaxAnisotropy();
+var material = new THREE.MeshBasicMaterial({ map: texture });
+var cube = new THREE.Mesh(cube, material);
+scene.add(mesh);
+\end{lstlisting}
+
+Babylon:
+ \begin{lstlisting}[frame=single]
+var box = BABYLON.Mesh.CreateBox("box", 3.0, sceneB);
+var material = new BABYLON.StandardMaterial("texture", sceneB);
+box.material = material;
+material.diffuseTexture = new BABYLON.Texture("texture.gif", sceneB);
+\end{lstlisting}
+
+-Finally, add a simple rotate animation and call the animate loop:
+Three:
+ \begin{lstlisting}[frame=single]
+function animate() {
+     requestAnimationFrame(animate);
+     cube.rotation.x += 0.005;
+     cube.rotation.y += 0.01;
+     renderer.render(scene, camera);
+}
+\end{lstlisting}
+
+Babylon:
+ \begin{lstlisting}[frame=single]
+engine.runRenderLoop(function () {
+     box.rotation.x += 0.005;
+     box.rotation.y += 0.01;
+     scene.render();
+});
 \end{lstlisting}
 
 \section{Three.js's Hello world!}
