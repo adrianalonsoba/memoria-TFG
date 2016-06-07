@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.1.26)  7 JUN 2016 10:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.1.26)  7 JUN 2016 10:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -431,7 +431,7 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 59.
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-<img/logo_vect.png, id=217, 169.8345pt x 338.2236pt>
+<img/logo_vect.png, id=221, 169.8345pt x 338.2236pt>
 File: img/logo_vect.png Graphic file (type png)
  <use img/logo_vect.png>
 Package pdftex.def Info: img/logo_vect.png used on input line 61.
@@ -466,25 +466,16 @@ l.154 \chapter
 
 ] [3] [4
 
-]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 185.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 185.
- [5] [6
+] [5] [6
 
 ] [7] [8
 
-]
-(./memory.toc [9])
+] (./memory.toc [9]
+[10])
 \tf@toc=\write4
 \openout4 = `memory.toc'.
 
- [10] [11] [12
+ [11] [12
 
 ] (./memory.lof [13
 
@@ -495,20 +486,28 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
  [14]
 Chapter 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 238.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 228.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.247 
+l.237 
        [1
 
 
-]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
- been already used, duplicate ignored
+]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 249.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 249.
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.277 \cleardoublepage
+l.267 \cleardoublepage
                        [2]
 Chapter 2.
 [3
@@ -517,37 +516,37 @@ Chapter 2.
 ] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 ) [4]
-Overfull \hbox (12.20937pt too wide) in paragraph at lines 322--324
+Overfull \hbox (12.20937pt too wide) in paragraph at lines 312--314
 []$[]$\OT1/ptm/m/n/12 : JavaScript is al-most en-tirely object-based. In JavaSc
 ript,
  []
 
 [5]
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 335.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 325.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 336.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 326.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 339.
+(Font)              <7> on input line 329.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 339.
+(Font)              <5> on input line 329.
  [6]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 367.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 357.
 
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ) [7] [8]
 [9] [10]
-Overfull \hbox (3.52084pt too wide) in paragraph at lines 426--427
+Overfull \hbox (3.52084pt too wide) in paragraph at lines 416--417
 []\OT1/ptm/m/n/12 Export and im-port: util-i-ties to cre-ate Three.js-compatibl
 e JSON files from within: Blender,
  []
 
-<img/car_example.png, id=519, 1159.33125pt x 561.09625pt>
+<img/car_example.png, id=524, 1159.33125pt x 561.09625pt>
 File: img/car_example.png Graphic file (type png)
 
 <use img/car_example.png>
-Package pdftex.def Info: img/car_example.png used on input line 436.
+Package pdftex.def Info: img/car_example.png used on input line 426.
 (pdftex.def)             Requested size: 426.79134pt x 206.55785pt.
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -556,25 +555,25 @@ File: lstlang1.sty 2014/09/06 1.5e listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 ) [11 <./img/car_example.png>]
-LaTeX Font Info:    Try loading font information for OML+ptm on input line 445.
+LaTeX Font Info:    Try loading font information for OML+ptm on input line 435.
 
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlptm.fd
 File: omlptm.fd 
 )
 LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 445.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 435.
 
-[12] <img/basic_example.png, id=569, 632.3625pt x 450.68375pt>
+[12] <img/basic_example.png, id=574, 632.3625pt x 450.68375pt>
 File: img/basic_example.png Graphic file (type png)
 
 <use img/basic_example.png>
-Package pdftex.def Info: img/basic_example.png used on input line 502.
+Package pdftex.def Info: img/basic_example.png used on input line 492.
 (pdftex.def)             Requested size: 256.0748pt x 182.50528pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13 <./img/basic_example.png>]
-Overfull \hbox (21.82332pt too wide) in paragraph at lines 524--525
+Overfull \hbox (21.82332pt too wide) in paragraph at lines 514--515
 \OT1/ptm/m/n/12 To in-ter-act with our charts, we need to man-age the clas-sic 
 Javascript events , like 'click','mouseover',
  []
@@ -583,57 +582,57 @@ Javascript events , like 'click','mouseover',
 Chapter 3.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 572.
+(hyperref)                than one, level fixed on input line 562.
 
 [17
 
-] <img/scrum1.png, id=644, 1193.45876pt x 664.4825pt>
+] <img/scrum1.png, id=649, 1193.45876pt x 664.4825pt>
 File: img/scrum1.png Graphic file (type png)
  <use img/scrum1.png>
-Package pdftex.def Info: img/scrum1.png used on input line 596.
+Package pdftex.def Info: img/scrum1.png used on input line 586.
 (pdftex.def)             Requested size: 426.79134pt x 237.62166pt.
 
 [18]
 Underfull \vbox (badness 1348) has occurred while \output is active []
 
- [19 <./img/scrum1.png>] <img/tutorials.png, id=665, 1371.1225pt x 770.88pt>
+ [19 <./img/scrum1.png>] <img/tutorials.png, id=672, 1371.1225pt x 770.88pt>
 File: img/tutorials.png Graphic file (type png)
 
 <use img/tutorials.png>
-Package pdftex.def Info: img/tutorials.png used on input line 625.
+Package pdftex.def Info: img/tutorials.png used on input line 615.
 (pdftex.def)             Requested size: 426.79134pt x 239.94662pt.
- <img/tutorial1.png, id=670, 1302.8675pt x 652.4375pt>
+ <img/tutorial1.png, id=677, 1302.8675pt x 652.4375pt>
 File: img/tutorial1.png Graphic file (type png)
 
 <use img/tutorial1.png>
-Package pdftex.def Info: img/tutorial1.png used on input line 636.
+Package pdftex.def Info: img/tutorial1.png used on input line 626.
 (pdftex.def)             Requested size: 455.24408pt x 227.96828pt.
  [20 <./img/tutorials.png>]
-<img/basic.png, id=685, 528.97626pt x 427.5975pt>
+<img/basic.png, id=693, 528.97626pt x 427.5975pt>
 File: img/basic.png Graphic file (type png)
  <use img/basic.png>
-Package pdftex.def Info: img/basic.png used on input line 654.
+Package pdftex.def Info: img/basic.png used on input line 644.
 (pdftex.def)             Requested size: 113.81102pt x 91.9969pt.
 
-<img/lambert.png, id=686, 526.96875pt x 429.605pt>
+<img/lambert.png, id=694, 526.96875pt x 429.605pt>
 File: img/lambert.png Graphic file (type png)
  <use img/lambert.png>
-Package pdftex.def Info: img/lambert.png used on input line 657.
+Package pdftex.def Info: img/lambert.png used on input line 647.
 (pdftex.def)             Requested size: 113.81102pt x 92.7828pt.
 
-<img/phong.png, id=687, 525.965pt x 427.5975pt>
+<img/phong.png, id=695, 525.965pt x 427.5975pt>
 File: img/phong.png Graphic file (type png)
  <use img/phong.png>
-Package pdftex.def Info: img/phong.png used on input line 660.
+Package pdftex.def Info: img/phong.png used on input line 650.
 (pdftex.def)             Requested size: 113.81102pt x 92.5254pt.
 
-<img/wireframe.png, id=688, 524.96124pt x 425.59pt>
+<img/wireframe.png, id=696, 524.96124pt x 425.59pt>
 File: img/wireframe.png Graphic file (type png)
  <use img/wireframe.png>
-Package pdftex.def Info: img/wireframe.png used on input line 663.
+Package pdftex.def Info: img/wireframe.png used on input line 653.
 (pdftex.def)             Requested size: 113.81102pt x 92.26634pt.
 
-Overfull \hbox (11.99997pt too wide) in paragraph at lines 654--664
+Overfull \hbox (11.99997pt too wide) in paragraph at lines 644--654
  [][][][][][][][] 
  []
 
@@ -641,50 +640,50 @@ Overfull \hbox (11.99997pt too wide) in paragraph at lines 654--664
 Underfull \vbox (badness 4518) has occurred while \output is active []
 
  [21 <./img/tutorial1.png> <./img/basic.png> <./img/lambert.png> <./img/phong.p
-ng> <./img/wireframe.png>] [22] <img/demo1.png, id=709, 1023.825pt x 596.2275pt
+ng> <./img/wireframe.png>] [22] <img/demo1.png, id=717, 1023.825pt x 596.2275pt
 >
 File: img/demo1.png Graphic file (type png)
 
 <use img/demo1.png>
-Package pdftex.def Info: img/demo1.png used on input line 732.
+Package pdftex.def Info: img/demo1.png used on input line 722.
 (pdftex.def)             Requested size: 455.24408pt x 265.1066pt.
- <img/demo2.png, id=713, 1300.86pt x 655.44875pt>
+ <img/demo2.png, id=721, 1300.86pt x 655.44875pt>
 File: img/demo2.png Graphic file (type png)
 
 <use img/demo2.png>
-Package pdftex.def Info: img/demo2.png used on input line 744.
+Package pdftex.def Info: img/demo2.png used on input line 734.
 (pdftex.def)             Requested size: 227.62206pt x 114.68524pt.
- <img/demo2b.png, id=714, 1286.8075pt x 646.415pt>
+ <img/demo2b.png, id=722, 1286.8075pt x 646.415pt>
 File: img/demo2b.png Graphic file (type png)
 
 <use img/demo2b.png>
-Package pdftex.def Info: img/demo2b.png used on input line 746.
+Package pdftex.def Info: img/demo2b.png used on input line 736.
 (pdftex.def)             Requested size: 227.62206pt x 114.33752pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 744--747
+Overfull \hbox (6.0pt too wide) in paragraph at lines 734--737
  [][][][] 
  []
 
 
-Overfull \hbox (16.76012pt too wide) in paragraph at lines 751--753
+Overfull \hbox (16.76012pt too wide) in paragraph at lines 741--743
 \OT1/ptm/m/n/12 ent meth-ods, .Once this is donde, we must give depth to the sh
 ape with 'THREE.ExtrudeGeometry',
  []
 
 [23] [24 <./img/demo1.png> <./img/demo2.png> <./img/demo2b.png>]
-<img/demo8.png, id=745, 1303.87125pt x 637.38126pt>
+<img/demo8.png, id=753, 1303.87125pt x 637.38126pt>
 File: img/demo8.png Graphic file (type png)
  <use img/demo8.png>
-Package pdftex.def Info: img/demo8.png used on input line 787.
+Package pdftex.def Info: img/demo8.png used on input line 777.
 (pdftex.def)             Requested size: 227.62206pt x 111.26134pt.
 
-<img/demo11.png, id=746, 1303.87125pt x 630.355pt>
+<img/demo11.png, id=754, 1303.87125pt x 630.355pt>
 File: img/demo11.png Graphic file (type png)
  <use img/demo11.png>
-Package pdftex.def Info: img/demo11.png used on input line 789.
+Package pdftex.def Info: img/demo11.png used on input line 779.
 (pdftex.def)             Requested size: 227.62206pt x 110.03484pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 787--790
+Overfull \hbox (6.0pt too wide) in paragraph at lines 777--780
  [][][][] 
  []
 
@@ -692,47 +691,47 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 787--790
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25]
-<img/raycolor.png, id=779, 999.735pt x 427.5975pt>
+<img/raycolor.png, id=788, 999.735pt x 427.5975pt>
 File: img/raycolor.png Graphic file (type png)
  <use img/raycolor.png>
-Package pdftex.def Info: img/raycolor.png used on input line 808.
+Package pdftex.def Info: img/raycolor.png used on input line 798.
 (pdftex.def)             Requested size: 455.24408pt x 194.71375pt.
 
 [26 <./img/demo8.png> <./img/demo11.png>]
-<img/text3D.png, id=788, 1291.82625pt x 598.235pt>
+<img/text3D.png, id=796, 1291.82625pt x 598.235pt>
 File: img/text3D.png Graphic file (type png)
  <use img/text3D.png>
-Package pdftex.def Info: img/text3D.png used on input line 821.
+Package pdftex.def Info: img/text3D.png used on input line 811.
 (pdftex.def)             Requested size: 455.24408pt x 210.81853pt.
 
 [27 <./img/raycolor.png>] [28 <./img/text3D.png>]
-<img/dc_example1.png, id=822, 1285.80376pt x 487.8225pt>
+<img/dc_example1.png, id=830, 1285.80376pt x 487.8225pt>
 File: img/dc_example1.png Graphic file (type png)
 
 <use img/dc_example1.png>
-Package pdftex.def Info: img/dc_example1.png used on input line 857.
+Package pdftex.def Info: img/dc_example1.png used on input line 847.
 (pdftex.def)             Requested size: 512.1496pt x 194.30675pt.
 
-Overfull \hbox (56.90549pt too wide) in paragraph at lines 857--858
+Overfull \hbox (56.90549pt too wide) in paragraph at lines 847--848
  [][] 
  []
 
 [29 <./img/dc_example1.png>]
-<img/cf_example1.png, id=831, 1171.37625pt x 571.13374pt>
+<img/cf_example1.png, id=839, 1171.37625pt x 571.13374pt>
 File: img/cf_example1.png Graphic file (type png)
 
 <use img/cf_example1.png>
-Package pdftex.def Info: img/cf_example1.png used on input line 888.
+Package pdftex.def Info: img/cf_example1.png used on input line 878.
 (pdftex.def)             Requested size: 227.62206pt x 110.98282pt.
 
-<img/cf_example2.png, id=832, 1173.38374pt x 572.1375pt>
+<img/cf_example2.png, id=840, 1173.38374pt x 572.1375pt>
 File: img/cf_example2.png Graphic file (type png)
 
 <use img/cf_example2.png>
-Package pdftex.def Info: img/cf_example2.png used on input line 890.
+Package pdftex.def Info: img/cf_example2.png used on input line 880.
 (pdftex.def)             Requested size: 227.62206pt x 110.98581pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 888--891
+Overfull \hbox (6.0pt too wide) in paragraph at lines 878--881
  [][][][] 
  []
 
@@ -740,28 +739,28 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 888--891
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [30 <./img/cf_example1.png> <./img/cf_example2.png>]
-<img/mixin.png, id=852, 963.6pt x 722.7pt>
+<img/mixin.png, id=860, 963.6pt x 722.7pt>
 File: img/mixin.png Graphic file (type png)
  <use img/mixin.png>
-Package pdftex.def Info: img/mixin.png used on input line 917.
+Package pdftex.def Info: img/mixin.png used on input line 907.
 (pdftex.def)             Requested size: 284.52756pt x 213.39314pt.
- [31] [32 <./img/mixin.png>] <img/mixin2.png, id=884, 951.555pt x 743.77875pt>
+ [31] [32 <./img/mixin.png>] <img/mixin2.png, id=893, 951.555pt x 743.77875pt>
 File: img/mixin2.png Graphic file (type png)
 
 <use img/mixin2.png>
-Package pdftex.def Info: img/mixin2.png used on input line 963.
+Package pdftex.def Info: img/mixin2.png used on input line 953.
 (pdftex.def)             Requested size: 455.24408pt x 355.84077pt.
 
-Overfull \hbox (60.3511pt too wide) in paragraph at lines 968--969
+Overfull \hbox (60.3511pt too wide) in paragraph at lines 958--959
 []\OT1/ptm/m/n/12 The cre-ation pro-cess of the grids is sim-i-lar to the chart
  cre-ation pro-cess, us-ing THREE.LineBasicMaterial
  []
 
-[33] [34 <./img/mixin2.png>] <img/result.png, id=895, 1371.1225pt x 770.88pt>
+[33] [34 <./img/mixin2.png>] <img/result.png, id=903, 1371.1225pt x 770.88pt>
 File: img/result.png Graphic file (type png)
 
 <use img/result.png>
-Package pdftex.def Info: img/result.png used on input line 974.
+Package pdftex.def Info: img/result.png used on input line 964.
 (pdftex.def)             Requested size: 455.24408pt x 255.94386pt.
  [35 <./img/result.png>] [36
 
@@ -769,124 +768,124 @@ Package pdftex.def Info: img/result.png used on input line 974.
 Chapter 4.
 [37
 
-] <img/diagram.png, id=911, 994.71625pt x 723.70375pt>
+] <img/diagram.png, id=919, 994.71625pt x 723.70375pt>
 File: img/diagram.png Graphic file (type png)
 
 <use img/diagram.png>
-Package pdftex.def Info: img/diagram.png used on input line 1016.
+Package pdftex.def Info: img/diagram.png used on input line 1006.
 (pdftex.def)             Requested size: 341.43306pt x 248.40814pt.
  [38 <./img/diagram.png>] [39]
-<img/diagram3.png, id=923, 963.6pt x 722.7pt>
+<img/diagram3.png, id=931, 963.6pt x 722.7pt>
 File: img/diagram3.png Graphic file (type png)
  <use img/diagram3.png>
-Package pdftex.def Info: img/diagram3.png used on input line 1085.
+Package pdftex.def Info: img/diagram3.png used on input line 1075.
 (pdftex.def)             Requested size: 341.43306pt x 256.06956pt.
  [40]
 [41 <./img/diagram3.png>]
-<img/barschart.png, id=939, 1287.81125pt x 523.9575pt>
+<img/barschart.png, id=947, 1287.81125pt x 523.9575pt>
 File: img/barschart.png Graphic file (type png)
  <use img/barschart.png>
-Package pdftex.def Info: img/barschart.png used on input line 1118.
+Package pdftex.def Info: img/barschart.png used on input line 1108.
 (pdftex.def)             Requested size: 455.24408pt x 185.2187pt.
 
 [42 <./img/barschart.png>]
-<img/linechart.png, id=961, 1290.8225pt x 580.1675pt>
+<img/linechart.png, id=969, 1290.8225pt x 580.1675pt>
 File: img/linechart.png Graphic file (type png)
  <use img/linechart.png>
-Package pdftex.def Info: img/linechart.png used on input line 1145.
+Package pdftex.def Info: img/linechart.png used on input line 1135.
 (pdftex.def)             Requested size: 455.24408pt x 204.61087pt.
 
-[43 <./img/linechart.png>] <img/piechart.png, id=982, 1288.815pt x 580.1675pt>
+[43 <./img/linechart.png>] <img/piechart.png, id=990, 1288.815pt x 580.1675pt>
 File: img/piechart.png Graphic file (type png)
 
 <use img/piechart.png>
-Package pdftex.def Info: img/piechart.png used on input line 1166.
+Package pdftex.def Info: img/piechart.png used on input line 1156.
 (pdftex.def)             Requested size: 455.24408pt x 204.92957pt.
  [44 <./img/piechart.png>]
-<img/smooth.png, id=1003, 1284.8pt x 526.96875pt>
+<img/smooth.png, id=1011, 1284.8pt x 526.96875pt>
 File: img/smooth.png Graphic file (type png)
  <use img/smooth.png>
-Package pdftex.def Info: img/smooth.png used on input line 1191.
+Package pdftex.def Info: img/smooth.png used on input line 1181.
 (pdftex.def)             Requested size: 455.24408pt x 186.71739pt.
- [45 <./img/smooth.png>] <img/1.png, id=1017, 1371.1225pt x 770.88pt>
+ [45 <./img/smooth.png>] <img/1.png, id=1025, 1371.1225pt x 770.88pt>
 File: img/1.png Graphic file (type png)
  <use img/1.png>
-Package pdftex.def Info: img/1.png used on input line 1231.
+Package pdftex.def Info: img/1.png used on input line 1221.
 (pdftex.def)             Requested size: 227.62206pt x 127.96605pt.
 
-<img/2.png, id=1018, 1371.1225pt x 770.88pt>
+<img/2.png, id=1026, 1371.1225pt x 770.88pt>
 File: img/2.png Graphic file (type png)
  <use img/2.png>
-Package pdftex.def Info: img/2.png used on input line 1233.
+Package pdftex.def Info: img/2.png used on input line 1223.
 (pdftex.def)             Requested size: 227.62206pt x 127.96605pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 1231--1234
+Overfull \hbox (6.0pt too wide) in paragraph at lines 1221--1224
  [][][][] 
  []
 
 
-Overfull \hbox (12.7267pt too wide) in paragraph at lines 1241--1242
+Overfull \hbox (12.7267pt too wide) in paragraph at lines 1231--1232
 \OT1/ptm/m/n/12 han-dle them to-gether. This is its in-ter-face: \OT1/ptm/b/n/1
 2 THREEDC.addPanel(coords,numberOfCharts,size) 
  []
 
 [46 <./img/1.png> <./img/2.png>]
-<img/emptypanel.png, id=1036, 1288.815pt x 583.17876pt>
+<img/emptypanel.png, id=1044, 1288.815pt x 583.17876pt>
 File: img/emptypanel.png Graphic file (type png)
 
 <use img/emptypanel.png>
-Package pdftex.def Info: img/emptypanel.png used on input line 1267.
+Package pdftex.def Info: img/emptypanel.png used on input line 1257.
 (pdftex.def)             Requested size: 455.24408pt x 205.99323pt.
  [47 <./img/emptypanel.png>]
-<img/panel1.png, id=1043, 1371.1225pt x 770.88pt>
+<img/panel1.png, id=1051, 1371.1225pt x 770.88pt>
 File: img/panel1.png Graphic file (type png)
  <use img/panel1.png>
-Package pdftex.def Info: img/panel1.png used on input line 1292.
+Package pdftex.def Info: img/panel1.png used on input line 1282.
 (pdftex.def)             Requested size: 455.24408pt x 255.94386pt.
 
-<img/gui.png, id=1046, 1098.1025pt x 422.57875pt>
+<img/gui.png, id=1054, 1098.1025pt x 422.57875pt>
 File: img/gui.png Graphic file (type png)
  <use img/gui.png>
-Package pdftex.def Info: img/gui.png used on input line 1301.
+Package pdftex.def Info: img/gui.png used on input line 1291.
 (pdftex.def)             Requested size: 455.24408pt x 175.18636pt.
  [48 <./img/panel1.png>] [49 <./img/gui.png>]
-<img/ex2.png, id=1068, 1371.1225pt x 770.88pt>
+<img/ex2.png, id=1076, 1371.1225pt x 770.88pt>
 File: img/ex2.png Graphic file (type png)
  <use img/ex2.png>
-Package pdftex.def Info: img/ex2.png used on input line 1318.
+Package pdftex.def Info: img/ex2.png used on input line 1308.
 (pdftex.def)             Requested size: 227.62206pt x 127.96605pt.
 
-<img/ex1.png, id=1069, 1371.1225pt x 770.88pt>
+<img/ex1.png, id=1077, 1371.1225pt x 770.88pt>
 File: img/ex1.png Graphic file (type png)
  <use img/ex1.png>
-Package pdftex.def Info: img/ex1.png used on input line 1320.
+Package pdftex.def Info: img/ex1.png used on input line 1310.
 (pdftex.def)             Requested size: 227.62206pt x 127.96605pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 1318--1321
+Overfull \hbox (6.0pt too wide) in paragraph at lines 1308--1311
  [][][][] 
  []
 
-<img/ex4.png, id=1070, 1371.1225pt x 770.88pt>
+<img/ex4.png, id=1078, 1371.1225pt x 770.88pt>
 File: img/ex4.png Graphic file (type png)
  <use img/ex4.png>
-Package pdftex.def Info: img/ex4.png used on input line 1330.
+Package pdftex.def Info: img/ex4.png used on input line 1320.
 (pdftex.def)             Requested size: 227.62206pt x 127.96605pt.
 
-<img/ex3.png, id=1071, 1371.1225pt x 770.88pt>
+<img/ex3.png, id=1079, 1371.1225pt x 770.88pt>
 File: img/ex3.png Graphic file (type png)
  <use img/ex3.png>
-Package pdftex.def Info: img/ex3.png used on input line 1332.
+Package pdftex.def Info: img/ex3.png used on input line 1322.
 (pdftex.def)             Requested size: 227.62206pt x 127.96605pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 1330--1333
+Overfull \hbox (6.0pt too wide) in paragraph at lines 1320--1323
  [][][][] 
  []
 
-<img/rotatexample.png, id=1072, 1371.1225pt x 770.88pt>
+<img/rotatexample.png, id=1080, 1371.1225pt x 770.88pt>
 File: img/rotatexample.png Graphic file (type png)
 
 <use img/rotatexample.png>
-Package pdftex.def Info: img/rotatexample.png used on input line 1339.
+Package pdftex.def Info: img/rotatexample.png used on input line 1329.
 (pdftex.def)             Requested size: 455.24408pt x 255.94386pt.
  [50
 
@@ -898,25 +897,25 @@ Chapter 5.
 [53
 
 
-] <img/piedc.png, id=1101, 659.46375pt x 658.46pt>
+] <img/piedc.png, id=1109, 659.46375pt x 658.46pt>
 File: img/piedc.png Graphic file (type png)
  <use img/piedc.png>
-Package pdftex.def Info: img/piedc.png used on input line 1399.
+Package pdftex.def Info: img/piedc.png used on input line 1389.
 (pdftex.def)             Requested size: 227.62206pt x 227.26942pt.
 
-<img/threedcpie.png, id=1102, 615.29875pt x 641.39626pt>
+<img/threedcpie.png, id=1110, 615.29875pt x 641.39626pt>
 File: img/threedcpie.png Graphic file (type png)
 
 <use img/threedcpie.png>
-Package pdftex.def Info: img/threedcpie.png used on input line 1401.
+Package pdftex.def Info: img/threedcpie.png used on input line 1391.
 (pdftex.def)             Requested size: 227.62206pt x 237.27374pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 1399--1402
+Overfull \hbox (6.0pt too wide) in paragraph at lines 1389--1392
  [][][][] 
  []
 
 
-Overfull \hbox (9.12653pt too wide) in paragraph at lines 1409--1411
+Overfull \hbox (9.12653pt too wide) in paragraph at lines 1399--1401
 \OT1/ptm/m/n/12 us-ing Javacript. Other re-lated ex-am-ples would be "In-ge-nie
 r[]^^Pa de Sis-temas Telem[]aticos"(Telematic
  []
@@ -926,21 +925,14 @@ Underfull \vbox (badness 4429) has occurred while \output is active []
 
  [54 <./img/piedc.png> <./img/threedcpie.png>] [55] [56]
 Ap\'endice A.
-
-Underfull \vbox (badness 1789) has occurred while \output is active []
-
- [57
+[57
 
 
 ]
 LaTeX Font Info:    Font shape `OML/ptm/m/it' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 1484.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 1474.
 
-
-[58] [59]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [60]
+ [58] [59] [60]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [61]
@@ -954,26 +946,31 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [64]
 [65] [66]
+Ap\'endice B.
 No file memory.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1793.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1793.
-(./memory.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1793.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1793.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1788.
+[67
+
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1788.
+ (./memory.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1788.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1788.
 
 Package rerunfilecheck Info: File `memory.out' has not changed.
-(rerunfilecheck)             Checksum: FD6D72F9EA3172D6CE84A9D3527018DE;3408.
+(rerunfilecheck)             Checksum: 191EFFB8E51EF651D58B5D4FD6A42D03;3457.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1793.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1788.
  ) 
 Here is how much of TeX's memory you used:
- 10424 strings out of 493105
- 154073 string characters out of 6137072
- 398396 words of memory out of 5000000
- 12916 multiletter control sequences out of 15000+600000
+ 10429 strings out of 493105
+ 154123 string characters out of 6137072
+ 392433 words of memory out of 5000000
+ 12918 multiletter control sequences out of 15000+600000
  35655 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,13n,49p,1278b,1852s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -985,10 +982,10 @@ urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/ut
 mb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on memory.pdf (84 pages, 3338863 bytes).
+Output written on memory.pdf (85 pages, 3339324 bytes).
 PDF statistics:
- 1652 PDF objects out of 1728 (max. 8388607)
- 1498 compressed objects within 15 object streams
- 802 named destinations out of 1000 (max. 500000)
- 630 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1667 PDF objects out of 1728 (max. 8388607)
+ 1511 compressed objects within 16 object streams
+ 805 named destinations out of 1000 (max. 500000)
+ 638 words of extra memory for PDF output out of 10000 (max. 10000000)
 

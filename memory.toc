@@ -51,3 +51,4 @@
 \contentsline {section}{\numberline {A.2}Three.js and Babylon.js comparison}{58}{section.A.2}
 \contentsline {section}{\numberline {A.3}Three.js's Hello world!}{60}{section.A.3}
 \contentsline {section}{\numberline {A.4}Raycasting example}{65}{section.A.4}
+\contentsline {chapter}{\numberline {B}Bibliography}{67}{appendix.B}

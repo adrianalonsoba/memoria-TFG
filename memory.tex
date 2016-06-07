@@ -181,15 +181,6 @@ El presente proyecto tiene como objetivo facilitar la visualización de datos y e
 
 Para realizarlo se ha utilizado principalmente el lenguaje de programación JavaScript y HTML5 como base para poder servirse de webGL, No obstante, dado que webGL es de relativo bajo nivel y sería muy complicado realizar aplicaciones directamente sobre su API, se ha utilizado una librería que proporciona un mayor nivel de abstracción que webGL, esta librería es Three.js.
 
-\begin{itemize}
-  \item ¿De qué va este proyecto? ¿Cuál es su objetivo principal?
-  \item ¿Cómo se ha realizado? ¿Qué tecnologías están involucradas?
-  \item ¿En qué contexto se ha realizado el proyecto? ¿Es un proyecto
-dentro de un marco general?
-\end{itemize}
-
-Lo mejor es escribir el resumen al final.
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% Resumen en inglés
 
@@ -220,7 +211,6 @@ To do this,it has been mainly used the JavaScript programming language , and HTM
 %\cleardoublepage
 %\addcontentsline{toc}{chapter}{Lista de tablas} % para que aparezca en el indice de contenidos
 %\listoftables % indice de tablas
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -616,9 +606,9 @@ At the beginning, there was a lot of things to explore. First of all, we had to 
 
 As we can see in the mentioned example, the two frameworks have strong syntax likenesses, but finally we opted for Three.js because as we said,  it has a bigger developer community than Babylon.js.  
 
-Once we choose Three.js to write our framework, the next step was to study the foundations of 3D interactive graphics. If you are a passionate video games player (better known as 'gamer') like me, you will be familiar with concepts like rendering, game engine, fps(frames per second), image resolution, pixels, GPU(graphics processing unit)... etc. If you don't, the first lesson of the Udacity course mentioned in the Three.js section~\ref{sec:titp}, would be helpful.
+Once we choose Three.js to write our framework, the next step was to study the foundations of 3D interactive graphics. If you are a passionate video games player (better known as 'gamer') like me, you will be familiar with concepts like rendering, game engine, fps(frames per second), image resolution, pixels, GPU(graphics processing unit)... etc. If you don't, the first lesson of the Udacity course mentioned in the Three.js's section~\ref{sec:titp}, would be helpful.
 
-The next step before studying Three.js was to remember the Javascript language(\ref{sec:js}) and to  a Github repository to contain the project. Once that is done, the best way to learn how to use a framework is to read code and play with it (the Udacity course is very good, but it would take much time), so i preferred to follow the Stemkoski tutorials.
+The next step before studying Three.js was to remember the Javascript language(\ref{sec:js}) and create a Github repository to contain the project. Once that is done, the best way to learn how to use a framework is to read code and play with it (the Udacity course is very good, but it would take much time), so i preferred to follow the Stemkoski's tutorials\footnote{\url{http://stemkoski.github.io/Three.js/}}.
 
 \begin{figure}
   \centering
@@ -629,7 +619,7 @@ The next step before studying Three.js was to remember the Javascript language(\
 
 Let's have a look to the Stemkoski's 'Hello world' code housed in the appendices: \ref{sec:threehw}
 
-In this heavily commented code we can see the fundamental aspects of a Three.js scene with no interactivity except for the mouse controls provided by the Three.js extension 'Orbit Controls' which allows us to rotate, zoom and displace the scene, you can see the final result here \ref{fig:tut} and try the demo into your web browser here\footnote{\url{http://stemkoski.github.io/Three.js/HelloWorld.html}}  
+In this heavily commented code we can see the fundamental aspects of a Three.js scene with no interactivity except for the mouse controls provided by the Three.js extension 'Orbit Controls' which allows us to rotate, zoom and displace the scene, you can see the final result here \ref{fig:tut} and try the demo into your web browser here\footnote{\url{http://stemkoski.github.io/Three.js/HelloWorld.html}}.  
 
 \begin{figure}
   \centering
@@ -1425,7 +1415,7 @@ There is also a lot of things that i learned through the project development, he
 \section{Future work}
 \label{sec:fw}
 
-"A software project is never ends" said several times by several teachers along the degree, there is always something to add, something to improve or something to fix, and here we have some examples:
+"A software project never ends" said several times by several teachers along the degree, there is always something to add, something to improve or something to fix, and here we have some examples:
 \begin{enumerate}
 \item Graphics improvements: add shadows, textures, reflections,... Without neglecting the performance.
 \item Add more chart types and charts with more dimensions.
@@ -1446,6 +1436,8 @@ There is also a lot of things that i learned through the project development, he
 \chapter{Appendix}
 \label{sec:appendix}
 \section{HTML5 sheet}
+
+The HTML5 sheet used in the first development demo.
 
  \begin{lstlisting}[frame=single]
 <!DOCTYPE html>
@@ -1471,8 +1463,6 @@ There is also a lot of things that i learned through the project development, he
 	</body>
 </html>
 \end{lstlisting}
-
-
 
 \section{Three.js and Babylon.js comparison}
 \label{sec:comparison}
@@ -1567,6 +1557,8 @@ engine.runRenderLoop(function () {
 
 \section{Three.js's Hello world!}
 \label{sec:threehw}
+
+A commented example of basic a Three.js scene.
  \begin{lstlisting}[frame=single]
 	///////////
 	// SCENE //
@@ -1742,7 +1734,7 @@ function render()
 
 \section{Raycasting example}
 \label{sec:rayexample}
-
+This example change the color of the meshes.
 \begin{lstlisting}[frame=single]
 var raycaster = new THREE.Raycaster();
 var mouse = new THREE.Vector2();
@@ -1778,6 +1770,9 @@ window.requestAnimationFrame(render);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \cleardoublepage
+\chapter{Bibliography}
+\label{sec:bib}
+
 
 % Las siguientes dos instrucciones es todo lo que necesitas
 % para incluir las citas en la memoria
