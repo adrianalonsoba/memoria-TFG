@@ -170,8 +170,6 @@ no hay que olvidarse de dar las gracias a tu madre, que aunque a veces no lo
 parezca disfrutará tanto de tus logros como tú\ldots Además, la pareja quizás
 no sea para siempre, pero tu madre sí.
 
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% Resumen en inglés
 
@@ -232,14 +230,14 @@ basis before to dive into the technical details.
 \subsection{Problem description}
 \label{subsec:probdescr}
 
-On the web we can find lot of frameworks which objective is to provide abstractions that  allow us to create our own dashboards in an easy way with not to many code lines. A dashboard is an user interface that let us manage a specific software and in our case it allow us to create different kinds of charts that show free software developing data and also, they can interact between them. Some popular examples of this frameworks could be Kibana, a tool to visualize and explore data indexed on ElasticSearch, Freeboard, a dashboard orientated to data visualization of internet of things or dc.js a library that allows us to visualize charts with a huge amount of data and filter them in real time. However, all these libraries have something in common, they show us 2D charts, which has its advantages. Due to the fact that they are created in 2D, there is no need of graphic acceleration nor extra plugin, so that, despite the simplicity of 2D rendering(with  barely impact in hardware performance) it has been the most common method of data representation. Furthermore, 2D representation also has its disadvantages, we could never visualize charts with more than 2 dimensions for obvious reasons; and collocation and visualization possibilities are limited too.
+On the web we can find lot of frameworks whose objective is to provide abstractions that  allow us to create our own dashboards in an easy way with not to many lines of code. A dashboard is an user interface that let us manage a specific software and in our case it allow us to create different kinds of charts that show software developing data and also, they can interact between them. Some popular examples of this frameworks could be Kibana, a tool to visualize and explore data indexed on ElasticSearch, Freeboard, a dashboard orientated to data visualization of internet of things or dc.js a library that allows us to visualize charts with a huge amount of data and filter them in real time. However, all these libraries have something in common, they show us 2D charts, which has its advantages. Due to the fact that they are created in 2D, there is no need of graphic acceleration nor extra plugin, so that, despite the simplicity of 2D rendering(with  barely impact in hardware performance) it has been the most common method of data representation. Furthermore, 2D representation also has its disadvantages, we could never visualize charts with more than 2 dimensions for obvious reasons; and collocation and visualization possibilities are limited too.
 
 Those disadvantages are the inspiring reason of this project, be different of the other kinds of libraries and to create one which render 3D charts, what is already possible without any plugin or additional driver thanks to webGL, that allow us to render 3D graphics in almost any web browser.
 
 \subsection{Main Objective}
 \label{subsec:mainobj}
 
-This project has as main objective achieve a tool which allows create 3D dashboards to visualize and filter data from free software development inside any web browser. However, the data can be extracted from any source, just it must be in the Crossfilter's(\ref{sec:cf}) format to be understood by our tool.
+This project has as main objective to achieve a system which to allows create 3D dashboards to visualize and filter data from software development inside any web browser. However, the data can be extracted from any source, just it must be in the Crossfilter's(\ref{sec:cf}) format to be understood by our tool.
 
 \subsection{Requeriments}
 \label{subsec:mainobj}
@@ -1770,10 +1768,44 @@ window.requestAnimationFrame(render);
 % BIBLIOGRAFIA %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\cleardoublepage
 \chapter{Bibliography}
 \label{sec:bib}
 
+\begin{enumerate}
+\item Javascript:
+
+ Marijn Haverbeke, \textit{Eloquent JavaScript}. 2014
+
+\url{http://www.w3schools.com/js/}
+
+\item Web theoretical reference: 
+
+\url{https://en.wikipedia.org/wiki/Main_Page}
+\item Three.js:
+
+\url{http://threejs.org/docs/}
+
+\url{https://www.udacity.com/course/interactive-3d-graphics--cs291}
+
+\url{http://stemkoski.github.io/Three.js/}
+
+\item Crossfilter: 
+
+\url{https://github.com/square/crossfilter/wiki/API-Reference}
+
+\item webGL:
+
+\url{https://www.khronos.org/webgl/}
+
+\item HTML5:
+
+\url{http://www.w3schools.com/html/html5_intro.asp}
+
+\item Domevents:
+
+\url{https://github.com/jeromeetienne/threex.domevents}
+
+\end{enumerate}
 
 % Las siguientes dos instrucciones es todo lo que necesitas
 % para incluir las citas en la memoria
@@ -1785,5 +1817,4 @@ window.requestAnimationFrame(render);
 % y verás que lo puedes hacer de manera sencilla.
 % Más información: 
 % http://texblog.org/2014/04/22/using-google-scholar-to-download-bibtex-citations/
-
 \end{document}
