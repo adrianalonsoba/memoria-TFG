@@ -237,26 +237,22 @@ Those disadvantages are the inspiring reason of this project, be different of th
 \subsection{Main Objective}
 \label{subsec:mainobj}
 
-This project has as main objective to achieve a system which to allows create 3D dashboards to visualize and filter data from software development inside any web browser. However, the data can be extracted from any source, just it must be in the Crossfilter's(\ref{sec:cf}) format to be understood by our tool.
+This project has as main objective to achieve a system which to allows create 3D dashboards to visualize and filter data from software development inside any web browser. However, the data can be extracted from any source, just it must be in the Crossfilter's(\ref{sec:cf}) format to be understood by our framework.
 
 \subsection{Requeriments}
 \label{subsec:mainobj}
 
 The project has the following basic requirements:
 
-\begin{itemize}
-\item Have an object-oriented structure to facilitate future chart types thanks to the inheritance and abstraction.
+\begin{enumerate}
+\item Achieve an interface and functionality as similar as the Dc.js as possible.
+\item Use any webGL renderer, in order to render the dashboard inside the web browser.
 \item As fast filter response as we can.
 \item Be able to drag, zoom, and displace around the dashboard.
-\item Have a dc.js similar interface, in order to facilitate the use if you know dc.js.
-\item Achieve an interface as similar to dc.js interface as we can, in order to facilitate its use if you know dc.js.
-\end{itemize}
-
-\section{Proyect context}
-\label{sec:pcontext}
-
-\section{Demos}
-\label{sec:demos}
+\item Be able to place independent charts at any position
+\item Be able to place the charts inside panels, to handle related charts together.
+\item Have an object-oriented structure to facilitate future chart types thanks to the inheritance and abstraction.
+\end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -558,7 +554,7 @@ A light weight graphical user interface for changing variables in JavaScript. Ra
 
 In this chapter we will describe our work methodology and the development process, in the next section we will explain our methodology and in the following sections we will explain the development.
 
-\subsection{Scrum methodology}
+\section{Scrum methodology}
 Scrum is an iterative and incremental agile software development framework for managing product development. It defines "a flexible, holistic product development strategy where a development team works as a unit to reach a common goal", challenges assumptions of the "traditional, sequential approach" to product development, and enables teams to self-organize by encouraging physical co-location or close online collaboration of all team members, as well as daily face-to-face communication among all team members and disciplines in the project.
 
 A key principle of scrum is its recognition that during production processes, the customers can change their minds about what they want and need (often called requirements volatility), and that unpredicted challenges cannot be easily addressed in a traditional predictive or planned manner. As such, scrum adopts an empirical approach,accepting that the problem cannot be fully understood or defined, focusing instead on maximizing the team's ability to deliver quickly, to respond to emerging requirements and to adapt to evolving technologies and changes in market conditions.
@@ -598,7 +594,7 @@ Sprints or iterations:
 \item \textbf{Iteration 5}: Add panels to contain related charts and additional features.
 \end{enumerate}
 
-\subsection{Iteration 0: Investigation and learning} 
+\section{Iteration 0: Investigation and learning} 
 This is not an iteration itself, but it is a necessary part of the development, so we decided to include it as 'iteration 0' and here we will get the tools we will need to make our software. 
 
 At the beginning, there was a lot of things to explore. First of all, we had to choose a webGL framework to avoid its low abstraction level, as we said in the webGL section, there are loads of javascript libraries to do this. Probably, the two most important libraries nowadays are Three.js and Babylon.js, both of them are free software and its code is hosted at Github ,but, although Babylon.js is written by Microsoft workers, Three.js has a larger developer community with more code examples. Here \ref{sec:comparison} we have a little code demo to see how to create a similar basic scene in Three.js and Babylon.js:
@@ -658,7 +654,7 @@ Following the rest of Stemkoski's demos, we can learn how to add shadows, create
 
 Once we had reviewed Javascript and understood the basics of Three.js, we were able to make our firsts dashboard demos, so let's go to the next subsection.
 
-\subsection{Iteration 1: First demos}
+\section{Iteration 1: First demos}
 
 The first iteration objective was to explore how to render different Charts types with Three.js, the main chart types we will create are the bars chart to represent discrete values, line chart for continues values and pie charts. In order to follow an appropriate  difficulty curve and for simplicity, the first chart we created was the bars chart, because the 'BoxGeometry(or CubeGeometry)' function provides us everything we needed.
 Here we have its constructor:
@@ -780,7 +776,7 @@ To finish this sprint we could use the THREE.Shape and THREE.ExtrudeGeometry to 
  \label{f:demoline}
 \end{figure}
 
-\subsection{Iteration 2: Interactivity and events}
+\section{Iteration 2: Interactivity and events}
 
 Now that we have the basic charts, the next sprint requirement was to add interactivity to them:
 \begin{itemize}
@@ -834,7 +830,7 @@ function onMouseMove( event ) {
 \end{lstlisting}
 By doing that, we can move any mesh around the plane. Rotating the plane we can move the meshes in any direction, you can check it here and you can rotate the plane by changing the controls \footnote{\url{http://adrianalonsoba.github.io/threeboard/demo15/}}.
 
-\subsection{Iteration 3: Filtering}
+\section{Iteration 3: Filtering}
 \label{sec:filt}
 
 In this sprint, we must integrate crossfilter(\ref{sec:cf}) in order to achieve a functionality that allow us to filter data sets in real time by interacting with the charts. There is already a library that do this: dc.js, a charting library with native crossfilter support and allowing highly efficient exploration on large multi-dimensional dataset (inspired by crossfilter's demo). It leverages d3.js engine to render charts in css friendly svg format.
@@ -885,7 +881,7 @@ In this \ref{f:cf_example} figure we can see that not only the bars are lower th
 
 You can try this simple demo in here \footnote{\url{http://adrianalonsoba.github.io/threeboard/demo13/}}
 
-\subsection{Iteration 4: Framework creation}
+\section{Iteration 4: Framework creation}
  
 Now we have all the needed elements to create our library, so the main requirement for this sprint is to build the main architecture and implement it, after this sprint, we should be able to create the previous demo iteration with a few lines of code. 
 
@@ -933,7 +929,7 @@ THREEDC.renderAll();
 
 Now we can render a lot of charts with a few lines of code, and also we can set size and color settings as we prefer.
 
-\subsection{Iteration 5: Panel creation and additional features}
+\section{Iteration 5: Panel creation and additional features}
 
 Once we built the basic architecture, in the final iteration we will add some additional features:
 
