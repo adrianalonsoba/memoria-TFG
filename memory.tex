@@ -887,7 +887,7 @@ You can try this simple demo in here \footnote{\url{http://adrianalonsoba.github
 
 \subsection{Iteration 4: Framework creation}
  
-Now we have all the needed elements to create our library, so the main requirement for this sprint is to build the main architecture and implement it, after this sprint, we should be able to create the previous demo iteration with a few code lines. 
+Now we have all the needed elements to create our library, so the main requirement for this sprint is to build the main architecture and implement it, after this sprint, we should be able to create the previous demo iteration with a few lines of code. 
 
 The first thing we needed is a global object that will contain the data structures, methods and it gives name to the framework, this object is \textbf{THREEDC}(three dimension 'dynamic' charting). THREEDC shall have three main methods and one data structure at least:
 \begin{itemize}
@@ -931,7 +931,7 @@ var pie = THREEDC.pieChart([300,100,0]);
 THREEDC.renderAll();
 \end{lstlisting}
 
-Now we can render a lot of charts with a few code lines, and also we can set size and color settings as we prefer.
+Now we can render a lot of charts with a few lines of code, and also we can set size and color settings as we prefer.
 
 \subsection{Iteration 5: Panel creation and additional features}
 
@@ -1348,7 +1348,7 @@ We can have as many panels and charts as you want, the limit is your computer ha
 \label{chap:conclusions}
 
 We can say we have fulfilled the main objectives we set at the beginning of the project, that is, achieve a similar functionality to DC.js made in 3D using THREE.js and webGL with free software. That means to build a framework that allow us to create custom 3D dashboards with filtering possibilities inside any web browser, thanks to the webGL's open graphics library.
- So, if you have any idea about how to use DC.js and THREE.js, you can create your own 3D dashboards easily with few code lines, if you don't, just take a look to the API \footnote{\url{https://github.com/adrianalonsoba/threeboard/blob/master/docs/api.md}}.
+ So, if you have any idea about how to use DC.js and THREE.js, you can create your own 3D dashboards easily with few lines of code, if you don't, just take a look to the API \footnote{\url{https://github.com/adrianalonsoba/threeboard/blob/master/docs/api.md}}.
  
  However, there are additional features provided by the 3D rendering which are not possible in 2D, like overlapping charts, we can see through them thanks to the opacity setting, the 3D drag and the camera rotation features. We can also rotate the charts to place them in different angles (not implemented yet, but it will be in the near future). Of course we can place the charts and the panels at any 3D coordinates. You can see examples of this possibilities with real data sets in the previous chapter: \ref{sec:examples}.
  
