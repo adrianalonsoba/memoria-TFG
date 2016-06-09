@@ -39,7 +39,7 @@
 \contentsline {section}{\numberline {4.6}Smooth curve chart}{44}{section.4.6}
 \contentsline {section}{\numberline {4.7}The filters}{45}{section.4.7}
 \contentsline {section}{\numberline {4.8}Panels}{46}{section.4.8}
-\contentsline {section}{\numberline {4.9}Examples}{50}{section.4.9}
+\contentsline {section}{\numberline {4.9}Examples}{49}{section.4.9}
 \contentsline {chapter}{\numberline {5}Conclusions}{53}{chapter.5}
 \contentsline {section}{\numberline {5.1}Application of lessons learned}{55}{section.5.1}
 \contentsline {section}{\numberline {5.2}Lessons learned}{55}{section.5.2}
