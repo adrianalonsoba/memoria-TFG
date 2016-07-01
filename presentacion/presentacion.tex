@@ -21,7 +21,7 @@
 \beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
 
 \begin{document}
-\title[Trabajo fin de grado]{WebGL Based 3D Dashboard for tracking software development}  
+\title[Trabajo fin de grado]{WebGL Based 3D Dashboard for Tracking Software Development}  
 \author{Adrián Alonso Barriuso}
 
 \institute[Universidad Rey Juan Carlos]{%
@@ -43,33 +43,52 @@
 
 \subsection{Descripción del problema}
 
-\begin{frame}\frametitle{¿Qué son las ecuaciones de Navier-Stokes?} 
+\begin{frame}\frametitle{Dashboards y seguimiento de desarrollo de software } 
 
+ Un \textbf{dashboard} es una interfaz de ususario que nos permite manejar y gestionar un tipo determinado de software o de hardware. En nuestro caso trabajamos con dashboards de visualización de datos de desarrollo de software.
+Algunos ejemplos de dashboards y de librerías para la visualzacion de datos son:
+ 
 \begin{itemize}
 
-\item Son un conjunto de ecuaciones en derivadas parciales no lineales  que describen el movimiento de un fluido (liquidos y gases). \pause
-\bigskip
+\item \textbf{Kibana}
 
-%\item Las ecuaciones de Navier-Stokes reciben su nombre de Claude-Louis Navier y George Gabriel Stokes. \pause
-%\bigskip
+\item \textbf{dc}
 
-\item Modelan una gran variedad de fenómenos físicos complejos: \medskip
-\begin{itemize}
- \item clima \pause \medskip
- \item corrientes oceánicas  \pause \medskip
- \item aerodinámica \pause \medskip
- \item movimiento de estrellas 
-\end{itemize} \pause
-\bigskip
-
-\item No se conoce una fórmula que resuelva las ecuaciones (solución analítica) excepto en algunos tipos de flujos concretos.
-\pause
-\bigskip
-
-\item Es necesario recurrir al análisis numérico para determinar soluciones aproximadas.
-\bigskip
+\item \textbf{freeboard}
 
 \end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Kibana} 
+
+\begin{figure}
+  \centering
+  \includegraphics[width=9cm, keepaspectratio]{kibana}
+  \caption{ejemplo de Kibana}
+  \label{fig:car}
+\end{figure}
+\end{frame}
+
+\begin{frame}\frametitle{Freeboard} 
+
+\begin{figure}
+  \centering
+  \includegraphics[width=8cm, keepaspectratio]{freeboard}
+  \caption{Ejemplo de freeboard}
+  \label{fig:car}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}\frametitle{dc} 
+
+\begin{figure}
+  \centering
+  \includegraphics[width=12cm, keepaspectratio]{dc_example1}
+  \caption{ejemplo de uso de dc.js}
+  \label{fig:car}
+\end{figure}
 
 \end{frame}
 
@@ -101,7 +120,6 @@ precisamente el movimiento de un fluido hipotético no viscoso.
 \end{block}
 
 \end{frame}
-
 
 \begin{frame}\frametitle{ ¿Cómo surgen?} 
 
@@ -184,19 +202,16 @@ which will unlock the secrets hidden in the Navier-Stokes equations.\\
 
 \section{Tecnologías utilizadas} 
 
-\subsection{Las ecuaciones de Euler}
-\begin{frame}\frametitle{Las ecuaciones de Euler para el movimiento de fluidos} 
+\begin{frame}\frametitle{Tecnologías utilizadas} 
 \begin{itemize}
-\item  Las ecuaciones de Euler gobiernan el flujo de un fluido hipotético sin viscodidad que se extiende
-de manera infinita en todas las direcciones. \pause
-\bigskip
-\item Asumimos que cada punto $P=(x, y, z)$ en el fluido está sujeto a fuerzas que varían con el tiempo en cada 
-dirección: $f_x(x,y,z,t)$, $f_y(x,y,z,t)$ y $f_z(x,y,z,t)$.\pause
-\bigskip
-\item El fluido experimenta una presión $p(x,y,z,t)$ en el punto $P$ al tiempo $t$. \pause
-\bigskip
-\item El movimiento del fluido en el punto $P$ al tiempo $t$ queda determinado por la velocidad con que
-fluye en cada dirección: $u_x(x,y,z,t)$, $u_y(x,y,z,t)$ y $u_z(x,y,z,t)$. 
+\item \textbf{HTML5}
+\item \textbf{Javascript}
+\item \textbf{webGL}
+\item \textbf{Three.js}
+\item \textbf{Crossfilter}
+\item \textbf{THREEx.DomEvents}
+\item \textbf{Orbit controls}
+
 \end{itemize}
 
 \end{frame}
@@ -248,7 +263,6 @@ u_z\frac{\partial u_z}{\partial z} &= f_z(x,y,z,t) -  \frac{\partial p}{\partial
 %\caption{show an example picture}
 %\end{figure}
 
-\subsection{Las Ecuaciones de Navier-Stokes}
 \begin{frame}\frametitle{Las Ecuaciones de Navier-Stokes}
 
 \begin{itemize}
@@ -318,7 +332,6 @@ donde \pause
 \end{frame}
 
 
-\subsection{El desafío}
 \begin{frame}\frametitle{El desafío} 
 
 
