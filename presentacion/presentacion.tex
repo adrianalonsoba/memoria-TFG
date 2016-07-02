@@ -52,9 +52,9 @@ Algunos ejemplos de dashboards y de librerías para la visualzacion de datos basa
 
 \item \textbf{Kibana}
 
-\item \textbf{dc}
-
 \item \textbf{Freeboard}
+
+\item \textbf{dc}
 
 \end{itemize}
 
@@ -94,85 +94,41 @@ Algunos ejemplos de dashboards y de librerías para la visualzacion de datos basa
 
 \begin{frame}\frametitle{Dashboards en 2D } 
 
-\textbf{Ventajas}:
+\begin{exampleblock}{Ventajas}
 \begin{enumerate}
-\item tal
+\item Simplicidad de representación.
+\item No requieren aceleración gráfica.
+\item Impacto mínimo en el rendimiento.
 \end{enumerate}
+\end{exampleblock}
 
-\textbf{Inconvenientes}:
+\begin{alertblock}{Inconvenientes}
 \begin{enumerate}
-\item pascual
+\item No se pueden representar gráficos con mas de 2 dimensiones, por razones obvias.
+\item Las posibilidades de visualización y colocación son limitadas.
 \end{enumerate}
+\end{alertblock}
+
 \end{frame}
 
 
 \subsection{Objetivo principal}
 \begin{frame}
-\frametitle{¿Cómo surgen?} 
+\frametitle{Objetivo principal} 
 
-\begin{block}{Daniel Bernoulli (1700 - 1782)}
-\begin{columns}
-\column{.1\textwidth} \hspace{0.9cm}
-\includegraphics[width=\textwidth]{Danielbernoulli} 
-\column{.8\textwidth}
-Durante la primera mitad del siglo XVIII el matemático suizo Daniel Bernoulli muestra cómo adaptar los
-métodos del cálculo para analizar cómo fluyen los fluidos.
-\end{columns}
-\end{block}
-
-\pause
-\bigskip
-
-\begin{block}{Leonhard Euler (1707 - 1783)}
-\begin{columns}
-\column{.1\textwidth} \hspace{0.9cm}
-\includegraphics[width=\textwidth]{Euler} 
-\column{.8\textwidth}
-Basado en el trabajo de Bernoulli, Leonhard Euler formula un conjunto de ecuaciones cuyas soluciones decriben
-precisamente el movimiento de un fluido hipotético no viscoso.
-\end{columns}
-\end{block}
-
-\end{frame}
-
-\begin{frame}\frametitle{ ¿Cómo surgen?} 
-
-\begin{block}{Claude-Louis Navier (1785 - 1836)}
-\begin{columns}
-\column{.1\textwidth} \hspace{0.9cm}
-\includegraphics[width=\textwidth]{Navier} 
-\column{.8\textwidth}
-En 1822 Navier modifica las ecuaciones de Euler para abarcar el caso más realista de un fluido con viscosidad.
-Aunque su razonamiento matemático fue incorrecto, obtuvo las ecuaciones correctas.
-\end{columns}
-\end{block}
-
-\pause
-\bigskip
-
-\begin{block}{George Gabriel Stokes (1819 - 1903)}
-\begin{columns}
-\column{.1\textwidth} \hspace{0.9cm}
-\includegraphics[width=\textwidth]{Stokes} 
-\column{.8\textwidth}
-En 1842 Stokes deduce por medio de un razonamiento correcto las ecuaciones que 20  años antes Navier había obtenido
-y extendió la teoría. 
-\end{columns}
-\end{block}
-
-\end{frame}
-
-\subsection{Requisitos}
-\begin{frame}\frametitle{Requisitos principales} 
-
-\textbf{Requisitos}:
+Crear una librería que nos permita crear visualizaciones y filtrar datos de desarrollo de software en 3D, dentro de cualquier navegador.
+\begin{block}{Requisitos}
 \begin{enumerate}
-\item tal
+\item Conseguir una interfaz y funcionalidad tan parecidos a los de dc.js como sea posible.
+\item Tener varios tipos de gráficas y ser capaces de filtrar.
+\item Utilizar un framework de webGL
+\item Respuesta rápida de los filtros.
+\item Debemos ser capaces de hacer zoom, desplazarnos y arrastrar las gráficas.
+\item Debemos poder colocar gráficas tanto de forma independiente como dentro de paneles.
+\item Tener una estructura basada en programación orientada a objetos.
 \end{enumerate}
-
+\end{block}
 \end{frame}
-
-\begin{frame}\frametitle{Problema matemático}
 
 %\begin{block}{title of the bloc}
 %bloc text
@@ -181,27 +137,6 @@ y extendió la teoría.
 %\begin{alertblock}{title of the bloc}
 %bloc text
 %\end{alertblock}
-
-\vspace{-1cm} %Esta insturcción sube el siguiente bloque 1 cm.
-
-\begin{exampleblock}{Anuncio del Instituto Clay de Matemáticas}
-\medskip
-\textbf{Navier-Stokes Equation}\\ 
-\medskip
-Waves follow our boat as we meander across the lake, and turbulent air
-currents follow our flight in a modern jet. Mathematicians and physicists
-believe that an explanation for and the prediction of both the breeze and
-the turbulence can be found through an understanding of solutions to the
-Navier-Stokes equations. Although these equations were written down
-in the 19th Century, our understanding of them remains minimal. The
-challenge is to make substantial progress toward a mathematical theory
-which will unlock the secrets hidden in the Navier-Stokes equations.\\ 
-\medskip
-\href{http://www.claymath.org/millennium/Navier-Stokes\_Equations/}{http://www.claymath.org/millennium/Navier-Stokes\_Equations/}
-\end{exampleblock}
-
-\end{frame}
-
 
 \section{Tecnologías utilizadas} 
 
