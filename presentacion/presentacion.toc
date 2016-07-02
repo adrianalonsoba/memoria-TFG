@@ -4,7 +4,9 @@
 \beamer@subsectionintoc {1}{1}{Descripci\'on del problema}{3}{0}{1}
 \beamer@subsectionintoc {1}{2}{Objetivo principal}{8}{0}{1}
 \beamer@sectionintoc {2}{Tecnolog\IeC {\'\i }as utilizadas}{9}{0}{2}
-\beamer@sectionintoc {3}{Desarrollo}{35}{0}{3}
-\beamer@sectionintoc {4}{Dise\~no y resultados}{39}{0}{4}
-\beamer@sectionintoc {5}{Conclusiones}{39}{0}{5}
-\beamer@sectionintoc {6}{Referencias}{39}{0}{6}
+\beamer@sectionintoc {3}{Desarrollo}{10}{0}{3}
+\beamer@subsectionintoc {3}{1}{Metodolog\IeC {\'\i }a}{10}{0}{3}
+\beamer@subsectionintoc {3}{2}{Iteraciones}{11}{0}{3}
+\beamer@sectionintoc {4}{Dise\~no y resultados}{12}{0}{4}
+\beamer@sectionintoc {5}{Conclusiones}{12}{0}{5}
+\beamer@sectionintoc {6}{Referencias}{12}{0}{6}

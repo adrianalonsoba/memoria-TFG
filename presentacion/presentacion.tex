@@ -142,55 +142,13 @@ Crear una librería que nos permita crear visualizaciones y filtrar datos de desa
 
 \begin{frame}\frametitle{Tecnologías utilizadas} 
 \begin{itemize}
-\item \textbf{HTML5}
-\item \textbf{Javascript}
+\item {HTML5}
+\item {Javascript}
 \item \textbf{webGL}
 \item \textbf{Three.js}
-\item \textbf{Crossfilter}
-\item \textbf{THREEx.DomEvents}
-\item \textbf{Orbit controls}
-
-\end{itemize}
-
-\end{frame}
-
-\begin{frame}\frametitle{Las ecuaciones de Euler para el movimiento de fluidos} 
-\begin{itemize}
-
-\item  Asumimos que el fluido es \textit{incompresible}: no se puede ``comprimir'' o ``expandir'' cuando actúan fuerzas
-sobre éste.\pause
-\bigskip
-
-\item La \textit{incompresibilidad} se expresa matematicamente por medio de
-\begin{equation}\label{incompresible}
- \frac{\partial u_x}{\partial x} + \frac{\partial u_y}{\partial y} + \frac{\partial u_z}{\partial z} = 0
-\end{equation}\pause
-\smallskip
-
-\item El problema presupone que conocemos cómo es el movimiento del fluido al inicio cuando $t=0$, i.e.,  $u_x(x,y,z,0)$, $u_y(x,y,z,0)$ y $u_z(x,y,z,0)$ son conocidas (condiciones iniciales).\pause
-\bigskip
-
-\item Estas funciones iniciales deben satisfacer ciertas hipótesis de ``suavidad'' o regularidad que más adelante en la sección (\ref{enunciado}) precisaremos.
-\end{itemize}
-
-\end{frame}
-
-\begin{frame}\frametitle{Las ecuaciones de Euler para el movimiento de fluidos} 
-\begin{itemize}
-
-\item  Al aplicar las leyes de Newton a cada punto $P$ del fluido y la ecuación de la incompresibilidad \eqref{incompresible} Euler obtuvo \pause
-\vspace{0.1cm}
-\begin{align}
-\frac{\partial u_x}{\partial t} + u_x\frac{\partial u_x}{\partial x} + u_y\frac{\partial u_x}{\partial y} + 
-u_z\frac{\partial u_x}{\partial z} &= f_x(x,y,z,t) -  \frac{\partial p}{\partial x} \label{ux} \\
-\frac{\partial u_y}{\partial t} + u_x\frac{\partial u_y}{\partial x} + u_y\frac{\partial u_y}{\partial y} + 
-u_z\frac{\partial u_y}{\partial z} &= f_y(x,y,z,t) -  \frac{\partial p}{\partial y} \label{uy} \\
-\frac{\partial u_z}{\partial t} + u_x\frac{\partial u_z}{\partial x} + u_y\frac{\partial u_z}{\partial y} + 
-u_z\frac{\partial u_z}{\partial z} &= f_z(x,y,z,t) -  \frac{\partial p}{\partial z} \label{uz}
-\end{align}\pause
-
-\medskip
-\item Las ecuaciones diferenciales parciales \eqref{incompresible} -- \eqref{uz} son conocidas como las \textit{ecuaciones de Euler} para el movimiento de un fluido.
+\item {Crossfilter}
+\item {THREEx.DomEvents}
+\item {Orbit controls}
 
 \end{itemize}
 
@@ -201,210 +159,27 @@ u_z\frac{\partial u_z}{\partial z} &= f_z(x,y,z,t) -  \frac{\partial p}{\partial
 %\caption{show an example picture}
 %\end{figure}
 
-\begin{frame}\frametitle{Las Ecuaciones de Navier-Stokes}
-
-\begin{itemize}
-
-\item  Navier y Stokes modifican las ecuaciones de Euler para abarcar el caso más realista de un fluido con viscosidad.. 
-
-\pause
-\medskip
-
-\item Introducen una constante positiva $\nu$ que mide las fuerzas de fricción en el interior del fluido.
-\pause
-\medskip
-
-\item Agregan al lado derecho de las ecuciones de Euler \eqref{ux} -- \eqref{uz} una fuerza adicional (debido a la viscosidad), dada en el caso de \eqref{ux} por
-\begin{equation*}
-\nu \left(\frac{\partial^2 u_x}{\partial x^2} + \frac{\partial^2 u_x}{\partial y^2} + \frac{\partial^2 u_x}{\partial z^2}\right)
-\end{equation*}
-\pause 
-\smallskip
-
-\item Para \eqref{uy} y \eqref{uz} el término a agregar es el mismo pero sustituyendo a $u_x$ por $u_y$ y $u_z$ respectivamente.
-
-\end{itemize}
-\end{frame}
-
-
-\begin{frame}\frametitle{Las Ecuaciones de Navier-Stokes} 
-\begin{itemize}
-
-\item  Las ecuaciones que Navier y Stokes obtienen son \pause
-\medskip
-%\vspace{0.1cm}
-\begin{align}
-\frac{\partial u_x}{\partial t} + u_x\frac{\partial u_x}{\partial x} + u_y\frac{\partial u_x}{\partial y} + 
-u_z\frac{\partial u_x}{\partial z} &= \nu \left(\frac{\partial^2 u_x}{\partial x^2} + \frac{\partial^2 u_x}{\partial y^2} + \frac{\partial^2 u_x}{\partial z^2}\right) \nonumber\\ & + f_x(x,y,z,t) - \frac{\partial p}{\partial x}\label{nsux}\\  \frac{\partial u_y}{\partial t} + u_x\frac{\partial u_y}{\partial x} + u_y\frac{\partial u_y}{\partial y} + 
-u_z\frac{\partial u_y}{\partial z} &= \nu \left(\frac{\partial^2 u_y}{\partial x^2} + \frac{\partial^2 u_y}{\partial y^2} + \frac{\partial^2 u_y}{\partial z^2}\right) \nonumber\\ & + f_y(x,y,z,t) - \frac{\partial p}{\partial y} \label{nsuy}\\  
-\frac{\partial u_z}{\partial t} + u_x\frac{\partial u_z}{\partial x} + u_y\frac{\partial u_z}{\partial y} + 
-u_z\frac{\partial u_z}{\partial z} &= \nu \left(\frac{\partial^2 u_z}{\partial x^2} + \frac{\partial^2 u_z}{\partial y^2} + \frac{\partial^2 u_z}{\partial z^2}\right)\nonumber\\ & + f_z(x,y,z,t) - \frac{\partial p}{\partial z} \label{nsuz} 
-\end{align}
-
-\end{itemize}
-
-\end{frame}
-
-\begin{frame}\frametitle{Las Ecuaciones de Navier-Stokes}
-
-\begin{itemize}
-
-\item  Durante el siglo XIX los matemáticos desarrollan una notación y un método para analizar cantidades que cambian en cada dirección llamado \textit{cálculo vectorial}.
-
-\pause
-\medskip
-
-\item Utilizando la notación del cálculo vectorial las ecuaciones de Navier-Stokes \eqref{nsux}-- \eqref{nsuz} se pueden escribir de forma más compacta como
-
-\begin{equation}\label{ns}
-\frac{\partial \mathbf{u}}{\partial t} + \left(\mathbf{u} \cdot \nabla\right) \mathbf{u} = \nu \Delta\mathbf{u}  -\nabla p + \mathbf{f}, \quad \nabla\cdot \mathbf{u} = 0 
-\end{equation}
-donde \pause 
-\begin{align*}
- \mathbf{u} &= (u_x,u_y,u_z)\ = \ \mbox{campo de velocidades del fluido}\\
-  p &= \mbox{presión que actúa sobre el fluido}\\	
-  \mathbf{f} &= (f_x,f_y,f_z)\ = \ \mbox{campo de fuerzas que actúan sobre el fluido}
-\end{align*} %\pause
-
-\end{itemize}
-\end{frame}
-
-
-\begin{frame}\frametitle{El desafío} 
-
-
-
-En ausencia de fuerzas externas ($f_x=f_y=f_z=0$), las ecuaciones de Navier-Stokes \eqref{ns} quedan así:
-\begin{equation}\label{ns0}
-\frac{\partial \mathbf{u}}{\partial t} + \left(\mathbf{u} \cdot \nabla\right) \mathbf{u} = \nu \Delta\mathbf{u}  -\nabla p, \quad \nabla\cdot \mathbf{u} = 0 
-\end{equation} 
-\pause
-
-El instituto Clay ofrece un millón de dólares a quien responda: 
-\pause
-\medskip
-
-\begin{alertblock}{Problema del milenio para las ecuaciones de Navier-Stokes}
-¿Es posible encontrar funciones $u_x(x,y,z,t)$, $u_y(x,y,z,t)$, $u_z(x,y,z,t)$ y $p(x,y,z,t)$ que satisfagan \eqref{ns0} y que se comporten lo suficientemente ``bien'' para corresponder con la realidad física?
-\end{alertblock}
-
-\end{frame}
-
-\begin{frame}\frametitle{El desafío} 
-
-\begin{itemize}
-
-\item Hasta el momento los avances para resolver el problema de las ecuaciones de Navier-Stokes han sido escasos \cite{Devlin}.
-\pause
-\medskip
-
-\item El problema análogo para el caso de viscosidad nula $\nu=0$ (ecuaciones de Euler) tampoco ha sido hasta ahora resuelto.  \pause
-\medskip
-
-\item Para el caso de dos dimensiones $(\mathbf{u}=(u_x,u_y))$, el problema de las ecuaciones de Navier-Stokes fue resuelto hace muchos años aunque su solución no ha ayudado a resolver el caso en tres dimensiones
-\pause
-\medskip
-
-\item El problema de las ecuaciones de Navier-Stokes admite solución bajo algunas restricciones. 
-\pause
-\medskip
-\begin{itemize}
-\item Dadas las condiciones iniciales, es posible encontrar un número $T>0$ tal que las ecuaciones pueden ser resueltas para todo tiempo $0\le t\le T$.
-\pause
-\medskip
-\item Esta constante $T$ (tiempo de ``blowup'') es muy pequeña y por tanto dicha solución no es muy útil en aplicaciones reales.
-\end{itemize}
-
-\end{itemize}
-\end{frame}
-
-
 \section{Desarrollo} \label{desarrollo}
-
-\begin{frame}\frametitle{Desarrollo}
-
-Las ecuaciones de Euler y Navier-Stokes describen el movimiento de un fluido en $\mathbb{R}^n\ (n=2,3)$. Las incógnitas del problema vienen dadas por el vector de velocidades $u(x,t)={(u_i(x,t))}_{1\leq i\leq n}\in \mathbb{R}^n$ y la presión $p(x,t)\in \mathbb{R}$, definidas para toda posición $x\in \mathbb{R}^n$ y todo tiempo $t\geq 0$.
-
-\bigskip
-
-Las ecuaciones de Navier-Stokes son
-\begin{align}
-\frac{\partial u_i}{\partial t} + \sum_{j=1}^n u_j \frac{\partial u_i}{\partial x_j} = \nu \Delta u_i - \frac{\partial p}{\partial x_i} + f_i(x,t) & \qquad (x\in \mathbb{R}^n,\ t\geq 0), \label{n-s} \\
-\mbox{div}\ u = \sum_{i=1}^n \frac{\partial u_i}{\partial x_i} = 0 & \qquad (x\in \mathbb{R}^n,\ t\geq 0) \label{inc}
-\end{align}
-
-con condiciones iniciales
-
-\begin{equation}\label{ci}
-u(x,0) = u^0(x) \qquad  (x\in \mathbb{R}^n).
-\end{equation}
-
-\medskip
-
+\subsection{Metodología}
+\begin{frame}\frametitle{Metodología Scrum} 
+\begin{figure}
+\includegraphics[scale=0.2]{scrum1.png} 
+\caption{Metodología Scrum}
+\end{figure}
 
 \end{frame}
+\subsection{Iteraciones}
 
-\begin{frame}\frametitle{Enunciado del problema}
-Se asume que $u^0(x)$ es un campo de clase $C^{\infty}$ y de divergencia nula en $\mathbb{R}^n$, $f_i(x,t)$ son las componentes de la fuerza externa aplicada (e.g. la gravedad), $\nu$ es el coeficiente de viscocidad y $\displaystyle \Delta = \sum_{i=1}^n \frac{\partial^2}{\partial x_i^2}$ es el laplaciano en las variables espaciales. Las ecuaciones de Euler son las ecuaciones \eqref{n-s}, \eqref{inc}, \eqref{ci} con $\nu = 0$.
+\begin{frame}\frametitle{Iteraciones} 
 
-\bigskip
-
-Se espera que las soluciones satisfagan ciertas propiedades de regularidad que las hagan lo suficientemente ``suaves'' para que sean soluciones físicamente plausibles y por tanto se establecen las siguientes restricciones sobre las condiciones iniciales y las fuerzas aplicadas:
-
-\begin{equation}\label{decaimiento}
-\vert \partial_x^{\alpha} u^0(x) \vert < C_{\alpha K}\left(1 + \vert x\vert \right)^{-K} 
-\end{equation}
-
-\bigskip
-
-en $\mathbb{R}^n$ para todo $\alpha$ y $K$,
-
-\end{frame}
-
-\begin{frame}\frametitle{Enunciado del problema}
-y también
-
-\medskip
-
-\begin{equation}\label{decaimientof}
-\vert \partial_x^{\alpha}\partial_t^{m} f(x,t)\vert < C_{\alpha m K}\left(1 + \vert x\vert + t \right)^{-K} 
-\end{equation}
-
-\bigskip
-
-en $\mathbb{R}^n\times [0,\infty)$ para todo $\alpha, m, K$. Una solución de \eqref{n-s}, \eqref{inc}, \eqref{ci} es físicamente plausible sólo si se satisfacen las propiedades de regularidad
-
-\medskip
-
-\begin{equation}\label{suavidad}
-p, u \in C^{\infty}\left(\mathbb{R}^n \times [0,\infty)\right)
-\end{equation}
-
-\medskip
-y 
-\medskip
-
-\begin{equation}\label{energia}
-\int_{\mathbb{R}^n} \vert u(x,t) \vert^2 \, dx < C \qquad \mbox{para todo } \ t\geq 0 
-\end{equation}
-
-\end{frame}
-
-\begin{frame}\frametitle{Enunciado del problema}
-El problema fundamental consiste en determinar si las ecuaciones de Navier-Stokes admiten o no soluciones suaves, físicamente plausibles:
-
-\smallskip
-
-\begin{alertblock}{Problema de existencia y regularidad en $\mathbb{R}^3$}
-Considere $\nu>0$ y $n=3$. Suponga que el dato inicial $u^0(x)$ es suave, de divergencia nula y satisface la propiedad de decaimiento rápido \eqref{decaimiento} y asuma $f(x,t)=0$. Entonces existen funciones suaves $p(x,t)$ y $u_i(x,t)$ definidas en $\mathbb{R}^3\times [0,\infty)$ que satisfacen \eqref{n-s}, \eqref{inc}, \eqref{ci}, \eqref{suavidad}, \eqref{energia}.
-\end{alertblock}
-
-\smallskip
-
-\begin{alertblock}{Problema de colapso de la solución en $\mathbb{R}^3$}
-Considere $\nu>0$ y $n=3$. Entonces existe un campo vectorial suave de divergencia nula $u^0(x) \in \mathbb{R}^3$ y una función suave $f(x,t)$ en $\mathbb{R}^3\times [0,\infty)$ que satisfacen \eqref{decaimiento}, \eqref{decaimientof} para las cuales \textbf{no} existen soluciones $(p,u)$ de \eqref{n-s}, \eqref{inc}, \eqref{ci}, \eqref{suavidad}, \eqref{energia}.
-
-\end{alertblock}
+\begin{itemize}
+\item \textbf{Iteracion 0}:
+\item \textbf{Iteracion 1}:
+\item \textbf{Iteracion 2}:
+\item \textbf{Iteracion 3}:
+\item \textbf{Iteracion 4}:
+\item \textbf{Iteracion 5}:
+\end{itemize}
 
 \end{frame}
 

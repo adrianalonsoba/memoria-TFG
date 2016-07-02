@@ -25,44 +25,28 @@
 \headcommand {\beamer@subsectionpages {8}{8}}
 \headcommand {\slideentry {2}{0}{2}{9/9}{}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\slideentry {2}{0}{3}{10/13}{}{0}}
-\headcommand {\beamer@framepages {10}{13}}
-\headcommand {\slideentry {2}{0}{4}{14/16}{}{0}}
-\headcommand {\beamer@framepages {14}{16}}
-\headcommand {\slideentry {2}{0}{5}{17/20}{}{0}}
-\headcommand {\beamer@framepages {17}{20}}
-\headcommand {\slideentry {2}{0}{6}{21/22}{}{0}}
-\headcommand {\beamer@framepages {21}{22}}
-\headcommand {\slideentry {2}{0}{7}{23/25}{}{0}}
-\headcommand {\beamer@framepages {23}{25}}
-\headcommand {\slideentry {2}{0}{8}{26/28}{}{0}}
-\headcommand {\beamer@framepages {26}{28}}
-\headcommand {\slideentry {2}{0}{9}{29/34}{}{0}}
-\headcommand {\beamer@framepages {29}{34}}
-\headcommand {\sectionentry {3}{Desarrollo}{35}{Desarrollo}{0}}
-\headcommand {\beamer@sectionpages {9}{34}}
-\headcommand {\beamer@subsectionpages {9}{34}}
-\headcommand {\slideentry {3}{0}{10}{35/35}{}{0}}
-\headcommand {\beamer@framepages {35}{35}}
-\headcommand {\slideentry {3}{0}{11}{36/36}{}{0}}
-\headcommand {\beamer@framepages {36}{36}}
-\headcommand {\slideentry {3}{0}{12}{37/37}{}{0}}
-\headcommand {\beamer@framepages {37}{37}}
-\headcommand {\slideentry {3}{0}{13}{38/38}{}{0}}
-\headcommand {\beamer@framepages {38}{38}}
-\headcommand {\sectionentry {4}{Dise\~no y resultados}{39}{Dise\~no y resultados}{0}}
-\headcommand {\beamer@sectionpages {35}{38}}
-\headcommand {\beamer@subsectionpages {35}{38}}
-\headcommand {\sectionentry {5}{Conclusiones}{39}{Conclusiones}{0}}
-\headcommand {\beamer@sectionpages {39}{38}}
-\headcommand {\beamer@subsectionpages {39}{38}}
-\headcommand {\sectionentry {6}{Referencias}{39}{Referencias}{0}}
-\headcommand {\beamer@sectionpages {39}{38}}
-\headcommand {\beamer@subsectionpages {39}{38}}
-\headcommand {\slideentry {6}{0}{14}{39/39}{}{0}}
-\headcommand {\beamer@framepages {39}{39}}
-\headcommand {\beamer@partpages {1}{39}}
-\headcommand {\beamer@subsectionpages {39}{39}}
-\headcommand {\beamer@sectionpages {39}{39}}
-\headcommand {\beamer@documentpages {39}}
-\headcommand {\def \inserttotalframenumber {21}}
+\headcommand {\sectionentry {3}{Desarrollo}{10}{Desarrollo}{0}}
+\headcommand {\beamer@sectionpages {9}{9}}
+\headcommand {\beamer@subsectionpages {9}{9}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{10}{Metodolog\IeC {\'\i }a}}\headcommand {\beamer@subsectionpages {10}{9}}
+\headcommand {\slideentry {3}{1}{1}{10/10}{Metodolog\IeC {\'\i }a}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{11}{Iteraciones}}\headcommand {\beamer@subsectionpages {10}{10}}
+\headcommand {\slideentry {3}{2}{1}{11/11}{Iteraciones}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\sectionentry {4}{Dise\~no y resultados}{12}{Dise\~no y resultados}{0}}
+\headcommand {\beamer@sectionpages {10}{11}}
+\headcommand {\beamer@subsectionpages {11}{11}}
+\headcommand {\sectionentry {5}{Conclusiones}{12}{Conclusiones}{0}}
+\headcommand {\beamer@sectionpages {12}{11}}
+\headcommand {\beamer@subsectionpages {12}{11}}
+\headcommand {\sectionentry {6}{Referencias}{12}{Referencias}{0}}
+\headcommand {\beamer@sectionpages {12}{11}}
+\headcommand {\beamer@subsectionpages {12}{11}}
+\headcommand {\slideentry {6}{0}{2}{12/12}{}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\beamer@partpages {1}{12}}
+\headcommand {\beamer@subsectionpages {12}{12}}
+\headcommand {\beamer@sectionpages {12}{12}}
+\headcommand {\beamer@documentpages {12}}
+\headcommand {\def \inserttotalframenumber {12}}
