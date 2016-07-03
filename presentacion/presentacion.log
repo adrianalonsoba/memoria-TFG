@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.1.26)  2 JUL 2016 19:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.1.26)  3 JUL 2016 13:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -897,7 +897,7 @@ Package hyperref Warning: Option `pdfauthor' has already been used,
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4> not available
 (Font)              size <5> substituted on input line 37.
 
-<logo_vect.png, id=68, 169.8345pt x 338.2236pt>
+<logo_vect.png, id=72, 169.8345pt x 338.2236pt>
 File: logo_vect.png Graphic file (type png)
  <use logo_vect.png>
 Package pdftex.def Info: logo_vect.png used on input line 37.
@@ -923,7 +923,7 @@ Package pdftex.def Info: logo_vect.png used on input line 61.
  [3
 
 ]
-<kibana.png, id=134, 1214.5375pt x 822.07124pt>
+<kibana.png, id=140, 1214.5375pt x 822.07124pt>
 File: kibana.png Graphic file (type png)
  <use kibana.png>
 Package pdftex.def Info: kibana.png used on input line 71.
@@ -939,7 +939,7 @@ Package pdftex.def Info: logo_vect.png used on input line 71.
  [4
 
  <./kibana.png>]
-<freeboard.png, id=153, 501.875pt x 351.3125pt>
+<freeboard.png, id=159, 501.875pt x 351.3125pt>
 File: freeboard.png Graphic file (type png)
  <use freeboard.png>
 Package pdftex.def Info: freeboard.png used on input line 82.
@@ -957,7 +957,7 @@ Package pdftex.def Info: logo_vect.png used on input line 82.
  [5
 
  <./freeboard.png>]
-<dc_example1.png, id=169, 1285.80376pt x 487.8225pt>
+<dc_example1.png, id=175, 1285.80376pt x 487.8225pt>
 File: dc_example1.png Graphic file (type png)
  <use dc_example1.png>
 Package pdftex.def Info: dc_example1.png used on input line 93.
@@ -997,37 +997,52 @@ Package pdftex.def Info: logo_vect.png used on input line 131.
 ]
 File: logo_vect.png Graphic file (type png)
  <use logo_vect.png>
-Package pdftex.def Info: logo_vect.png used on input line 155.
+Package pdftex.def Info: logo_vect.png used on input line 156.
 (pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
  [9
 
 ]
-<scrum1.png, id=235, 1193.45876pt x 664.4825pt>
+<scrum1.png, id=241, 1193.45876pt x 664.4825pt>
 File: scrum1.png Graphic file (type png)
  <use scrum1.png>
-Package pdftex.def Info: scrum1.png used on input line 170.
+Package pdftex.def Info: scrum1.png used on input line 171.
 (pdftex.def)             Requested size: 238.68752pt x 132.89413pt.
 File: logo_vect.png Graphic file (type png)
 
 <use logo_vect.png>
-Package pdftex.def Info: logo_vect.png used on input line 170.
+Package pdftex.def Info: logo_vect.png used on input line 171.
 (pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
  [10
 
  <./scrum1.png>]
 File: logo_vect.png Graphic file (type png)
  <use logo_vect.png>
-Package pdftex.def Info: logo_vect.png used on input line 184.
+Package pdftex.def Info: logo_vect.png used on input line 185.
 (pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
  [11
 
 ]
-File: logo_vect.png Graphic file (type png)
+<diagram.png, id=269, 994.71625pt x 723.70375pt>
+File: diagram.png Graphic file (type png)
+ <use diagram.png>
+Package pdftex.def Info: diagram.png used on input line 196.
+(pdftex.def)             Requested size: 284.52756pt x 207.00862pt.
 
+Overfull \vbox (18.38438pt too high) detected at line 196
+ []
+
+File: logo_vect.png Graphic file (type png)
 <use logo_vect.png>
-Package pdftex.def Info: logo_vect.png used on input line 220.
+Package pdftex.def Info: logo_vect.png used on input line 196.
 (pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
  [12
+
+ <./diagram.png>]
+File: logo_vect.png Graphic file (type png)
+ <use logo_vect.png>
+Package pdftex.def Info: logo_vect.png used on input line 238.
+(pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
+ [13
 
  </usr/share/texlive/texmf-dist/tex/latex/beamer/art/beamericonarticle.pdf>]
 \tf@nav=\write6
@@ -1039,17 +1054,24 @@ Package pdftex.def Info: logo_vect.png used on input line 220.
 \tf@snm=\write8
 \openout8 = `presentacion.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 223.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 223.
- (./presentacion.aux
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 241.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 241.
+
+(./presentacion.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 223.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 223.
-Package rerunfilecheck Info: File `presentacion.out' has not changed.
-(rerunfilecheck)             Checksum: 0A55F80E44A8F5A4F1E04CAEA3AE7D7B;574.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 241.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 241.
 
+
+Package rerunfilecheck Warning: File `presentacion.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `presentacion.out':
+(rerunfilecheck)             Before: D782A16D353FD58A9063CF9C6462BD6C;637
+(rerunfilecheck)             After:  EC09DE82158FC6C136A5F5E0A4CF6C6A;1108.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -1057,13 +1079,13 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 223.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 241.
  ) 
 Here is how much of TeX's memory you used:
- 17573 strings out of 493105
- 334946 string characters out of 6137072
- 419010 words of memory out of 5000000
- 20599 multiletter control sequences out of 15000+600000
+ 17593 strings out of 493105
+ 335208 string characters out of 6137072
+ 419013 words of memory out of 5000000
+ 20608 multiletter control sequences out of 15000+600000
  5492 words of font info for 20 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,20n,63p,432b,890s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1074,10 +1096,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmti9.pfb>
-Output written on presentacion.pdf (12 pages, 519645 bytes).
+Output written on presentacion.pdf (13 pages, 548167 bytes).
 PDF statistics:
- 324 PDF objects out of 1000 (max. 8388607)
- 265 compressed objects within 3 object streams
- 40 named destinations out of 1000 (max. 500000)
- 226 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 354 PDF objects out of 1000 (max. 8388607)
+ 292 compressed objects within 3 object streams
+ 50 named destinations out of 1000 (max. 500000)
+ 239 words of extra memory for PDF output out of 10000 (max. 10000000)
 
