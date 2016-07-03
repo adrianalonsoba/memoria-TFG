@@ -14,7 +14,7 @@
 \beamer@subsectionintoc {4}{4}{Filtros}{20}{0}{4}
 \beamer@subsectionintoc {4}{5}{Paneles}{21}{0}{4}
 \beamer@sectionintoc {5}{Conclusiones}{25}{0}{5}
-\beamer@subsectionintoc {5}{1}{Conocimientos aplicados}{25}{0}{5}
-\beamer@subsectionintoc {5}{2}{Lecciones aprendidas}{26}{0}{5}
-\beamer@subsectionintoc {5}{3}{Trabajos futuros}{27}{0}{5}
-\beamer@sectionintoc {6}{Referencias}{28}{0}{6}
+\beamer@subsectionintoc {5}{1}{Conocimientos aplicados}{27}{0}{5}
+\beamer@subsectionintoc {5}{2}{Lecciones aprendidas}{28}{0}{5}
+\beamer@subsectionintoc {5}{3}{Trabajos futuros}{29}{0}{5}
+\beamer@sectionintoc {6}{Referencias}{30}{0}{6}

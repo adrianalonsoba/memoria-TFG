@@ -294,10 +294,10 @@ Los \textbf{paneles} tienen como objetivo contener las gráficas relacionadas, su
 \end{enumerate}
 \end{block}
 
-Un ejemplo de instanciación de panel con 4 gráficas:
+Un ejemplo de instanciación de panel con 3 gráficas:
 
 \begin{lstlisting}[frame=single]
-var panel=THREEDC.addPanel([0,0,0],4,[200x200]);
+var panel=THREEDC.addPanel([0,0,0],3,[200x200]);
 \end{lstlisting}
 
 \begin{frame}{Ejemplos de colocación}
@@ -339,17 +339,77 @@ var panel=THREEDC.addPanel([0,0,0],4,[200x200]);
 \end{figure}
 \end{frame}
 \section{Conclusiones}
+Código para crear la misma gráfica de tarta usando dc.js y THREEDC.js:
+Usando dc.js:
+\begin{lstlisting}[frame=single]
+//HTML5 div to attach the pie
+var pieDC = dc.pieChart("#test");
+
+pieDC.radius(100)
+	 .dimension(dimPerOrg)
+	 .group(groupPerOrg);
+	 
+dc.renderAll();
+\end{lstlisting}
+Usando THREEDC.js:
+\begin{lstlisting}[frame=single]
+//Coordinates to attach the pie, a panel could be used too.
+var pieTHREEDC =  THREEDC.pieChart([0,0,0]);
+
+pieTHREEDC.radius(100)
+          .dimension(dimPerOrg)
+          .group(groupPerOrg);
+
+THREEDC.renderAll();
+\end{lstlisting}
+
+\begin{frame}{Comparacion con dc}
+  \begin{columns}[t]
+    \column{0.5\textwidth}
+\begin{figure}
+  \centering
+  \includegraphics[width=4cm, keepaspectratio]{piedc.png}
+  \caption{dc.js}
+\end{figure}
+    \column{0.5\textwidth}
+\begin{figure}
+  \centering
+  \includegraphics[width=4cm, keepaspectratio]{threedcpie.png}
+  \caption{THREEDC.js}
+\end{figure}
+  \end{columns}
+\end{frame}
 \subsection{Conocimientos aplicados}
-\begin{frame}{Conocimientos aplicados}
-sfd
+
+\begin{frame}{Asignaturas relacionadas}
+\begin{itemize}
+\item \textbf{Desarrollo de aplicaciones telemáticas}
+\item \textbf{Ingeniería de sistemas de información}
+\item \textbf{Servicios y aplicaciones telemáticas}
+\item \textbf{Ingeniería de sistemas telemáticos}
+\end{itemize}
 \end{frame}
 \subsection{Lecciones aprendidas}
 \begin{frame}{Lecciones aprendidas}
-fsd
+\begin{itemize}
+\item \textbf{Profundización en conocimiento de Javascript y HTML5}
+\item \textbf{Uso e implicaciones de webGL y desarrollo de gráficos en 3D}
+\item \textbf{Uso de dashboard y frameworks de visualización de datos}
+\item \textbf{Uso de \LaTeX}
+\item \textbf{Mejora del nivel de inglés escrito}
+\end{itemize}
 \end{frame}
 \subsection{Trabajos futuros}
 \begin{frame}{Trabajos futuros}
-fsd
+\begin{enumerate}
+\item \textbf{Mejoras gráficas.}
+\item \textbf{Añadir mas tipos de gráficas}
+\item \textbf{Añadir animaciones}
+\item \textbf{Añadir posibilidades de personalización en tiempo de ejecución}
+\item \textbf{Conseguir integración con ElasticSearch y Kibana(¿MENCIONO EL TRABAJO DE VIOREL?)}
+\item \textbf{Optimización general de rendimiento}
+\item \textbf{Implementar la rotación de gráficas y paneles en la UI}
+\end{enumerate}
 \end{frame}
 
 
