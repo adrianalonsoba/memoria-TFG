@@ -7,14 +7,14 @@
 \beamer@sectionintoc {3}{Desarrollo}{10}{0}{3}
 \beamer@subsectionintoc {3}{1}{Metodolog\IeC {\'\i }a}{10}{0}{3}
 \beamer@subsectionintoc {3}{2}{Iteraciones}{11}{0}{3}
-\beamer@sectionintoc {4}{Dise\~no y resultados}{12}{0}{4}
-\beamer@subsectionintoc {4}{1}{Arquitectura}{12}{0}{4}
-\beamer@subsectionintoc {4}{2}{Funciones principales}{13}{0}{4}
-\beamer@subsectionintoc {4}{3}{Tipos de gr\'aficas}{13}{0}{4}
-\beamer@subsectionintoc {4}{4}{Filtros}{13}{0}{4}
-\beamer@subsectionintoc {4}{5}{Paneles}{13}{0}{4}
-\beamer@sectionintoc {5}{Conclusiones}{13}{0}{5}
-\beamer@subsectionintoc {5}{1}{Conocimientos aplicados}{13}{0}{5}
-\beamer@subsectionintoc {5}{2}{Lecciones aprendidas}{13}{0}{5}
-\beamer@subsectionintoc {5}{3}{Trabajos futuros}{13}{0}{5}
-\beamer@sectionintoc {6}{Referencias}{13}{0}{6}
+\beamer@sectionintoc {4}{Dise\~no y resultados}{13}{0}{4}
+\beamer@subsectionintoc {4}{1}{Arquitectura}{13}{0}{4}
+\beamer@subsectionintoc {4}{2}{Funciones principales}{14}{0}{4}
+\beamer@subsectionintoc {4}{3}{Tipos de gr\'aficas}{15}{0}{4}
+\beamer@subsectionintoc {4}{4}{Filtros}{20}{0}{4}
+\beamer@subsectionintoc {4}{5}{Paneles}{21}{0}{4}
+\beamer@sectionintoc {5}{Conclusiones}{25}{0}{5}
+\beamer@subsectionintoc {5}{1}{Conocimientos aplicados}{25}{0}{5}
+\beamer@subsectionintoc {5}{2}{Lecciones aprendidas}{26}{0}{5}
+\beamer@subsectionintoc {5}{3}{Trabajos futuros}{27}{0}{5}
+\beamer@sectionintoc {6}{Referencias}{28}{0}{6}

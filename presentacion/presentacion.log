@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.1.26)  3 JUL 2016 13:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.1.26)  3 JUL 2016 19:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -750,7 +750,39 @@ Package babel Info: Making . an active character on input line 617.
 Package babel Info: Making < an active character on input line 662.
 Package babel Info: Making > an active character on input line 662.
 ))
-(./presentacion.aux
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count155
+\lst@gtempboxa=\box53
+\lst@token=\toks46
+\lst@length=\count156
+\lst@currlwidth=\dimen189
+\lst@column=\count157
+\lst@pos=\count158
+\lst@lostspace=\dimen190
+\lst@width=\dimen191
+\lst@newlines=\count159
+\lst@lineno=\count160
+\lst@maxwidth=\dimen192
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+\c@lstnumber=\count161
+\lst@skipnumbers=\count162
+\lst@framebox=\box54
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2014/09/06 1.5e listings configuration
+))
+Package: listings 2014/09/06 1.5e (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count163
+\float@exts=\toks47
+\float@box=\box55
+\@float@everytoks=\toks48
+\@floatcapt=\box56
+) (./presentacion.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 
@@ -763,20 +795,20 @@ LaTeX Warning: Label `fig:car' multiply defined.
 )
 \openout1 = `presentacion.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -814,17 +846,17 @@ LaTeX Font Info:    ... okay on input line 23.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count155
-\scratchdimen=\dimen189
-\scratchbox=\box53
-\nofMPsegments=\count156
-\nofMParguments=\count157
-\everyMPshowfont=\toks46
-\MPscratchCnt=\count158
-\MPscratchDim=\dimen190
-\MPnumerator=\count159
-\makeMPintoPDFobject=\count160
-\everyMPtoPDFconversion=\toks47
+\scratchcounter=\count164
+\scratchdimen=\dimen193
+\scratchbox=\box57
+\nofMPsegments=\count165
+\nofMParguments=\count166
+\everyMPshowfont=\toks49
+\MPscratchCnt=\count167
+\MPscratchDim=\dimen194
+\MPnumerator=\count168
+\makeMPintoPDFobject=\count169
+\everyMPtoPDFconversion=\toks50
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -841,8 +873,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring OFF on input line 23.
+\AtBeginShipoutBox=\box58
+Package hyperref Info: Link coloring OFF on input line 26.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -850,11 +882,11 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count161
+\c@section@level=\count170
 )
-LaTeX Info: Redefining \ref on input line 23.
-LaTeX Info: Redefining \pageref on input line 23.
-LaTeX Info: Redefining \nameref on input line 23.
+LaTeX Info: Redefining \ref on input line 26.
+LaTeX Info: Redefining \pageref on input line 26.
+LaTeX Info: Redefining \nameref on input line 26.
 
 (./presentacion.out) (./presentacion.out)
 \@outlinefile=\write5
@@ -885,22 +917,23 @@ Dictionary: translator-numbers-dictionary, Language: English
 orem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 23.
-LaTeX Info: Redefining \. on input line 23.
-LaTeX Info: Redefining \% on input line 23.
+LaTeX Info: Redefining \includegraphics on input line 26.
+LaTeX Info: Redefining \. on input line 26.
+LaTeX Info: Redefining \% on input line 26.
+\c@lstlisting=\count171
  (./presentacion.nav)
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 25.
+(hyperref)                setting the option has no effect on input line 28.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 37.
+(Font)              size <5> substituted on input line 40.
 
-<logo_vect.png, id=72, 169.8345pt x 338.2236pt>
+<logo_vect.png, id=100, 169.8345pt x 338.2236pt>
 File: logo_vect.png Graphic file (type png)
  <use logo_vect.png>
-Package pdftex.def Info: logo_vect.png used on input line 37.
+Package pdftex.def Info: logo_vect.png used on input line 40.
 (pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -911,59 +944,59 @@ LaTeX Info: Redefining \% on input line 2.
 )
 File: logo_vect.png Graphic file (type png)
  <use logo_vect.png>
-Package pdftex.def Info: logo_vect.png used on input line 40.
+Package pdftex.def Info: logo_vect.png used on input line 43.
 (pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
  [2
 
 ]
 File: logo_vect.png Graphic file (type png)
  <use logo_vect.png>
-Package pdftex.def Info: logo_vect.png used on input line 61.
+Package pdftex.def Info: logo_vect.png used on input line 64.
 (pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
  [3
 
 ]
-<kibana.png, id=140, 1214.5375pt x 822.07124pt>
+<kibana.png, id=182, 1214.5375pt x 822.07124pt>
 File: kibana.png Graphic file (type png)
  <use kibana.png>
-Package pdftex.def Info: kibana.png used on input line 71.
+Package pdftex.def Info: kibana.png used on input line 74.
 (pdftex.def)             Requested size: 256.0748pt x 173.31741pt.
 
-Overfull \vbox (2.16978pt too high) detected at line 71
+Overfull \vbox (2.16978pt too high) detected at line 74
  []
 
 File: logo_vect.png Graphic file (type png)
 <use logo_vect.png>
-Package pdftex.def Info: logo_vect.png used on input line 71.
+Package pdftex.def Info: logo_vect.png used on input line 74.
 (pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
  [4
 
  <./kibana.png>]
-<freeboard.png, id=159, 501.875pt x 351.3125pt>
+<freeboard.png, id=202, 501.875pt x 351.3125pt>
 File: freeboard.png Graphic file (type png)
  <use freeboard.png>
-Package pdftex.def Info: freeboard.png used on input line 82.
+Package pdftex.def Info: freeboard.png used on input line 85.
 (pdftex.def)             Requested size: 227.62204pt x 159.33817pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:car}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.82 \end{frame}
+l.85 \end{frame}
                 
 File: logo_vect.png Graphic file (type png)
  <use logo_vect.png>
-Package pdftex.def Info: logo_vect.png used on input line 82.
+Package pdftex.def Info: logo_vect.png used on input line 85.
 (pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
  [5
 
  <./freeboard.png>]
-<dc_example1.png, id=175, 1285.80376pt x 487.8225pt>
+<dc_example1.png, id=217, 1285.80376pt x 487.8225pt>
 File: dc_example1.png Graphic file (type png)
  <use dc_example1.png>
-Package pdftex.def Info: dc_example1.png used on input line 93.
+Package pdftex.def Info: dc_example1.png used on input line 96.
 (pdftex.def)             Requested size: 341.43306pt x 129.53287pt.
 
-Overfull \hbox (34.14319pt too wide) in paragraph at lines 93--93
+Overfull \hbox (34.14319pt too wide) in paragraph at lines 96--96
  [] 
  []
 
@@ -971,11 +1004,11 @@ pdfTeX warning (ext4): destination with the same identifier (name{fig:car}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.93 \end{frame}
+l.96 \end{frame}
                 
 File: logo_vect.png Graphic file (type png)
  <use logo_vect.png>
-Package pdftex.def Info: logo_vect.png used on input line 93.
+Package pdftex.def Info: logo_vect.png used on input line 96.
 (pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
  [6
 
@@ -983,66 +1016,271 @@ Package pdftex.def Info: logo_vect.png used on input line 93.
 File: logo_vect.png Graphic file (type png)
 
 <use logo_vect.png>
-Package pdftex.def Info: logo_vect.png used on input line 112.
+Package pdftex.def Info: logo_vect.png used on input line 115.
 (pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
  [7
 
 ]
 File: logo_vect.png Graphic file (type png)
  <use logo_vect.png>
-Package pdftex.def Info: logo_vect.png used on input line 131.
+Package pdftex.def Info: logo_vect.png used on input line 134.
 (pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
  [8
 
 ]
 File: logo_vect.png Graphic file (type png)
  <use logo_vect.png>
-Package pdftex.def Info: logo_vect.png used on input line 156.
+Package pdftex.def Info: logo_vect.png used on input line 159.
 (pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
  [9
 
 ]
-<scrum1.png, id=241, 1193.45876pt x 664.4825pt>
+<scrum1.png, id=283, 1193.45876pt x 664.4825pt>
 File: scrum1.png Graphic file (type png)
  <use scrum1.png>
-Package pdftex.def Info: scrum1.png used on input line 171.
+Package pdftex.def Info: scrum1.png used on input line 174.
 (pdftex.def)             Requested size: 238.68752pt x 132.89413pt.
 File: logo_vect.png Graphic file (type png)
 
 <use logo_vect.png>
-Package pdftex.def Info: logo_vect.png used on input line 171.
+Package pdftex.def Info: logo_vect.png used on input line 174.
 (pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
  [10
 
  <./scrum1.png>]
 File: logo_vect.png Graphic file (type png)
  <use logo_vect.png>
-Package pdftex.def Info: logo_vect.png used on input line 185.
+Package pdftex.def Info: logo_vect.png used on input line 187.
 (pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
  [11
 
 ]
-<diagram.png, id=269, 994.71625pt x 723.70375pt>
-File: diagram.png Graphic file (type png)
- <use diagram.png>
-Package pdftex.def Info: diagram.png used on input line 196.
-(pdftex.def)             Requested size: 284.52756pt x 207.00862pt.
-
-Overfull \vbox (18.38438pt too high) detected at line 196
- []
-
+<result.png, id=312, 1371.1225pt x 770.88pt>
+File: result.png Graphic file (type png)
+ <use result.png>
+Package pdftex.def Info: result.png used on input line 193.
+(pdftex.def)             Requested size: 274.21964pt x 154.17326pt.
 File: logo_vect.png Graphic file (type png)
+
 <use logo_vect.png>
-Package pdftex.def Info: logo_vect.png used on input line 196.
+Package pdftex.def Info: logo_vect.png used on input line 193.
 (pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
  [12
+
+ <./result.png>]
+<diagram.png, id=327, 994.71625pt x 723.70375pt>
+File: diagram.png Graphic file (type png)
+ <use diagram.png>
+Package pdftex.def Info: diagram.png used on input line 204.
+(pdftex.def)             Requested size: 256.0748pt x 186.30334pt.
+File: logo_vect.png Graphic file (type png)
+
+<use logo_vect.png>
+Package pdftex.def Info: logo_vect.png used on input line 204.
+(pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
+ [13
 
  <./diagram.png>]
 File: logo_vect.png Graphic file (type png)
  <use logo_vect.png>
-Package pdftex.def Info: logo_vect.png used on input line 238.
+Package pdftex.def Info: logo_vect.png used on input line 222.
 (pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
- [13
+ [14
+
+]
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+)
+<linechart.png, id=362, 1290.8225pt x 580.1675pt>
+File: linechart.png Graphic file (type png)
+ <use linechart.png>
+Package pdftex.def Info: linechart.png used on input line 245.
+(pdftex.def)             Requested size: 256.0748pt x 115.09305pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: logo_vect.png Graphic file (type png)
+
+<use logo_vect.png>
+Package pdftex.def Info: logo_vect.png used on input line 245.
+(pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
+ [15
+
+]
+File: logo_vect.png Graphic file (type png)
+ <use logo_vect.png>
+Package pdftex.def Info: logo_vect.png used on input line 245.
+(pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
+ [16 <./linechart.png>]
+<piechart.png, id=397, 1288.815pt x 580.1675pt>
+File: piechart.png Graphic file (type png)
+ <use piechart.png>
+Package pdftex.def Info: piechart.png used on input line 252.
+(pdftex.def)             Requested size: 256.0748pt x 115.27011pt.
+File: logo_vect.png Graphic file (type png)
+
+<use logo_vect.png>
+Package pdftex.def Info: logo_vect.png used on input line 252.
+(pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
+ [17
+
+ <./piechart.png>]
+<barschart.png, id=416, 1287.81125pt x 523.9575pt>
+File: barschart.png Graphic file (type png)
+ <use barschart.png>
+Package pdftex.def Info: barschart.png used on input line 259.
+(pdftex.def)             Requested size: 256.0748pt x 104.18202pt.
+File: logo_vect.png Graphic file (type png)
+
+<use logo_vect.png>
+Package pdftex.def Info: logo_vect.png used on input line 259.
+(pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
+ [18
+
+ <./barschart.png>]
+<smooth.png, id=434, 1284.8pt x 526.96875pt>
+File: smooth.png Graphic file (type png)
+ <use smooth.png>
+Package pdftex.def Info: smooth.png used on input line 266.
+(pdftex.def)             Requested size: 256.0748pt x 105.03003pt.
+File: logo_vect.png Graphic file (type png)
+
+<use logo_vect.png>
+Package pdftex.def Info: logo_vect.png used on input line 266.
+(pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
+ [19
+
+ <./smooth.png>]
+<1.png, id=453, 1371.1225pt x 770.88pt>
+File: 1.png Graphic file (type png)
+ <use 1.png>
+Package pdftex.def Info: 1.png used on input line 284.
+(pdftex.def)             Requested size: 170.71652pt x 95.97159pt.
+
+Overfull \hbox (17.0716pt too wide) in paragraph at lines 284--284
+ [] 
+ []
+
+<2.png, id=454, 1371.1225pt x 770.88pt>
+File: 2.png Graphic file (type png)
+ <use 2.png>
+Package pdftex.def Info: 2.png used on input line 284.
+(pdftex.def)             Requested size: 170.71652pt x 95.97159pt.
+
+Overfull \hbox (17.0716pt too wide) in paragraph at lines 284--284
+ [] 
+ []
+
+File: logo_vect.png Graphic file (type png)
+<use logo_vect.png>
+Package pdftex.def Info: logo_vect.png used on input line 284.
+(pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
+ [20
+
+ <./1.png> <./2.png>]
+<ex1.png, id=471, 1371.1225pt x 770.88pt>
+File: ex1.png Graphic file (type png)
+ <use ex1.png>
+Package pdftex.def Info: ex1.png used on input line 318.
+(pdftex.def)             Requested size: 170.71652pt x 95.97159pt.
+
+Overfull \hbox (17.0716pt too wide) in paragraph at lines 318--318
+ [] 
+ []
+
+<ex2.png, id=472, 1371.1225pt x 770.88pt>
+File: ex2.png Graphic file (type png)
+ <use ex2.png>
+Package pdftex.def Info: ex2.png used on input line 318.
+(pdftex.def)             Requested size: 170.71652pt x 95.97159pt.
+
+Overfull \hbox (17.0716pt too wide) in paragraph at lines 318--318
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: logo_vect.png Graphic file (type png)
+
+<use logo_vect.png>
+Package pdftex.def Info: logo_vect.png used on input line 318.
+(pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
+ [21
+
+]
+File: logo_vect.png Graphic file (type png)
+ <use logo_vect.png>
+Package pdftex.def Info: logo_vect.png used on input line 318.
+(pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
+ [22 <./ex1.png> <./ex2.png>]
+<ex4.png, id=506, 1371.1225pt x 770.88pt>
+File: ex4.png Graphic file (type png)
+ <use ex4.png>
+Package pdftex.def Info: ex4.png used on input line 333.
+(pdftex.def)             Requested size: 170.71652pt x 95.97159pt.
+
+Overfull \hbox (17.0716pt too wide) in paragraph at lines 333--333
+ [] 
+ []
+
+<ex3.png, id=507, 1371.1225pt x 770.88pt>
+File: ex3.png Graphic file (type png)
+ <use ex3.png>
+Package pdftex.def Info: ex3.png used on input line 333.
+(pdftex.def)             Requested size: 170.71652pt x 95.97159pt.
+
+Overfull \hbox (17.0716pt too wide) in paragraph at lines 333--333
+ [] 
+ []
+
+File: logo_vect.png Graphic file (type png)
+<use logo_vect.png>
+Package pdftex.def Info: logo_vect.png used on input line 333.
+(pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
+ [23
+
+ <./ex4.png> <./ex3.png>]
+<rotatexample.png, id=526, 1371.1225pt x 770.88pt>
+File: rotatexample.png Graphic file (type png)
+ <use rotatexample.png>
+Package pdftex.def Info: rotatexample.png used on input line 340.
+(pdftex.def)             Requested size: 256.0748pt x 143.96327pt.
+File: logo_vect.png Graphic file (type png)
+
+<use logo_vect.png>
+Package pdftex.def Info: logo_vect.png used on input line 340.
+(pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
+ [24
+
+ <./rotatexample.png>]
+File: logo_vect.png Graphic file (type png)
+ <use logo_vect.png>
+Package pdftex.def Info: logo_vect.png used on input line 345.
+(pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
+ [25
+
+]
+File: logo_vect.png Graphic file (type png)
+
+<use logo_vect.png>
+Package pdftex.def Info: logo_vect.png used on input line 349.
+(pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
+ [26
+
+]
+File: logo_vect.png Graphic file (type png)
+ <use logo_vect.png>
+Package pdftex.def Info: logo_vect.png used on input line 353.
+(pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
+ [27
+
+]
+File: logo_vect.png Graphic file (type png)
+ <use logo_vect.png>
+Package pdftex.def Info: logo_vect.png used on input line 386.
+(pdftex.def)             Requested size: 16.98444pt x 33.82434pt.
+ [28
 
  </usr/share/texlive/texmf-dist/tex/latex/beamer/art/beamericonarticle.pdf>]
 \tf@nav=\write6
@@ -1054,24 +1292,18 @@ Package pdftex.def Info: logo_vect.png used on input line 238.
 \tf@snm=\write8
 \openout8 = `presentacion.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 241.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 241.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 389.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 389.
 
 (./presentacion.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 241.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 241.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 389.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 389.
+Package rerunfilecheck Info: File `presentacion.out' has not changed.
+(rerunfilecheck)             Checksum: 7774C1662219E334E2CA35EDD02FE7F8;1108.
 
-
-Package rerunfilecheck Warning: File `presentacion.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `presentacion.out':
-(rerunfilecheck)             Before: D782A16D353FD58A9063CF9C6462BD6C;637
-(rerunfilecheck)             After:  EC09DE82158FC6C136A5F5E0A4CF6C6A;1108.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -1079,27 +1311,28 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 241.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 389.
  ) 
 Here is how much of TeX's memory you used:
- 17593 strings out of 493105
- 335208 string characters out of 6137072
- 419013 words of memory out of 5000000
- 20608 multiletter control sequences out of 15000+600000
+ 19500 strings out of 493105
+ 359841 string characters out of 6137072
+ 471260 words of memory out of 5000000
+ 22453 multiletter control sequences out of 15000+600000
  5492 words of font info for 20 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,20n,63p,432b,890s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,20n,63p,432b,1124s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmti9.pfb>
-Output written on presentacion.pdf (13 pages, 548167 bytes).
+st/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmti9.pfb>
+Output written on presentacion.pdf (28 pages, 1686927 bytes).
 PDF statistics:
- 354 PDF objects out of 1000 (max. 8388607)
- 292 compressed objects within 3 object streams
- 50 named destinations out of 1000 (max. 500000)
- 239 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 659 PDF objects out of 1000 (max. 8388607)
+ 566 compressed objects within 6 object streams
+ 80 named destinations out of 1000 (max. 500000)
+ 355 words of extra memory for PDF output out of 10000 (max. 10000000)
 

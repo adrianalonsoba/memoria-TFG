@@ -17,6 +17,9 @@
 
 \usepackage[latin1]{inputenc}
 \usepackage[spanish]{babel}
+\usepackage{listings}
+\usepackage{float} 
+
 
 \beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
 
@@ -179,9 +182,14 @@ Crear una librería que nos permita crear visualizaciones y filtrar datos de desa
 \item \textbf{Iteración 2}:Añadir interactividad
 \item \textbf{Iteración 3}:Añadir posibilidades de filtrado dimensional.
 \item \textbf{Iteración 4}: Creación de la biblioteca
-\item \textbf{Iteración}: Añadir paneles y otras características.
+\item \textbf{Iteración 5}: Añadir paneles y otras características.
 \end{itemize}
+\end{frame}
 
+\begin{frame}\frametitle{Ejemplo al final de la iteración 5} 
+\begin{figure}
+\includegraphics[scale=0.2]{result.png} 
+\end{figure}
 \end{frame}
 
 \section{Diseño y resultados}
@@ -190,19 +198,159 @@ Crear una librería que nos permita crear visualizaciones y filtrar datos de desa
 \begin{frame}
 \begin{figure}
   \centering
-  \includegraphics[width=10cm, keepaspectratio]{diagram.png}
+  \includegraphics[width=9cm, keepaspectratio]{diagram.png}
   \caption{Arquitectura de la librería}
 \end{figure}
 \end{frame}
 \subsection{Funciones principales}
+\begin{frame}
+\begin{block}{Métodos en cadena}
+\begin{itemize}
+\item \textbf{group}:Establece el grupo de Crossfilter.
+\item \textbf{dimension}:Establece la dimension de Crossfilter.
+\item \textbf{width}: El ancho de la gráfica.
+\item \textbf{height}: El alto de la gráfica.
+\item \textbf{gridsOn}: Activa los grids
+\item \textbf{gridsOff}: Descactiva los grids.
+\item \textbf{numberOfXLabels}: Establece el numero de etiquetas del eje x.
+\item \textbf{numberOfYLabels}: Establece el numero de etiquetas del eje y.
+\item \textbf{color}: Establece el color de la gráfica.
+\item \textbf{depth}: Establece la profundidad de la gráfica.
+\item \textbf{opacity}: Establece la la opacidad de la gráfica
+\end{itemize}
+\end{block}
+\end{frame}
 \subsection{Tipos de gráficas}
+\lstset{language=Java, breaklines=true, basicstyle=\footnotesize}
+Una vez creada la escena con las condiciones de camara y luz deseadas, hacemos uso de la librería:
+\begin{lstlisting}[frame=single]
+var line =  THREEDC.lineChart([0,0,0]);
+line.group(groupByMonth)
+    .dimension(dimByMonth)
+    .width(500)
+    .numberOfXLabels(10)
+    .numberOfYLabels(15)
+    .gridsOn()
+    .height(200)
+    .color(0x0000ff)
+    .depth(20);
+THREEDC.renderAll();
+\end{lstlisting}
+\begin{frame}{lineChart}
+\begin{figure}
+  \centering
+  \includegraphics[width=9cm, keepaspectratio]{linechart.png}
+  \caption{Ejemplo de lineChart}
+\end{figure}
+\end{frame}
+\begin{frame}{pieChart}
+\begin{figure}
+  \centering
+  \includegraphics[width=9cm, keepaspectratio]{piechart.png}
+  \caption{Arquitectura de la librería}
+\end{figure}
+\end{frame}
+\begin{frame}{barsChart}
+\begin{figure}
+  \centering
+  \includegraphics[width=9cm, keepaspectratio]{barschart.png}
+  \caption{Arquitectura de la librería}
+\end{figure}
+\end{frame}
+\begin{frame}{smoothCurveChart}
+\begin{figure}
+  \centering
+  \includegraphics[width=9cm, keepaspectratio]{smooth.png}
+  \caption{Arquitectura de la librería}
+\end{figure}
+\end{frame}
+
 \subsection{Filtros}
+\begin{frame}{Filtrado}
+  \begin{columns}[t]
+    \column{0.5\textwidth}
+\begin{figure}
+  \centering
+  \includegraphics[width=6cm, keepaspectratio]{1.png}
+  \caption{Antes de filtrado}
+\end{figure}
+    \column{0.5\textwidth}
+\begin{figure}
+  \centering
+  \includegraphics[width=6cm, keepaspectratio]{2.png}
+  \caption{Después del filtrado}
+\end{figure}
+  \end{columns}
+\end{frame}
+
 \subsection{Paneles}
 
+\begin{block}{Paneles}
+Los \textbf{paneles} tienen como objetivo contener las gráficas relacionadas, sus parámetros son:
+\begin{enumerate}
+\item coords
+\item numberOfCharts
+\item size
+\end{enumerate}
+\end{block}
+
+Un ejemplo de instanciación de panel con 4 gráficas:
+
+\begin{lstlisting}[frame=single]
+var panel=THREEDC.addPanel([0,0,0],4,[200x200]);
+\end{lstlisting}
+
+\begin{frame}{Ejemplos de colocación}
+  \begin{columns}[t]
+    \column{0.5\textwidth}
+\begin{figure}
+  \centering
+  \includegraphics[width=6cm, keepaspectratio]{ex1.png}
+  \caption{Gráfica fuera del panel}
+\end{figure}
+    \column{0.5\textwidth}
+\begin{figure}
+  \centering
+  \includegraphics[width=6cm, keepaspectratio]{ex2.png}
+  \caption{Gráfica dentro del panel}
+\end{figure}
+  \end{columns}
+\end{frame}
+\begin{frame}{Ejemplos de colocación}
+  \begin{columns}[t]
+    \column{0.5\textwidth}
+\begin{figure}
+  \centering
+  \includegraphics[width=6cm, keepaspectratio]{ex4.png}
+\end{figure}
+    \column{0.5\textwidth}
+\begin{figure}
+  \centering
+  \includegraphics[width=6cm, keepaspectratio]{ex3.png}
+  \caption{paneles y gráficas translúcidos}
+\end{figure}
+  \end{columns}
+\end{frame}
+\begin{frame}{Ejemplos de colocación}
+\begin{figure}
+  \centering
+  \includegraphics[width=9cm, keepaspectratio]{rotatexample.png}
+  \caption{Ejemplo de charts y paneles rotados}
+\end{figure}
+\end{frame}
 \section{Conclusiones}
 \subsection{Conocimientos aplicados}
+\begin{frame}{Conocimientos aplicados}
+sfd
+\end{frame}
 \subsection{Lecciones aprendidas}
+\begin{frame}{Lecciones aprendidas}
+fsd
+\end{frame}
 \subsection{Trabajos futuros}
+\begin{frame}{Trabajos futuros}
+fsd
+\end{frame}
 
 
 \section{Referencias} 
