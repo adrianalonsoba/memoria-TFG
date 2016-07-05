@@ -48,6 +48,7 @@
 
 \begin{frame}\frametitle{Dashboards y seguimiento de desarrollo de software } 
 
+{\LARGE 
  Un \textbf{dashboard} es una interfaz de ususario que nos permite manejar y gestionar un tipo determinado de software o de hardware. En nuestro caso trabajamos con dashboards de visualización de datos de desarrollo de software.
 Algunos ejemplos de dashboards y de librerías para la visualzacion de datos basadas en software libre son:
  
@@ -60,7 +61,7 @@ Algunos ejemplos de dashboards y de librerías para la visualzacion de datos basa
 \item \textbf{dc}
 
 \end{itemize}
-
+}
 \end{frame}
 
 \begin{frame}\frametitle{Kibana} 
@@ -96,7 +97,7 @@ Algunos ejemplos de dashboards y de librerías para la visualzacion de datos basa
 \end{frame}
 
 \begin{frame}\frametitle{Dashboards en 2D } 
-
+{\LARGE 
 \begin{exampleblock}{Ventajas}
 \begin{enumerate}
 \item Simplicidad de representación.
@@ -111,14 +112,14 @@ Algunos ejemplos de dashboards y de librerías para la visualzacion de datos basa
 \item Las posibilidades de visualización y colocación son limitadas.
 \end{enumerate}
 \end{alertblock}
-
+}
 \end{frame}
 
 
 \subsection{Objetivo principal}
 \begin{frame}
 \frametitle{Objetivo principal} 
-
+{\large 
 Crear una librería que nos permita crear visualizaciones y filtrar datos de desarrollo de software en 3D, dentro de cualquier navegador.
 \begin{block}{Requisitos}
 \begin{enumerate}
@@ -131,6 +132,7 @@ Crear una librería que nos permita crear visualizaciones y filtrar datos de desa
 \item Tener una estructura basada en programación orientada a objetos.
 \end{enumerate}
 \end{block}
+}
 \end{frame}
 
 %\begin{block}{title of the bloc}
@@ -144,6 +146,7 @@ Crear una librería que nos permita crear visualizaciones y filtrar datos de desa
 \section{Tecnologías utilizadas} 
 
 \begin{frame}\frametitle{Tecnologías utilizadas} 
+{\LARGE 
 \begin{itemize}
 \item {HTML5}
 \item {Javascript}
@@ -155,11 +158,11 @@ Crear una librería que nos permita crear visualizaciones y filtrar datos de desa
 \item {dat.GUI}
 
 \end{itemize}
-
+}
 \end{frame}
 
 %\begin{figure}
-%\includegraphics[scale=0.2]{convection} 
+%\includegraphics[scahle=0.2]{convection} 
 %\caption{show an example picture}
 %\end{figure}
 
@@ -175,7 +178,7 @@ Crear una librería que nos permita crear visualizaciones y filtrar datos de desa
 \subsection{Iteraciones}
 
 \begin{frame}\frametitle{Iteraciones} 
-
+{\LARGE 
 \begin{itemize}
 \item \textbf{Iteración 0}:Investigación y aprendizaje
 \item \textbf{Iteracion 1}:Primeras demos
@@ -184,6 +187,7 @@ Crear una librería que nos permita crear visualizaciones y filtrar datos de desa
 \item \textbf{Iteración 4}: Creación de la biblioteca
 \item \textbf{Iteración 5}: Añadir paneles y otras características.
 \end{itemize}
+}
 \end{frame}
 
 \begin{frame}\frametitle{Ejemplo al final de la iteración 5} 
@@ -221,6 +225,7 @@ Crear una librería que nos permita crear visualizaciones y filtrar datos de desa
 \end{block}
 \end{frame}
 \subsection{Tipos de gráficas}
+{\LARGE 
 \lstset{language=Java, breaklines=true, basicstyle=\footnotesize}
 Una vez creada la escena con las condiciones de camara y luz deseadas, hacemos uso de la librería:
 \begin{lstlisting}[frame=single]
@@ -236,6 +241,7 @@ line.group(groupByMonth)
     .depth(20);
 THREEDC.renderAll();
 \end{lstlisting}
+}
 \begin{frame}{lineChart}
 \begin{figure}
   \centering
@@ -284,7 +290,7 @@ THREEDC.renderAll();
 \end{frame}
 
 \subsection{Paneles}
-
+{\Large 
 \begin{block}{Paneles}
 Los \textbf{paneles} tienen como objetivo contener las gráficas relacionadas, sus parámetros son:
 \begin{enumerate}
@@ -297,8 +303,9 @@ Los \textbf{paneles} tienen como objetivo contener las gráficas relacionadas, su
 Un ejemplo de instanciación de panel con 3 gráficas:
 
 \begin{lstlisting}[frame=single]
-var panel=THREEDC.addPanel([0,0,0],3,[200x200]);
+var panel=THREEDC.addPanel([0,0,0],3,[200,200]);
 \end{lstlisting}
+}
 
 \begin{frame}{Ejemplos de colocación}
   \begin{columns}[t]
@@ -306,13 +313,13 @@ var panel=THREEDC.addPanel([0,0,0],3,[200x200]);
 \begin{figure}
   \centering
   \includegraphics[width=6cm, keepaspectratio]{ex1.png}
-  \caption{Gráfica fuera del panel}
+  \caption{Gráfica dentro del panel}
 \end{figure}
     \column{0.5\textwidth}
 \begin{figure}
   \centering
   \includegraphics[width=6cm, keepaspectratio]{ex2.png}
-  \caption{Gráfica dentro del panel}
+  \caption{Gráfica fuera del panel}
 \end{figure}
   \end{columns}
 \end{frame}
@@ -348,7 +355,6 @@ var pieDC = dc.pieChart("#test");
 pieDC.radius(100)
 	 .dimension(dimPerOrg)
 	 .group(groupPerOrg);
-	 
 dc.renderAll();
 \end{lstlisting}
 Usando THREEDC.js:
@@ -381,16 +387,20 @@ THREEDC.renderAll();
 \end{frame}
 \subsection{Conocimientos aplicados}
 
-\begin{frame}{Asignaturas relacionadas}
+\begin{frame}\frametitle{Asignaturas relacionadas}
+{\LARGE
 \begin{itemize}
+
 \item \textbf{Desarrollo de aplicaciones telemáticas}
 \item \textbf{Ingeniería de sistemas de información}
 \item \textbf{Servicios y aplicaciones telemáticas}
 \item \textbf{Ingeniería de sistemas telemáticos}
 \end{itemize}
+}
 \end{frame}
 \subsection{Lecciones aprendidas}
-\begin{frame}{Lecciones aprendidas}
+\begin{frame}\frametitle{Lecciones aprendidas}
+{\LARGE
 \begin{itemize}
 \item \textbf{Profundización en conocimiento de Javascript y HTML5}
 \item \textbf{Uso e implicaciones de webGL y desarrollo de gráficos en 3D}
@@ -398,52 +408,66 @@ THREEDC.renderAll();
 \item \textbf{Uso de \LaTeX}
 \item \textbf{Mejora del nivel de inglés escrito}
 \end{itemize}
+}
 \end{frame}
 \subsection{Trabajos futuros}
-\begin{frame}{Trabajos futuros}
+\begin{frame}\frametitle{Trabajos futuros}
+{\LARGE
 \begin{enumerate}
 \item \textbf{Mejoras gráficas.}
 \item \textbf{Añadir mas tipos de gráficas}
 \item \textbf{Añadir animaciones}
 \item \textbf{Añadir posibilidades de personalización en tiempo de ejecución}
-\item \textbf{Conseguir integración con ElasticSearch y Kibana(¿MENCIONO EL TRABAJO DE VIOREL?)}
+\item \textbf{Conseguir integración con ElasticSearch y Kibana}
 \item \textbf{Optimización general de rendimiento}
 \item \textbf{Implementar la rotación de gráficas y paneles en la UI}
 \end{enumerate}
+}
 \end{frame}
-
-
 \section{Referencias} 
 
-\begin{frame}\frametitle<presentation>{Referencias}
+\begin{frame}\frametitle<presentation>{Referencias y bibliografía}
+\begin{enumerate}
+\item Javascript:
 
+ Marijn Haverbeke, \textit{Eloquent JavaScript}. 2014
 
-\begin{thebibliography}{10}
+\url{http://www.w3schools.com/js/}
 
-\bibitem[Devlin, 2002]{Devlin}
-A.J.~Chorin, J.E.~Marsden.
-\newblock {\em A Mathematical Introduction to Fluid Mechanics}
-\newblock Springer-Verlag, 1980.
+\item Web theoretical reference: 
 
-\bibitem[Devlin, 2002]{Devlin}
-K.~Devlin.
-\newblock {\em The Millenium Problems. The Seven Greatest Unsolved Mathematical Puzzles of Our Time}
-\newblock Basic Books, 2002.
+\url{https://en.wikipedia.org/wiki/Main_Page}
+\item Three.js:
 
-\bibitem{Fefferman} 
-C.~Fefferman.
-\newblock {\em Clay Mathematics Institute, Millenium Problems. Official problem description}.
-\newblock 
-\href{http://www.claymath.org/millennium/Navier-Stokes\_Equations/}{http://www.claymath.org/millennium/Navier-Stokes\_Equation}
-\bibitem[Wikipedia contributors, 200]{Wikipedia}
-Wikipedia contributors
-\newblock {\em Navier-Stokes equations}
-\newblock Wikipedia, The Free Encyclopedia., 2008.
-\newblock 
-\href{http://en.wikipedia.org/wiki/Navier-Stokes\_equations}{http://en.wikipedia.org/wiki/Navier-Stokes\_equations}
+\url{http://threejs.org/docs/}
 
-\end{thebibliography}
+\url{https://www.udacity.com/course/interactive-3d-graphics--cs291}
+
+\url{http://stemkoski.github.io/Three.js/}
+
+\item Crossfilter: 
+
+\url{https://github.com/square/crossfilter/wiki/API-Reference}
+
+\item webGL:
+
+\url{https://www.khronos.org/webgl/}
+
+\item HTML5:
+
+\url{http://www.w3schools.com/html/html5_intro.asp}
+
+\item Domevents:
+
+\url{https://github.com/jeromeetienne/threex.domevents}
+
+\end{enumerate}
+
 \end{frame}
-
+\begin{frame}\frametitle{Web del proyecto}
+{\LARGE
+\url{https://adrianalonsoba.github.io/web-TFG/}
+}
+\end{frame}
 
 \end{document}

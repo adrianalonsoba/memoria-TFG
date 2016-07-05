@@ -1,0 +1,52 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Objectives}{chapter.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{Problem description}{section.1.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.2}{Main Objective}{section.1.1}% 4
+\BOOKMARK [2][-]{subsection.1.1.3}{Requeriments}{section.1.1}% 5
+\BOOKMARK [0][-]{chapter.2}{Used technologies}{}% 6
+\BOOKMARK [1][-]{section.2.1}{HTML5}{chapter.2}% 7
+\BOOKMARK [2][-]{subsection.2.1.1}{General description}{section.2.1}% 8
+\BOOKMARK [2][-]{subsection.2.1.2}{In this project}{section.2.1}% 9
+\BOOKMARK [1][-]{section.2.2}{Javascript}{chapter.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.1}{Main features}{section.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.2}{In this project}{section.2.2}% 12
+\BOOKMARK [1][-]{section.2.3}{WebGL}{chapter.2}% 13
+\BOOKMARK [2][-]{subsection.2.3.1}{Support}{section.2.3}% 14
+\BOOKMARK [2][-]{subsection.2.3.2}{In this project}{section.2.3}% 15
+\BOOKMARK [1][-]{section.2.4}{Three}{chapter.2}% 16
+\BOOKMARK [2][-]{subsection.2.4.1}{Usage example}{section.2.4}% 17
+\BOOKMARK [2][-]{subsection.2.4.2}{In this project}{section.2.4}% 18
+\BOOKMARK [1][-]{section.2.5}{Domevents}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.6}{Crossfilter}{chapter.2}% 20
+\BOOKMARK [2][-]{subsection.2.6.1}{General description}{section.2.6}% 21
+\BOOKMARK [2][-]{subsection.2.6.2}{In this project}{section.2.6}% 22
+\BOOKMARK [1][-]{section.2.7}{Orbitcontrols}{chapter.2}% 23
+\BOOKMARK [1][-]{section.2.8}{dat.GUI}{chapter.2}% 24
+\BOOKMARK [0][-]{chapter.3}{Development}{}% 25
+\BOOKMARK [1][-]{section.3.1}{Scrum methodology}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.2}{Iteration 0: Investigation and learning}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.3}{Iteration 1: First demos}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.4}{Iteration 2: Interactivity and events}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.5}{Iteration 3: Filtering}{chapter.3}% 30
+\BOOKMARK [1][-]{section.3.6}{Iteration 4: Framework creation}{chapter.3}% 31
+\BOOKMARK [1][-]{section.3.7}{Iteration 5: Panel creation and additional features}{chapter.3}% 32
+\BOOKMARK [0][-]{chapter.4}{Design and results}{}% 33
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 34
+\BOOKMARK [1][-]{section.4.2}{The mixin}{chapter.4}% 35
+\BOOKMARK [1][-]{section.4.3}{Bars chart}{chapter.4}% 36
+\BOOKMARK [1][-]{section.4.4}{Line chart}{chapter.4}% 37
+\BOOKMARK [1][-]{section.4.5}{Pie chart}{chapter.4}% 38
+\BOOKMARK [1][-]{section.4.6}{Smooth curve chart}{chapter.4}% 39
+\BOOKMARK [1][-]{section.4.7}{The filters}{chapter.4}% 40
+\BOOKMARK [1][-]{section.4.8}{Panels}{chapter.4}% 41
+\BOOKMARK [1][-]{section.4.9}{Examples}{chapter.4}% 42
+\BOOKMARK [0][-]{chapter.5}{Conclusions}{}% 43
+\BOOKMARK [1][-]{section.5.1}{Application of lessons learned}{chapter.5}% 44
+\BOOKMARK [1][-]{section.5.2}{Lessons learned}{chapter.5}% 45
+\BOOKMARK [1][-]{section.5.3}{Future work}{chapter.5}% 46
+\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 47
+\BOOKMARK [1][-]{section.A.1}{HTML5 sheet}{appendix.A}% 48
+\BOOKMARK [1][-]{section.A.2}{Three.js and Babylon.js comparison}{appendix.A}% 49
+\BOOKMARK [1][-]{section.A.3}{Three.js's Hello world!}{appendix.A}% 50
+\BOOKMARK [1][-]{section.A.4}{Raycasting example}{appendix.A}% 51
+\BOOKMARK [0][-]{appendix.B}{Bibliography}{}% 52
